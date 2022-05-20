@@ -8,16 +8,17 @@ public class CharacterMovement : MonoBehaviour
     private new Rigidbody rigidbody;
     public Vector3 movementInput;
     public SpriteRenderer spriteRenderer;
+    public AnimatedSprite animatedSprite;
+    public float speedWalkThreshold = 0.1f;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        rigidbody.mass = config.mass;
     }
 
     public void Update()
     {
-        movementInput.x = Input.GetAxis("Horizontal");
-        movementInput.z = Input.GetAxis("Vertical");
         spriteRenderer.flipX = rigidbody.velocity.x < 0;
     }
     
@@ -25,6 +26,7 @@ public class CharacterMovement : MonoBehaviour
     {
         rigidbody.AddForce(movementInput * config.acceleration);
         rigidbody.velocity = rigidbody.velocity * Mathf.Pow(config.inertia, Time.fixedDeltaTime);
+        animatedSprite.SelectAnim(movementInput.sqrMagnitude > speedWalkThreshold * speedWalkThreshold ? "Walk" : "Idle");
         if(rigidbody.velocity.sqrMagnitude > config.maxSpeed * config.maxSpeed)
         {
             rigidbody.velocity = rigidbody.velocity * config.maxSpeed / rigidbody.velocity.magnitude;

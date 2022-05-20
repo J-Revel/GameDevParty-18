@@ -8,5 +8,6 @@ public class CharacterMovementConfig : ScriptableObject
     public float acceleration;
     public float inertia;
     public float maxSpeed;
+    public float mass;
     
 }
