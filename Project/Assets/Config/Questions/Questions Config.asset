@@ -13,15 +13,25 @@ MonoBehaviour:
   m_Name: Questions Config
   m_EditorClassIdentifier: 
   questions:
-  - question: 
-    answerYes: 
-    answerNo: 
-    answerIndecisive: 
-  - question: 
-    answerYes: 
-    answerNo: 
-    answerIndecisive: 
-  - question: 
-    answerYes: 
-    answerNo: 
-    answerIndecisive: 
+  - theme: 0
+    genre: 0
+    question: 
+    answersAgree: []
+    answersDisagree: []
+    answersIndecisive: []
+  - theme: 0
+    genre: 0
+    question: 
+    answersAgree:
+    - test
+    - test
+    answersDisagree:
+    - 
+    - 
+    answersIndecisive: []
+  - theme: 0
+    genre: 0
+    question: 
+    answersAgree: []
+    answersDisagree: []
+    answersIndecisive: []

@@ -11,14 +11,22 @@ public enum QuestionTheme
     Culture,
 }
 
+public enum Genre
+{
+    Male,
+    Female,
+    Both,
+}
+
 [System.Serializable]
 public struct QuestionConfig
 {
     public QuestionTheme theme;
+    public Genre genre;
     public string question;
-    public string answerAgree;
-    public string answerDisagree;
-    public string answerIndecisive;
+    public string[] answersAgree;
+    public string[] answersDisagree;
+    public string[] answersIndecisive;
 }
 
 [CreateAssetMenu]
