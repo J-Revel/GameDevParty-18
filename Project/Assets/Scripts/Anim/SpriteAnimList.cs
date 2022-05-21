@@ -31,8 +31,8 @@ public struct SpriteAnimRef
 [CreateAssetMenu]
 public class SpriteAnimList : ScriptableObject
 {
-    public NamedSpriteAnim[] spriteAnims;
     public string[] actionPointNames;
+    public NamedSpriteAnim[] spriteAnims;
 
     public void AddActionPoint(string name)
     {
