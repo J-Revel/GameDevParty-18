@@ -24,6 +24,11 @@ public class ThemeSelector : MonoBehaviour
     public Transform questionTransform;
     public Transform answerTransform;
 
+    public float bubbleAnimFPS = 20;
+    public float answerAppearDelay = 1;
+    public float[] bubbleAnimAppearScales = new float[]{0.3f, 0.8f, 1.1f, 0.9f, 1};
+    public float[] bubbleAnimDisappearScales = new float[]{0.9f, 1.1f, 0.8f, 0.3f, 0};
+
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -79,8 +84,19 @@ public class ThemeSelector : MonoBehaviour
         }
     }
 
+    private IEnumerator DisappearBubblesCoroutine()
+    {
+        for(int i=0; i<bubbleAnimDisappearScales.Length; i++)
+        {
+            questionTransform.localScale = Vector3.one * bubbleAnimDisappearScales[i];
+            answerTransform.localScale = Vector3.one * bubbleAnimDisappearScales[i];
+            yield return new WaitForSeconds(1 / bubbleAnimFPS);
+        }
+    }
+
     public IEnumerator SelectThemeCoroutine()
     {
+        StartCoroutine(DisappearBubblesCoroutine());
         for(float time=0; time < blinkAnimDuration; time += Time.deltaTime)
         {
             elements[selectedIndex].color = Mathf.Floor(time * blinkAnimFreq) % 2 == 0 ? highlightColor : blinkColor;
@@ -91,7 +107,17 @@ public class ThemeSelector : MonoBehaviour
             rectTransform.anchoredPosition = Vector2.Lerp(new Vector2(rectTransform.anchoredPosition.x, visibleBarY), new Vector2(rectTransform.anchoredPosition.x, hiddenBarY), time / barSlideDuration);
             yield return null;
         }
-        // for(float time=0; )
+        for(int i=0; i<bubbleAnimAppearScales.Length; i++)
+        {
+            questionTransform.localScale = Vector3.one * bubbleAnimAppearScales[i];
+            yield return new WaitForSeconds(1 / bubbleAnimFPS);
+        }
+        yield return new WaitForSeconds(answerAppearDelay);
+        for(int i=0; i<bubbleAnimAppearScales.Length; i++)
+        { 
+            answerTransform.localScale = Vector3.one * bubbleAnimAppearScales[i];
+            yield return new WaitForSeconds(1 / bubbleAnimFPS);
+        }
         yield return AppearCoroutine();
     }
 }
