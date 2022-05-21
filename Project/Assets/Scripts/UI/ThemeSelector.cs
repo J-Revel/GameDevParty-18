@@ -28,6 +28,10 @@ public class ThemeSelector : MonoBehaviour
     public float answerAppearDelay = 1;
     public float[] bubbleAnimAppearScales = new float[]{0.3f, 0.8f, 1.1f, 0.9f, 1};
     public float[] bubbleAnimDisappearScales = new float[]{0.9f, 1.1f, 0.8f, 0.3f, 0};
+    public RectTransform leftPartTransform;
+    public RectTransform rightPartTransform;
+
+    private bool bubblesVisible = false;
 
     void Start()
     {
@@ -36,6 +40,13 @@ public class ThemeSelector : MonoBehaviour
         elementColors = new Color[elements.Length];
         for(int i=0; i<elements.Length; i++)
             elementColors[i] = elements[i].color;
+        
+        questionTransform.localScale = Vector3.zero;
+        answerTransform.localScale = Vector3.zero;
+        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, hiddenBarY);
+        rightPartTransform.pivot = new Vector2(0, 0.5f);
+        leftPartTransform.pivot = new Vector2(1, 0.5f);
+        
     }
 
     private int selectedIndex { get {
@@ -66,20 +77,25 @@ public class ThemeSelector : MonoBehaviour
 
             cursor.anchorMax = new Vector2(animRatio, 1);
             cursor.anchorMin = new Vector2(animRatio, 0);
-            if(Input.GetButtonDown("Talk"))
-            {
-                playing = false;
-                StartCoroutine(SelectThemeCoroutine());
-            }
         }
     }
 
-    public IEnumerator AppearCoroutine()
+    public IEnumerator ShowSelectorCoroutine()
     {
         playing = true;
         for(float time=0; time < barSlideDuration; time += Time.deltaTime)
         {
             rectTransform.anchoredPosition = Vector2.Lerp(new Vector2(rectTransform.anchoredPosition.x, hiddenBarY), new Vector2(rectTransform.anchoredPosition.x, visibleBarY), time / barSlideDuration);
+            yield return null;
+        }
+    }
+    
+    public IEnumerator HideSelectorCoroutine()
+    {
+        playing = true;
+        for(float time=0; time < barSlideDuration; time += Time.deltaTime)
+        {
+            rectTransform.anchoredPosition = Vector2.Lerp(new Vector2(rectTransform.anchoredPosition.x, visibleBarY), new Vector2(rectTransform.anchoredPosition.x, hiddenBarY), time / barSlideDuration);
             yield return null;
         }
     }
@@ -94,9 +110,41 @@ public class ThemeSelector : MonoBehaviour
         }
     }
 
+    private IEnumerator AppearCoroutine()
+    {
+        float duration = 0.5f;
+        for(float time = 0; time < duration; time += Time.deltaTime)
+        {
+            rightPartTransform.pivot = new Vector2(time / duration, 0.5f);
+            leftPartTransform.pivot = new Vector2(1 - time / duration, 0.5f);
+            yield return null;
+        }
+        yield return ShowSelectorCoroutine();
+    }
+
+    public void CloseMenu()
+    {
+        StartCoroutine(DisappearCoroutine());
+    }
+
+    private IEnumerator DisappearCoroutine()
+    {
+        StartCoroutine(HideSelectorCoroutine());
+        float duration = 0.5f;
+        for(float time = 0; time < duration; time += Time.deltaTime)
+        {
+            rightPartTransform.pivot = new Vector2(1 - time / duration, 0.5f);
+            leftPartTransform.pivot = new Vector2(time / duration, 0.5f);
+            yield return null;
+        }
+    }
+
     public IEnumerator SelectThemeCoroutine()
     {
-        StartCoroutine(DisappearBubblesCoroutine());
+        if(bubblesVisible)
+        {
+            StartCoroutine(DisappearBubblesCoroutine());
+        }
         for(float time=0; time < blinkAnimDuration; time += Time.deltaTime)
         {
             elements[selectedIndex].color = Mathf.Floor(time * blinkAnimFreq) % 2 == 0 ? highlightColor : blinkColor;
@@ -118,6 +166,18 @@ public class ThemeSelector : MonoBehaviour
             answerTransform.localScale = Vector3.one * bubbleAnimAppearScales[i];
             yield return new WaitForSeconds(1 / bubbleAnimFPS);
         }
-        yield return AppearCoroutine();
+        bubblesVisible = true;
+        yield return ShowSelectorCoroutine();
+    }
+
+    public void StartDialogue(PNJProfile config)
+    {
+        StartCoroutine(AppearCoroutine());
+    }
+
+    public void OnTalkButtonPressed()
+    {
+        playing = false;
+        StartCoroutine(SelectThemeCoroutine());
     }
 }
