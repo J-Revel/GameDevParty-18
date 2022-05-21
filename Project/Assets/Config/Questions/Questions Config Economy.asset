@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0ad7fd38100f544ea09c37210e7127d, type: 3}
-  m_Name: Questions Config
+  m_Name: Questions Config Economy
   m_EditorClassIdentifier: 
   questions:
   - theme: 0
