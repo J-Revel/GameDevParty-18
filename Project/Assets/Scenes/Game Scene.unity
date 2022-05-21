@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28516743, g: 0.3713011, b: 0.49385178, a: 1}
+  m_IndirectSpecularColor: {r: 0.2851676, g: 0.3713013, b: 0.49385256, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -536,8 +536,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902912455124168559, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_Name
-      value: PNJ (1)
+      value: PNJ_Citoyen_A
       objectReference: {fileID: 0}
+    - target: {fileID: 902912456211528379, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
+      propertyPath: animList
+      value: 
+      objectReference: {fileID: 11400000, guid: 5e653cb0795600940a7c88cbbf881ab1, type: 2}
+    - target: {fileID: 902912456211528381, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 879fa2686f726c340b9d6b539275e9d7, type: 3}
     - target: {fileID: 1305502342205285269, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: highlightColor.b
       value: 0.254902
