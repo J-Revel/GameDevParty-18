@@ -14,9 +14,10 @@ public enum QuestionTheme
 [System.Serializable]
 public struct QuestionConfig
 {
+    public QuestionTheme theme;
     public string question;
-    public string answerYes;
-    public string answerNo;
+    public string answerAgree;
+    public string answerDisagree;
     public string answerIndecisive;
 }
 
