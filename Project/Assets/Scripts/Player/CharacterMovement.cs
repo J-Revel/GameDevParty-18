@@ -114,10 +114,10 @@ public class CharacterMovement : MonoBehaviour
                 if(configOverrides[i].state == newState)
                 {
                     currentConfig = configOverrides[i].config;
-                    UpdatePhysicsConfig();
                     break;
                 }
             }
+            UpdatePhysicsConfig();
             stateChangedDelegate?.Invoke(newState);
         }
         switch(newState)
@@ -141,6 +141,9 @@ public class CharacterMovement : MonoBehaviour
 
             case CharacterState.Flying:
                 animatedSprite.SelectAnim("Flying");
+                break;
+            case CharacterState.Carried:
+                animatedSprite.SelectAnim("Carried");
                 break;
         }
     }

@@ -24,6 +24,11 @@ public class PlayerMovementInput : MonoBehaviour
         
         int closestGrabbableIndex = -1;
         float closestGrabbableDistance = Mathf.Infinity;
+        for(int i=inRangeGrabbables.Count - 1; i >= 0; i--)
+        {
+            if(!inRangeGrabbables[i].isActiveAndEnabled)
+                inRangeGrabbables.RemoveAt(i);
+        }
         for(int i=0; i < inRangeGrabbables.Count; i++)
         {
             float distance = Vector3.SqrMagnitude(inRangeGrabbables[i].transform.position - transform.position);
@@ -33,7 +38,7 @@ public class PlayerMovementInput : MonoBehaviour
                 closestGrabbableIndex = i;
             }
         }
-        if(closestGrabbableIndex < 0)
+        if(closestGrabbableIndex < 0 || characterMovement.currentState != CharacterState.Idle)
         {
             if(closestGrabbable != null)
                 closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
@@ -45,25 +50,32 @@ public class PlayerMovementInput : MonoBehaviour
                 closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
             closestGrabbable = inRangeGrabbables[closestGrabbableIndex];
             closestGrabbable.GetComponent<Highlightable>().SetHighlighted(true);
-            
         }
 
-        if(Input.GetButtonDown("Interact") && closestGrabbable != null)
+        if(Input.GetButtonDown("Interact"))
         {
             switch(characterMovement.currentState)
             {
                 case CharacterState.Idle:
-                    characterMovement.SetState(CharacterState.Grabbing);
-                    grabbedElement = closestGrabbable;
-                    closestGrabbable.grabStartedDelegate?.Invoke();
-                    grabbedElement.StartGrabbed();
-
+                    if(closestGrabbable != null)
+                    {
+                        characterMovement.SetState(CharacterState.Grabbing);
+                        grabbedElement = closestGrabbable;
+                        closestGrabbable.grabStartedDelegate?.Invoke();
+                        grabbedElement.StartGrabbed();
+                        inRangeGrabbables.Remove(grabbedElement);
+                        closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
+                        closestGrabbable = null;
+                    }
                     break;
                 case CharacterState.Carrying:
-                    characterMovement.SetState(CharacterState.Throwing);
-                    closestGrabbable.thrownDelegate?.Invoke();
-                    grabbedElement.OnThrow(characterMovement.throwVelocity);
-                    grabbedElement = null;
+                    if(grabbedElement != null)
+                    {
+                        characterMovement.SetState(CharacterState.Throwing);
+                        grabbedElement.thrownDelegate?.Invoke();
+                        grabbedElement.OnThrow(characterMovement.throwVelocity);
+                        grabbedElement = null;
+                    }
                     break;
             }
         }
