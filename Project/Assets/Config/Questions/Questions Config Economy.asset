@@ -14,24 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
-  - theme: 0
-    genre: 0
-    question: 
+    genre: 2
+    question: 'Faut-il augmenter le salaire minimum ? '
     answersAgree:
     - test
-    - test
     answersDisagree:
-    - 
-    - 
-    answersIndecisive: []
+    - "Mais bien s\xFBr, il faut aider ces pauvres travailleurs !"
+    answersIndecisive:
+    - Oh ben oui, c'est mieux, la vie, avec de l'argent.
   - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
+    genre: 2
+    question: "Vous n'auriez pas une petite pi\xE8ce ?"
+    answersAgree:
+    - "Et voici 2\u20AC !"
+    answersDisagree:
+    - "La manche je la pr\xE9f\xE8re en maillot de bain ! Allez vous trouver un travail
+      !"
+    answersIndecisive:
+    - Z'avez du bol, j'ai 10 centimes !
+  - theme: 0
+    genre: 2
+    question: "\xCAtes-vous pour remettre l'ISF ? "
+    answersAgree:
+    - Oui et un ISF climatique si possible !
+    answersDisagree:
+    - "\"Oulaaa non... J'ai travaill\xE9 dur pour h\xE9riter de mon ch\xE2teau en
+      Espagne Boarf, je ne pr\xE9f\xE8re pas.\""
+    answersIndecisive:
+    - "L\u2019Institut de formation professionnelle d\u2019intervention Sociale et
+      Familiale ? Je ne comprends pas le sens de la question..."
+  - theme: 0
+    genre: 2
+    question: "\xCAtes-vous contre remettre l'ISF ? "
+    answersAgree:
+    - '"Non, je suis pour ! Non, enfin si ! Enfin... je suis pas contre quoi."'
+    answersDisagree:
+    - "\"Apr\xE8s des ann\xE9es de dur labeur, j'ai h\xE9rit\xE9 \xE0 la sueur de
+      mon front une maison \xE0 la Baule, et il faudrait que je paye davantage d'imp\xF4ts
+      ? Alors, \xE7a non ! Plut\xF4t contre, effectivement\""
+    answersIndecisive:
+    - "L\u2019Institut de formation professionnelle d\u2019intervention Sociale et
+      Familiale ? Je ne comprends pas le sens de la question du coup..."
