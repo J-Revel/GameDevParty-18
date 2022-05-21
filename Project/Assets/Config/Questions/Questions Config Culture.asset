@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ad7fd38100f544ea09c37210e7127d, type: 3}
+  m_Name: Questions Config Culture
+  m_EditorClassIdentifier: 
+  questions:
+  - theme: 4
+    genre: 2
+    question: Il fait beau aujourd'hui ?
+    answersAgree:
+    - " Tout \xE0 fait "
+    answersDisagree:
+    - ' Effectivement !'
+    answersIndecisive:
+    - "S\xE9rieux ? Vous voulez parler m\xE9t\xE9o maintenant ?"
+  - theme: 4
+    genre: 2
+    question: "P\xE9tain, \xE7a vous dirait qu'on en parle ? "
+    answersAgree:
+    - Seulement pour le clasher
+    answersDisagree:
+    - "Avec plaisir, c'\xE9tait un grand homme qui a sauv\xE9 notre France tout de
+      m\xEAme !"
+    answersIndecisive:
+    - "Humph, qu'est-ce que vous voulez qu'on en dise ? A vrai dire, j'ai l'impression
+      d'entendre parler mon grand-p\xE8re. Il nous parlait tout le temps de P\xE9tain
+      comme d'un homme tr\xE8s honorable. J'imagine que sur certains points il avait
+      raison, mais qu'il ne m'a pas tout dit non plus... P\xE9tain \xE9tait un homme
+      de guerre, un homme politique, mais surtout un homme du pass\xE9. Je pense
+      qu'on peut passer \xE0 autre chose maintenant."
+  - theme: 4
+    genre: 2
+    question: "Napol\xE9on vous manque-t-il ?"
+    answersAgree:
+    - ' Pas le moins du monde.'
+    answersDisagree:
+    - ' Terriblement, nous aurions besoin d''un homme comme lui pour relever notre
+      triste France...'
+    answersIndecisive:
+    - "Oh j'en ai une bonne : vous savez pourquoi Napol\xE9on n'a jamais d\xE9m\xE9nag\xE9
+      ? ... ... ... ... ... ... Parce qu'il avait un Bonaparte ! Bon appart', Bonaparte,
+      vous l'avez ?"
+  - theme: 4
+    genre: 2
+    question: "Mangez vous des Mich\xE8le et Augustin ? "
+    answersAgree:
+    - ' Ces fachos ?!'
+    answersDisagree:
+    - ' J''adore ! '
+    answersIndecisive:
+    - C'est qui ?
+  - theme: 4
+    genre: 2
+    question: 'Dans la culture, le plus important c''est... '
+    answersAgree:
+    - "la diversit\xE9 avant tout !"
+    answersDisagree:
+    - "le beau patrimoine fran\xE7ais ! "
+    answersIndecisive:
+    - "l'ensemble des ph\xE9nom\xE8nes mat\xE9riels et id\xE9ologiques qui caract\xE9risent
+      un groupe ethnique ou une nation, une civilisation, par opposition \xE0 un
+      autre groupe ou \xE0 une autre nation ?"

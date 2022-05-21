@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ad7fd38100f544ea09c37210e7127d, type: 3}
+  m_Name: Questions Config Social
+  m_EditorClassIdentifier: 
+  questions:
+  - theme: 2
+    genre: 2
+    question: "Faut-il reculer l'\xE2ge de la retraite ? "
+    answersAgree:
+    - Non !
+    - "Je ne pense pas\u2026"
+    answersDisagree:
+    - " Oui, \xE0 70 m\xEAme !"
+    - "Regardez en Chine, on travaille avec fiert\xE9 jusqu'\xE0 100 ans !!!"
+    answersIndecisive:
+    - "\xC7a d\xE9pend\u2026"
+    - "Peut-\xEAtre oui\u2026 Peut-\xEAtre non\u2026"
+    - "Impossible de r\xE9pondre d'une traite\u2026 Ha ha vous avez compris ? Retraite
+      ? UNEtraite ? C'est un jeu de mot sur le prefixe de traite en fait !"
+  - theme: 2
+    genre: 2
+    question: "La pauvret\xE9 c'est super triste... "
+    answersAgree:
+    - Oui (agree rep 1)
+    - Agree REP 2
+    answersDisagree:
+    - ' Oui (disagree rep 1)'
+    - Disagree REP 2
+    answersIndecisive:
+    - "Ind\xE9cis REP"

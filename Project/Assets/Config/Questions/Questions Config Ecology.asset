@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ad7fd38100f544ea09c37210e7127d, type: 3}
+  m_Name: Questions Config Ecology
+  m_EditorClassIdentifier: 
+  questions:
+  - theme: 1
+    genre: 2
+    question: "\xCAtes-vous pour r\xE9duire le nucl\xE9aire ? "
+    answersAgree:
+    - "Plut\xF4t oui..."
+    answersDisagree:
+    - " Plut\xF4t pas..."
+    answersIndecisive:
+    - Je ne souhaite pas me prononcer sur ce sujet...
+  - theme: 1
+    genre: 2
+    question: "Les animaux sont-ils des \xEAtres sentients ? "
+    answersAgree:
+    - Oui, ils sont capables de ressentir la douleur, a minima.
+    answersDisagree:
+    - Non et puis quoi encore ?!
+    answersIndecisive:
+    - C'est quoi un cien ? Genre les humains, ils ont des ciens eux ?
+  - theme: 1
+    genre: 2
+    question: "Le r\xE9chauffement climatique existe-t-il ? "
+    answersAgree:
+    - "\xC9videment "
+    answersDisagree:
+    - "\"Non, du pur bullshit ! Je veux bien admettre que la temp\xE9rature augmente,
+      mais del\xE0 \xE0 penser que ce sont les humains qui sont la cause de tout
+      cela... Bon, n'exag\xE9rons rien tout de m\xEAme.\""
+    answersIndecisive:
+    - "Euh oui, \xE9videmment, mais j'ai un doute sur son origine par contre, je
+      lis des trucs et tout... J'sais pas trop en vrai..."
+  - theme: 1
+    genre: 2
+    question: "Qu'est-ce que la r\xE8gle verte ? "
+    answersAgree:
+    - "On ne pr\xE9l\xE8ve pas davantage \xE0 la nature que ce qu'elle est en \xE9tat
+      de reconstituer"
+    answersDisagree:
+    - "Oh non, j'imagine que c'est encore un truc de bobo-\xE9colo-islamo-gauchiste
+      ?"
+    answersIndecisive:
+    - Un truc vert pour tracer droit ? Elle est trop dure votre question...
+  - theme: 1
+    genre: 2
+    question: "\xCAtes-vous pour cr\xE9er une Agence pour les relocalisations d\xE9pendant
+      du Conseil \xE0 la planification \xE9cologique, charg\xE9e de recenser les
+      secteurs industriels indispensables \xE0 la souverainet\xE9 nationale et \xE0
+      la bifurcation \xE9cologique, et d\u2019\xE9tablir un plan de relocalisation
+      pour chaque fili\xE8re ou production strat\xE9gique identifi\xE9e ?"
+    answersAgree:
+    - Evidemment !
+    answersDisagree:
+    - "\u2026 \u2026 \u2026"
+    answersIndecisive:
+    - Hum hum pardon ? Vous avez dit ?
