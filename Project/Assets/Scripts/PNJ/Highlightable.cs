@@ -12,6 +12,7 @@ public class Highlightable : MonoBehaviour
     
     public void SetHighlighted(bool highlighted)
     {
+        renderer.GetPropertyBlock(propertyBlock);
         propertyBlock.SetColor(hilightColorShaderParam, highlighted ? highlightColor : Color.white);
         renderer.SetPropertyBlock(propertyBlock);
     }

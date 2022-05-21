@@ -75,3 +75,33 @@ MonoBehaviour:
       - {x: -0.001953125, y: -0.8847656}
       framePerSecond: 10
       loop: 0
+  - name: Flying
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 10
+      loop: 1
+  - name: Carried
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 10
+      loop: 1
+  - name: Down
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 2
+      loop: 1

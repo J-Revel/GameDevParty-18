@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Standing PNJ Movement
   m_EditorClassIdentifier: 
   acceleration: 100
-  inertia: 0.02
-  maxSpeed: 6
+  inertia: 0.3
+  maxSpeed: 15
   mass: 10
   gravity: 100
+  throwSpeed: 100
+  throwVerticalSpeed: 3
+  onGroundDuration: 2
+  collisionThrowSpeed: 10

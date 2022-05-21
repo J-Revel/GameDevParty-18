@@ -56,11 +56,13 @@ public class PlayerMovementInput : MonoBehaviour
                     characterMovement.SetState(CharacterState.Grabbing);
                     grabbedElement = closestGrabbable;
                     closestGrabbable.grabStartedDelegate?.Invoke();
+                    grabbedElement.StartGrabbed();
 
                     break;
                 case CharacterState.Carrying:
                     characterMovement.SetState(CharacterState.Throwing);
-                    closestGrabbable.grabFinishedDelegate?.Invoke();
+                    closestGrabbable.thrownDelegate?.Invoke();
+                    grabbedElement.OnThrow(characterMovement.throwVelocity);
                     grabbedElement = null;
                     break;
             }
@@ -75,19 +77,19 @@ public class PlayerMovementInput : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        Grabbable grabbable = collider.GetComponent<Grabbable>();
+        Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
         if(grabbable != null)
             inRangeGrabbables.Add(grabbable);
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        Grabbable grabbable = collider.GetComponent<Grabbable>();
+        Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
         inRangeGrabbables.Remove(grabbable);
     }
 
     private void OnThrow()
     {
-        
+
     }
 }

@@ -14,27 +14,69 @@ public enum CharacterState
     
 }
 
+[System.Serializable]
+public struct CharacterMovementSetting
+{
+    public CharacterState state;
+    public CharacterMovementConfig config;
+}
+
 public class CharacterMovement : MonoBehaviour
 {
-    public CharacterMovementConfig config;
+    private CharacterMovementConfig currentConfig;
+    public CharacterMovementConfig defaultConfig;
+    public CharacterMovementSetting[] configOverrides;
     private new Rigidbody rigidbody;
     public Vector3 movementInput;
+    public Vector3 lookDirection = Vector3.right;
     public SpriteRenderer spriteRenderer;
     public AnimatedSprite animatedSprite;
     public float speedWalkThreshold = 0.1f;
     public CharacterState currentState;
     public System.Action throwDelegate;
+    public System.Action touchGroundDelegate;
     public System.Action<CharacterState> stateChangedDelegate;
+
+    private Grabbable grabbable;
+    private float onGroundTime = 0;
+    public int animFps = 2;
+
+    public float collisionThrowSpeed {
+        get {
+            return currentConfig.collisionThrowSpeed;
+        }
+    }
+
+    public float throwVerticalSpeed {
+        get => currentConfig.throwVerticalSpeed;
+    }
+
+    public Vector3 throwVelocity {
+        get {
+            return lookDirection * currentConfig.throwSpeed + Vector3.up * currentConfig.throwVerticalSpeed + rigidbody.velocity;
+        }
+    }
+
+    public float getUpAnimDuration = 0.75f;
+    public float[] getUpAnimValues = new float[]{0.9f, 1.05f, 0.95f};
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        rigidbody.mass = config.mass;
+        grabbable = GetComponent<Grabbable>();
+        currentConfig = defaultConfig;
+        UpdatePhysicsConfig();
+        
+    }
+
+    private void UpdatePhysicsConfig()
+    {
+        rigidbody.mass = currentConfig.mass;
     }
 
     public void Update()
     {
-        spriteRenderer.flipX = rigidbody.velocity.x < 0;
+        spriteRenderer.flipX = lookDirection.x < 0;
         bool animFinished = animatedSprite.isAnimationFinished;
         if(animFinished)
         {
@@ -47,6 +89,14 @@ public class CharacterMovement : MonoBehaviour
                 case CharacterState.Grabbing:
                     SetState(CharacterState.Carrying);
                     break;
+                case CharacterState.OnGround:
+                    onGroundTime += Time.deltaTime;
+                    if(onGroundTime >= currentConfig.onGroundDuration)
+                    {
+                        onGroundTime = 0;
+                        SetState(CharacterState.Idle);
+                    }
+                    break;
             }
 
         }
@@ -54,27 +104,66 @@ public class CharacterMovement : MonoBehaviour
 
     public void SetState(CharacterState newState)
     {
-        if(newState != currentState)
+        CharacterState oldState = currentState;
+        currentState = newState;
+        if(newState != oldState)
         {
+            currentConfig = defaultConfig;
+            for(int i=0; i<configOverrides.Length; i++)
+            {
+                if(configOverrides[i].state == newState)
+                {
+                    currentConfig = configOverrides[i].config;
+                    UpdatePhysicsConfig();
+                    break;
+                }
+            }
             stateChangedDelegate?.Invoke(newState);
         }
-        currentState = newState;
         switch(newState)
         {
+            case CharacterState.Idle:
+                if(oldState == CharacterState.OnGround)
+                {
+                    StartCoroutine(GetUpAnimCoroutine());
+                }
+                break;
             case CharacterState.Throwing:
                 animatedSprite.SelectAnim("Throw");
                 break;
             case CharacterState.Grabbing:
                 animatedSprite.SelectAnim("Grab");
+                
+                break;
+            case CharacterState.OnGround:
+                animatedSprite.SelectAnim("Down");
+                break;
+
+            case CharacterState.Flying:
+                animatedSprite.SelectAnim("Flying");
                 break;
         }
+    }
+
+    private IEnumerator GetUpAnimCoroutine()
+    {
+        for(int i=0; i<getUpAnimValues.Length; i++)
+        {
+            transform.localScale = new Vector3(1, getUpAnimValues[i], 1);
+            yield return new WaitForSeconds(1.0f/animFps);
+        }
+        transform.localScale = Vector3.one;
     }
     
     public void FixedUpdate()
     {
-        rigidbody.AddForce(movementInput * config.acceleration);
-        rigidbody.AddForce(Vector3.down * config.gravity);
-        rigidbody.velocity = rigidbody.velocity * Mathf.Pow(config.inertia, Time.fixedDeltaTime);
+        if(movementInput.sqrMagnitude > 0)
+        {
+            lookDirection = movementInput.normalized;
+        }
+        rigidbody.AddForce(movementInput * currentConfig.acceleration);
+        rigidbody.AddForce(Vector3.down * currentConfig.gravity);
+        rigidbody.velocity = rigidbody.velocity * Mathf.Pow(currentConfig.inertia, Time.fixedDeltaTime);
         switch(currentState)
         {
             case CharacterState.Idle:
@@ -85,9 +174,17 @@ public class CharacterMovement : MonoBehaviour
                 break;
         }
         
-        if(rigidbody.velocity.sqrMagnitude > config.maxSpeed * config.maxSpeed)
+        if(rigidbody.velocity.sqrMagnitude > currentConfig.maxSpeed * currentConfig.maxSpeed)
         {
-            rigidbody.velocity = rigidbody.velocity * config.maxSpeed / rigidbody.velocity.magnitude;
+            rigidbody.velocity = rigidbody.velocity * currentConfig.maxSpeed / rigidbody.velocity.magnitude;
+        }
+    }
+
+    public void OnTouchGround()
+    {
+        if(currentState == CharacterState.Flying)
+        {
+            SetState(CharacterState.OnGround);
         }
     }
 }
