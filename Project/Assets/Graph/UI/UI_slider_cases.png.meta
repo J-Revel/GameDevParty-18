@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 091a374b563547340b661bd03f7328b3
+guid: 1bbac9d93e5fe3b4087935579d9fffc1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -150,18 +150,128 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI_slider_cases_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 275
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac1a133e48a4a64cba9d1fdd9878e41
+      internalID: -248439828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_slider_cases_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 18
+        width: 272
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ef32e0d0275fd4f83bd16761e6395e
+      internalID: 1112669473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_slider_cases_2
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 16
+        width: 283
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ba58ecd897d554baa66f9479a54955
+      internalID: -1280177252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_slider_cases_3
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 16
+        width: 285
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c8a42b9b1195d41ae0a7af5c2a1e00
+      internalID: -1090325914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_slider_cases_4
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 16
+        width: 280
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ce30acd6b27fe4182dd249c26e85e4
+      internalID: 2008719709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 19739ccfcc8cd194d871e22e8298cca7
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_slider_cases_3: -1090325914
+      UI_slider_cases_4: 2008719709
+      UI_slider_cases_0: -248439828
+      UI_slider_cases_2: -1280177252
+      UI_slider_cases_1: 1112669473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

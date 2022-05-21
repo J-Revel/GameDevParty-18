@@ -17,6 +17,6 @@ public class PNJProfile : MonoBehaviour
     public bool isAlly;
     public void GenerateProfile(PNJConfig config)
     {
-        this.ecology = Random.Range(config.minEcology, config.maxEcology);
+        // this.ecology = Random.Range(config.minEcology, config.maxEcology);
     }
 }
