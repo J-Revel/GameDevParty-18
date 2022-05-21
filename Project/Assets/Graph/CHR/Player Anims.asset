@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13426e9ead40efb40b3fde96cfad97aa, type: 3}
   m_Name: Player Anims
   m_EditorClassIdentifier: 
-  actionPointNames: []
+  actionPointNames:
+  - Grab Point
   spriteAnims:
   - name: Idle
     spriteAnim:
       sprites:
       - {fileID: 21300000, guid: d6571196073f47e4b95b456918432e2e, type: 3}
       - {fileID: 21300000, guid: 80eab3a78a5916449bcf180e4eb5687b, type: 3}
-      actionPoints: []
+      actionPoints:
+      - {x: 0, y: 0}
+      - {x: 0, y: 0}
       framePerSecond: 5
       loop: 1
   - name: Walk
@@ -27,6 +30,48 @@ MonoBehaviour:
       sprites:
       - {fileID: 21300000, guid: c995266081cf56941bad4ebe457b9471, type: 3}
       - {fileID: 21300000, guid: e75689a79db1a904ca02ccb1cf0196a4, type: 3}
-      actionPoints: []
+      actionPoints:
+      - {x: 0, y: 0}
+      - {x: 0, y: 0}
       framePerSecond: 5
       loop: 1
+  - name: Carry Idle
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 0d42dd02710994c429ffc0fff3f038b0, type: 3}
+      - {fileID: 21300000, guid: 7f3f1e6fe1c99de4c9475785722805cf, type: 3}
+      actionPoints:
+      - {x: 0.021484375, y: -0.6894531}
+      - {x: 0.048828125, y: -0.6347656}
+      framePerSecond: 5
+      loop: 1
+  - name: Carry Walk
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: bff97d679ea6d784c98b7146f2a2aeac, type: 3}
+      - {fileID: 21300000, guid: d3d2df51510d1ee49ab127f95e5979de, type: 3}
+      actionPoints:
+      - {x: 0.013671875, y: -0.9589844}
+      - {x: -0.029296875, y: -0.9824219}
+      framePerSecond: 5
+      loop: 1
+  - name: Throw
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 1a24d6fefd68d3c40986a78471a1beeb, type: 3}
+      - {fileID: 21300000, guid: 0be5c44623422de4a90638d8ff4f12fc, type: 3}
+      actionPoints:
+      - {x: -0.060546875, y: -0.8847656}
+      - {x: 0.6972656, y: -0.7207031}
+      framePerSecond: 10
+      loop: 0
+  - name: Grab
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 0be5c44623422de4a90638d8ff4f12fc, type: 3}
+      - {fileID: 21300000, guid: 7f3f1e6fe1c99de4c9475785722805cf, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 10
+      loop: 0

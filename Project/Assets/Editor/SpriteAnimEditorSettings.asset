@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db428bcc52ff740bf6ef4b8c2f1e02, type: 3}
-  m_Name: Standing PNJ Movement
+  m_Script: {fileID: 11500000, guid: a3e5d4879ab908a4ca66f1588ce0877d, type: 3}
+  m_Name: SpriteAnimEditorSettings
   m_EditorClassIdentifier: 
-  acceleration: 100
-  inertia: 0.02
-  maxSpeed: 6
-  mass: 10
-  gravity: 100
+  colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
