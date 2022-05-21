@@ -13,25 +13,28 @@ MonoBehaviour:
   m_Name: Questions Config Social
   m_EditorClassIdentifier: 
   questions:
-  - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
-  - theme: 0
-    genre: 0
-    question: 
+  - theme: 2
+    genre: 2
+    question: "Faut-il reculer l'\xE2ge de la retraite ? "
     answersAgree:
-    - test
-    - test
+    - Non !
+    - "Je ne pense pas\u2026"
     answersDisagree:
-    - 
-    - 
-    answersIndecisive: []
-  - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
+    - " Oui, \xE0 70 m\xEAme !"
+    - "Regardez en Chine, on travaille avec fiert\xE9 jusqu'\xE0 100 ans !!!"
+    answersIndecisive:
+    - "\xC7a d\xE9pend\u2026"
+    - "Peut-\xEAtre oui\u2026 Peut-\xEAtre non\u2026"
+    - "Impossible de r\xE9pondre d'une traite\u2026 Ha ha vous avez compris ? Retraite
+      ? UNEtraite ? C'est un jeu de mot sur le prefixe de traite en fait !"
+  - theme: 2
+    genre: 2
+    question: "La pauvret\xE9 c'est super triste... "
+    answersAgree:
+    - Oui (agree rep 1)
+    - Agree REP 2
+    answersDisagree:
+    - ' Oui (disagree rep 1)'
+    - Disagree REP 2
+    answersIndecisive:
+    - "Ind\xE9cis REP"

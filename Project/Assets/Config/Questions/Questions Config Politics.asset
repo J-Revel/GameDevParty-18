@@ -13,25 +13,24 @@ MonoBehaviour:
   m_Name: Questions Config Politics
   m_EditorClassIdentifier: 
   questions:
-  - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
-  - theme: 0
-    genre: 0
-    question: 
+  - theme: 3
+    genre: 2
+    question: 'Pour ou contre la sortie de l''Europe ? '
     answersAgree:
-    - test
-    - test
+    - "Plut\xF4t contre"
     answersDisagree:
-    - 
-    - 
-    answersIndecisive: []
-  - theme: 0
-    genre: 0
-    question: 
-    answersAgree: []
-    answersDisagree: []
-    answersIndecisive: []
+    - " Plut\xF4t pour "
+    answersIndecisive:
+    - "Je chai p\xF4"
+  - theme: 3
+    genre: 2
+    question: "Quelles sont les mesures \xE0 prendre pour l'accueil des migrants
+      ? "
+    answersAgree:
+    - Mieux accueillir les migrants
+    answersDisagree:
+    - Favoriser les expulsions
+    - "Il faut nettoyer les cit\xE9s au c\xE4rsher"
+    answersIndecisive:
+    - "Aucune id\xE9e..."
+    - Mmmmmmmmmmh....
