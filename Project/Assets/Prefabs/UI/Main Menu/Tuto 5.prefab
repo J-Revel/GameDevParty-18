@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -9}
+  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &733158857576428172
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: JOUER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
-  m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: feb07934353d7b74496aaaff421337c1, type: 2}
+  m_sharedMaterial: {fileID: -9213752247864742037, guid: feb07934353d7b74496aaaff421337c1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

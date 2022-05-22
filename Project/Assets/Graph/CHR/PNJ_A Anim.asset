@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13426e9ead40efb40b3fde96cfad97aa, type: 3}
+  m_Name: PNJ_A Anim
+  m_EditorClassIdentifier: 
+  actionPointNames:
+  - Grab Point
+  spriteAnims:
+  - name: Grab
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 0be5c44623422de4a90638d8ff4f12fc, type: 3}
+      - {fileID: 21300000, guid: 7f3f1e6fe1c99de4c9475785722805cf, type: 3}
+      actionPoints:
+      - {x: 0.5882813, y: -0.48164064}
+      - {x: 0.010156274, y: -0.7980469}
+      framePerSecond: 10
+      loop: 0
+  - name: Walk
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 36e2f4223bf284b418a1f3797f710f23, type: 3}
+      - {fileID: 21300000, guid: cc4e78e614ee739458a60656ffb189c2, type: 3}
+      actionPoints:
+      - {x: 0, y: 0}
+      - {x: 0, y: 0}
+      framePerSecond: 5
+      loop: 1
+  - name: Carry Idle
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 0d42dd02710994c429ffc0fff3f038b0, type: 3}
+      - {fileID: 21300000, guid: 7f3f1e6fe1c99de4c9475785722805cf, type: 3}
+      actionPoints:
+      - {x: 0.0007812977, y: -0.8136719}
+      - {x: 0.0046875477, y: -0.8058594}
+      framePerSecond: 5
+      loop: 1
+  - name: Carry Walk
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: bff97d679ea6d784c98b7146f2a2aeac, type: 3}
+      - {fileID: 21300000, guid: d3d2df51510d1ee49ab127f95e5979de, type: 3}
+      actionPoints:
+      - {x: 0.010279605, y: -0.8028372}
+      - {x: 0.016927058, y: -0.7892796}
+      framePerSecond: 5
+      loop: 1
+  - name: Throw
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 1a24d6fefd68d3c40986a78471a1beeb, type: 3}
+      - {fileID: 21300000, guid: 0be5c44623422de4a90638d8ff4f12fc, type: 3}
+      actionPoints:
+      - {x: -0.060546875, y: -0.8847656}
+      - {x: 0.6972656, y: -0.7207031}
+      framePerSecond: 10
+      loop: 0
+  - name: Flying
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 10
+      loop: 1
+  - name: Carried
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.0046875477, y: -0.3996094}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 10
+      loop: 1
+  - name: Down
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 09a05c38c5e4e5e44976cd9cf8fd7dc0, type: 3}
+      - {fileID: 21300000, guid: 64b7a68a47d9ffb408cfa5910deb73ee, type: 3}
+      actionPoints:
+      - {x: 0.6152344, y: -0.7128906}
+      - {x: -0.001953125, y: -0.8847656}
+      framePerSecond: 2
+      loop: 1
+  - name: Idle
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 879fa2686f726c340b9d6b539275e9d7, type: 3}
+      - {fileID: 21300000, guid: 2c1f3fe1fc06da344b78c3c9806b42f1, type: 3}
+      actionPoints:
+      - {x: 0, y: 0}
+      - {x: 0, y: 0}
+      framePerSecond: 5
+      loop: 1
