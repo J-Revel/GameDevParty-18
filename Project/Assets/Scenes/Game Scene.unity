@@ -556,7 +556,7 @@ MonoBehaviour:
   pnjPrefab: {fileID: 902912455124168338, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
   animationSets: []
   animationSetsMale:
-  - {fileID: 11400000, guid: f583d24ede590f74fb748aebcfa9b75e, type: 2}
+  - {fileID: 11400000, guid: e5f3a7799d6e9d04e8e85851ecb93455, type: 2}
   - {fileID: 11400000, guid: cacbf84ba07e67341a1d79e733e53c96, type: 2}
   animationSetsFemale:
   - {fileID: 11400000, guid: 5e653cb0795600940a7c88cbbf881ab1, type: 2}
@@ -632,7 +632,7 @@ MonoBehaviour:
   pnjPrefab: {fileID: 902912455124168338, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
   animationSets: []
   animationSetsMale:
-  - {fileID: 11400000, guid: f583d24ede590f74fb748aebcfa9b75e, type: 2}
+  - {fileID: 11400000, guid: e5f3a7799d6e9d04e8e85851ecb93455, type: 2}
   - {fileID: 11400000, guid: cacbf84ba07e67341a1d79e733e53c96, type: 2}
   animationSetsFemale:
   - {fileID: 11400000, guid: 5e653cb0795600940a7c88cbbf881ab1, type: 2}
@@ -867,7 +867,7 @@ MonoBehaviour:
   pnjPrefab: {fileID: 902912455124168338, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
   animationSets: []
   animationSetsMale:
-  - {fileID: 11400000, guid: f583d24ede590f74fb748aebcfa9b75e, type: 2}
+  - {fileID: 11400000, guid: e5f3a7799d6e9d04e8e85851ecb93455, type: 2}
   - {fileID: 11400000, guid: cacbf84ba07e67341a1d79e733e53c96, type: 2}
   animationSetsFemale:
   - {fileID: 11400000, guid: 5e653cb0795600940a7c88cbbf881ab1, type: 2}
