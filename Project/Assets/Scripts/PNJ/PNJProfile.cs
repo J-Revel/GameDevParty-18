@@ -25,6 +25,7 @@ public class PNJProfile : MonoBehaviour
     public Genre genre;
     public string idCard;
     public bool canVote = true;
+    public int procurationCount = 0;
 
     public QuestionTheme[] favouriteThemes;
 
