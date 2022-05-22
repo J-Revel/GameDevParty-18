@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 70
   inertia: 0.3
-  maxSpeed: 15
+  maxSpeed: 17.5
   mass: 10
   gravity: 100
   throwSpeed: 100
-  throwVerticalSpeed: 3
+  throwVerticalSpeed: 3.2
   onGroundDuration: 2
   collisionThrowSpeed: 10
