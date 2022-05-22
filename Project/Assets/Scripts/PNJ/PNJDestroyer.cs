@@ -9,7 +9,7 @@ public class PNJDestroyer : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         PNJProfile pnj = other.GetComponentInParent<PNJProfile>();
-        if(pnj != null)
+        if(pnj != null && pnj.GetComponent<CharacterMovement>().currentState == CharacterState.Flying)
         {
             Transform destructionFXInstance = Instantiate(destructionFX, pnj.transform.position, Quaternion.LookRotation(transform.forward));
             StartCoroutine(FXCoroutine(pnj.gameObject, destructionFXInstance.gameObject));

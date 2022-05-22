@@ -21,7 +21,7 @@ public class PlayerMovementInput : MonoBehaviour
 
     public void Update()
     {
-        if(talking)
+        if(characterMovement.currentState == CharacterState.Talking)
         {
             characterMovement.movementInput = Vector3.zero;
             if(Input.GetButtonDown("Interact"))
@@ -107,7 +107,7 @@ public class PlayerMovementInput : MonoBehaviour
         if(Input.GetButtonDown("Talk"))
         {
             
-            if(talking)
+            if(characterMovement.currentState == CharacterState.Talking)
             {
                 themeSelector.OnTalkButtonPressed();
             }
@@ -120,7 +120,8 @@ public class PlayerMovementInput : MonoBehaviour
                         {
                             PNJProfile config = closestGrabbable.GetComponent<PNJProfile>();
                             themeSelector.StartDialogue(config);
-                            talking = true;
+                            characterMovement.SetState(CharacterState.Talking);
+                            closestGrabbable.GetComponent<CharacterMovement>().SetState(CharacterState.Talking);
                         }
                         break;
                 }
