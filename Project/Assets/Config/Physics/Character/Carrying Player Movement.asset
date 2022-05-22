@@ -15,7 +15,7 @@ MonoBehaviour:
   acceleration: 50
   inertia: 0.001
   maxSpeed: 6
-  mass: 2
+  mass: 1.2
   gravity: 100
   throwSpeed: 1000
   throwVerticalSpeed: 3
