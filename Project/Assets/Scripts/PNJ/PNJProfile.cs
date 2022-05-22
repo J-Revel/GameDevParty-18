@@ -10,13 +10,30 @@ public enum PNJState
     Aggressive,
 }
 
+public enum AnswerType
+{
+    LeftWingAnswer,
+    RightWingAnswer,
+    DontKnowAnswer,
+}
+
 public class PNJProfile : MonoBehaviour
 {
 
     public PNJState state;
-    public bool isAlly;
-    public void GenerateProfile(PNJConfig config)
+    public bool leftWing;
+    public Genre genre;
+
+    public QuestionTheme[] favouriteThemes;
+
+    public bool IsThemeFavourite(QuestionTheme theme)
     {
-        // this.ecology = Random.Range(config.minEcology, config.maxEcology);
+        for(int i=0; i<favouriteThemes.Length; i++)
+        {
+            if(favouriteThemes[i] == theme)
+                return true;
+        }
+        return false;
     }
+
 }

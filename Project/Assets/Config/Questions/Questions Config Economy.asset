@@ -15,15 +15,18 @@ MonoBehaviour:
   questions:
   - theme: 0
     genre: 2
+    agreeAnswerSide: 0
     question: 'Faut-il augmenter le salaire minimum ? '
     answersAgree:
-    - test
+    - Il serait temps !
     answersDisagree:
-    - "Mais bien s\xFBr, il faut aider ces pauvres travailleurs !"
+    - "Et puis quoi encore ? Vous avez une id\xE9e de combien \xE7a co\xFBte \xE0
+      une bo\xEEte un employ\xE9 au SMIC ?"
     answersIndecisive:
-    - Oh ben oui, c'est mieux, la vie, avec de l'argent.
+    - Ah bah moi si on me donne de l'argent, je dis pas non !
   - theme: 0
     genre: 2
+    agreeAnswerSide: 0
     question: "Vous n'auriez pas une petite pi\xE8ce ?"
     answersAgree:
     - "Et voici 2\u20AC !"
@@ -34,6 +37,7 @@ MonoBehaviour:
     - Z'avez du bol, j'ai 10 centimes !
   - theme: 0
     genre: 2
+    agreeAnswerSide: 0
     question: "\xCAtes-vous pour remettre l'ISF ? "
     answersAgree:
     - Oui et un ISF climatique si possible !
@@ -45,6 +49,7 @@ MonoBehaviour:
       Familiale ? Je ne comprends pas le sens de la question..."
   - theme: 0
     genre: 2
+    agreeAnswerSide: 0
     question: "\xCAtes-vous contre remettre l'ISF ? "
     answersAgree:
     - '"Non, je suis pour ! Non, enfin si ! Enfin... je suis pas contre quoi."'

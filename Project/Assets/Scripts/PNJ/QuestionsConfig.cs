@@ -23,6 +23,7 @@ public struct QuestionConfig
 {
     public QuestionTheme theme;
     public Genre genre;
+    public AnswerType agreeAnswerSide;
     public string question;
     public string[] answersAgree;
     public string[] answersDisagree;

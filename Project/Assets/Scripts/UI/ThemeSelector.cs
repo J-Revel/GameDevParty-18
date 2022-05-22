@@ -31,6 +31,12 @@ public class ThemeSelector : MonoBehaviour
     public RectTransform leftPartTransform;
     public RectTransform rightPartTransform;
 
+    public QuestionsConfig[] configs;
+
+    private TMPro.TextMeshProUGUI questionText;
+    private TMPro.TextMeshProUGUI answerText;
+    private PNJProfile pnj;
+
     private bool bubblesVisible = false;
 
     void Start()
@@ -46,7 +52,8 @@ public class ThemeSelector : MonoBehaviour
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, hiddenBarY);
         rightPartTransform.pivot = new Vector2(0, 0.5f);
         leftPartTransform.pivot = new Vector2(1, 0.5f);
-        
+        questionText = questionTransform.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+        answerText = answerTransform.GetComponentInChildren<TMPro.TextMeshProUGUI>();
     }
 
     private int selectedIndex { get {
@@ -130,6 +137,10 @@ public class ThemeSelector : MonoBehaviour
     private IEnumerator DisappearCoroutine()
     {
         StartCoroutine(HideSelectorCoroutine());
+        if(bubblesVisible)
+        {
+            StartCoroutine(DisappearBubblesCoroutine());
+        }
         float duration = 0.5f;
         for(float time = 0; time < duration; time += Time.deltaTime)
         {
@@ -155,6 +166,21 @@ public class ThemeSelector : MonoBehaviour
             rectTransform.anchoredPosition = Vector2.Lerp(new Vector2(rectTransform.anchoredPosition.x, visibleBarY), new Vector2(rectTransform.anchoredPosition.x, hiddenBarY), time / barSlideDuration);
             yield return null;
         }
+        QuestionTheme[] themes = new QuestionTheme[]{QuestionTheme.Economy, QuestionTheme.Ecology, QuestionTheme.Social, QuestionTheme.Politics, QuestionTheme.Culture};
+        QuestionConfig question = GetRandomQuestion(pnj.genre, themes[selectedIndex]);
+        questionText.text = question.question;
+        if(!pnj.IsThemeFavourite(question.theme))
+        {
+            answerText.text = question.answersIndecisive[Random.Range(0, question.answersIndecisive.Length)];
+        }
+        else if(pnj.leftWing)
+        {
+            answerText.text = question.answersAgree[Random.Range(0, question.answersAgree.Length)];
+        }
+        else
+        {
+            answerText.text = question.answersDisagree[Random.Range(0, question.answersDisagree.Length)];
+        }
         for(int i=0; i<bubbleAnimAppearScales.Length; i++)
         {
             questionTransform.localScale = Vector3.one * bubbleAnimAppearScales[i];
@@ -170,8 +196,24 @@ public class ThemeSelector : MonoBehaviour
         yield return ShowSelectorCoroutine();
     }
 
-    public void StartDialogue(PNJProfile config)
+    public QuestionConfig GetRandomQuestion(Genre genre, QuestionTheme theme)
     {
+        List<QuestionConfig> usableQuestions = new List<QuestionConfig>();
+        for(int i=0; i<configs.Length; i++)
+        {
+            for(int j=0; j<configs[i].questions.Length; j++)
+            {
+                QuestionConfig question = configs[i].questions[j];
+                if((question.genre == genre || question.genre == Genre.Both) && question.theme == theme)
+                    usableQuestions.Add(question);
+            }
+        }
+        return usableQuestions[Random.Range(0, usableQuestions.Count)];
+    }
+
+    public void StartDialogue(PNJProfile pnj)
+    {
+        this.pnj = pnj;
         StartCoroutine(AppearCoroutine());
     }
 

@@ -15,6 +15,7 @@ MonoBehaviour:
   questions:
   - theme: 4
     genre: 2
+    agreeAnswerSide: 2
     question: Il fait beau aujourd'hui ?
     answersAgree:
     - " Tout \xE0 fait "
@@ -24,6 +25,7 @@ MonoBehaviour:
     - "S\xE9rieux ? Vous voulez parler m\xE9t\xE9o maintenant ?"
   - theme: 4
     genre: 2
+    agreeAnswerSide: 0
     question: "P\xE9tain, \xE7a vous dirait qu'on en parle ? "
     answersAgree:
     - Seulement pour le clasher
@@ -39,6 +41,7 @@ MonoBehaviour:
       qu'on peut passer \xE0 autre chose maintenant."
   - theme: 4
     genre: 2
+    agreeAnswerSide: 0
     question: "Napol\xE9on vous manque-t-il ?"
     answersAgree:
     - ' Pas le moins du monde.'
@@ -51,6 +54,7 @@ MonoBehaviour:
       vous l'avez ?"
   - theme: 4
     genre: 2
+    agreeAnswerSide: 0
     question: "Mangez vous des Mich\xE8le et Augustin ? "
     answersAgree:
     - ' Ces fachos ?!'
@@ -60,6 +64,7 @@ MonoBehaviour:
     - C'est qui ?
   - theme: 4
     genre: 2
+    agreeAnswerSide: 0
     question: 'Dans la culture, le plus important c''est... '
     answersAgree:
     - "la diversit\xE9 avant tout !"

@@ -68,8 +68,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc2939cc2a3ead4aaf683be20f56303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultConfig: {fileID: 11400000, guid: 64e2ee32f21979c48a2d786f5c7415e8, type: 2}
-  configOverrides: []
+  defaultConfig: {fileID: 11400000, guid: 54d03b886aeb2c646ac0144e72bf18bd, type: 2}
+  configOverrides:
+  - state: 5
+    config: {fileID: 11400000, guid: 64e2ee32f21979c48a2d786f5c7415e8, type: 2}
   movementInput: {x: 0, y: 0, z: 0}
   lookDirection: {x: 1, y: 0, z: 0}
   spriteRenderer: {fileID: 902912456211528381}
@@ -96,7 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34de1672fcad94418008917336ca1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ecology: 3
+  state: 0
+  leftWing: 0
+  genre: 0
+  favouriteThemes: 
 --- !u!114 &1305502342205285269
 MonoBehaviour:
   m_ObjectHideFlags: 0
