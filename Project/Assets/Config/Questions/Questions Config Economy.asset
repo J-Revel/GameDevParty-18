@@ -19,44 +19,199 @@ MonoBehaviour:
     question: 'Faut-il augmenter le salaire minimum ? '
     answersAgree:
     - Il serait temps !
+    - "\xC9videmment, y en a marre d'\xEAtre pay\xE9 une mis\xE8re pour enrichir
+      les grands patrons."
     answersDisagree:
     - "Et puis quoi encore ? Vous avez une id\xE9e de combien \xE7a co\xFBte \xE0
       une bo\xEEte un employ\xE9 au SMIC ?"
     answersIndecisive:
     - Ah bah moi si on me donne de l'argent, je dis pas non !
   - theme: 0
-    genre: 2
+    genre: 0
     agreeAnswerSide: 0
     question: "Vous n'auriez pas une petite pi\xE8ce ?"
     answersAgree:
     - "Et voici 2\u20AC !"
     answersDisagree:
-    - "La manche je la pr\xE9f\xE8re en maillot de bain ! Allez vous trouver un travail
-      !"
+    - "La manche je la pr\xE9f\xE8re en maillot de bain, si vous voyez c'que j'veux
+      dire, h\xE9h\xE9 !"
+    - Mais allez vous trouver un travail !
     answersIndecisive:
+    - Z'avez du bol, j'ai 10 centimes !
+    - "Ah mince... Je suis navr\xE9 j'ai pas de monnaie sur moi... "
+  - theme: 0
+    genre: 1
+    agreeAnswerSide: 0
+    question: "Vous n'auriez pas une petite pi\xE8ce ?"
+    answersAgree:
+    - "Et voici 2\u20AC !"
+    answersDisagree:
+    - Mais allez vous trouver un travail !
+    - "La manche je la pr\xE9f\xE8re en maillot de bain, si vous voyez c'que j'veux
+      dire, h\xE9h\xE9 !"
+    answersIndecisive:
+    - "Ah mince... Je suis navr\xE9e j'ai pas de monnaie sur moi... "
     - Z'avez du bol, j'ai 10 centimes !
   - theme: 0
     genre: 2
     agreeAnswerSide: 0
     question: "\xCAtes-vous pour remettre l'ISF ? "
     answersAgree:
-    - Oui et un ISF climatique si possible !
+    - 'Oui et un ISF climatique si possible. '
     answersDisagree:
-    - "\"Oulaaa non... J'ai travaill\xE9 dur pour h\xE9riter de mon ch\xE2teau en
-      Espagne Boarf, je ne pr\xE9f\xE8re pas.\""
+    - "Oulaaa non... J'ai travaill\xE9 dur pour h\xE9riter de mon ch\xE2teau en Espagne
+      ! "
+    - "Boarf, je ne pr\xE9f\xE8re pas. "
     answersIndecisive:
     - "L\u2019Institut de formation professionnelle d\u2019intervention Sociale et
       Familiale ? Je ne comprends pas le sens de la question..."
   - theme: 0
     genre: 2
     agreeAnswerSide: 0
-    question: "\xCAtes-vous contre remettre l'ISF ? "
+    question: "\xCAtes-vous contre remettre l'ISF ?"
     answersAgree:
-    - '"Non, je suis pour ! Non, enfin si ! Enfin... je suis pas contre quoi."'
+    - Non, enfin si ! Enfin... je suis pas contre quoi.
+    - Non, je suis pour !
     answersDisagree:
-    - "\"Apr\xE8s des ann\xE9es de dur labeur, j'ai h\xE9rit\xE9 \xE0 la sueur de
-      mon front une maison \xE0 la Baule, et il faudrait que je paye davantage d'imp\xF4ts
-      ? Alors, \xE7a non ! Plut\xF4t contre, effectivement\""
+    - "Apr\xE8s des ann\xE9es de dur labeur, j'ai h\xE9rit\xE9 \xE0 la sueur de mon
+      front, d'une maison \xE0 la Baule, et il faudrait que je paye davantage d'imp\xF4ts
+      ? Alors, \xE7a non !"
+    - "Plut\xF4t contre, effectivement."
     answersIndecisive:
     - "L\u2019Institut de formation professionnelle d\u2019intervention Sociale et
       Familiale ? Je ne comprends pas le sens de la question du coup..."
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: 'Que pensez-vous du temps de travail hebdomadaire ? '
+    answersAgree:
+    - "Il faut le r\xE9duire \xE0 32h/semaine. Tout simplement."
+    - 35h c'est bien, ni plus ni moins, je pense.
+    answersDisagree:
+    - "Il faut l'augmenter ! Les fran\xE7ais sont des feignasses..."
+    - "Il faut reconna\xEEtre que les 35h ont tu\xE9 l'\xE9conomie fran\xE7aise...
+      Je pense qu'augmenter un peu le temps de travail ne serait pas une mauvaise
+      chose."
+    answersIndecisive:
+    - J'ai pas de travail...
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: 'Le capitalisme, c''est bien ou mal ? '
+    answersAgree:
+    - Mal
+    - "A l'\xE8re de l'Anthropoc\xE8ne ce syst\xE8me aura fait son temps !"
+    answersDisagree:
+    - Bien
+    - "C'est ce qui nous permet de vivre dans cette soci\xE9t\xE9 si d\xE9velopp\xE9e."
+    answersIndecisive:
+    - "Oh vous me posez de ces questions, pas facile \xE0 r\xE9pondre \xE0 vrai dire... "
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Faudrait-il plus de politiques d'exception quant \xE0 l'orientation
+      de la Banque Centrale Europ\xE9enne ?"
+    answersAgree:
+    - "Oui, plus de r\xE9gulations de la Banque Centrale permettraient une \xE9conomie
+      supranationale"
+    answersDisagree:
+    - Non il faut suivre la politique de la Banque Centrale telle quelle.
+    answersIndecisive:
+    - "Euh... j'attends une amie l\xE0, j'ai pas vraiment le temps de r\xE9pondre
+      \xE0 vos questions en fait..."
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Que pensez-vous de la monnaie unique europ\xE9enne ?"
+    answersAgree:
+    - Un premier pas vers une vision altermondialiste
+    - C'est bien, ma foi.
+    answersDisagree:
+    - Retournons au franc !
+    - "Une grossi\xE8re erreur..."
+    answersIndecisive:
+    - Les billets sont zolis, vous trouvez pas ?
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Croyez-vous en la th\xE9orie du ruissellement ?"
+    answersAgree:
+    - Non. Juste non. Et... encore non.
+    answersDisagree:
+    - Je n'y crois pas, j'en suis convaincu ! Ce sont bien les riches qui permettent
+      aux pauvres de travailler.
+    answersIndecisive:
+    - "Ah c'est difficile \xE0 dire... \xE7a pourrait peut-\xEAtre avoir un effet
+      mais on peut se questionner quant \xE0 la taille de cet effet justement. Et
+      j'ai cru entendre r\xE9cemment \xE0 la radio, que les experts en \xE9conomie
+      n'\xE9taient pas parvenus \xE0 mettre en \xE9vidence cet effet. En m\xEAme
+      temps, y a beaucoup de gens qui le d\xE9fendent. Qui je suis moi, pour pouvoir
+      les remettre en question ? "
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: Que pensez-vous du salaire horaire ?
+    answersAgree:
+    - "Ha, \xE7a d\xE9pend des m\xE9tiers. Chez les grands patrons, il est bien trop
+      ind\xE9cent..."
+    answersDisagree:
+    - "Ha, \xE7a d\xE9pend des m\xE9tiers. Chez les fonctionnaires, il est bien trop
+      haut..."
+    answersIndecisive:
+    - "Oh ben de mani\xE8re g\xE9n\xE9rale, je ne suis pas contre d'avoir un peu
+      plus d'argent en poche."
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Que pensez-vous des indemnit\xE9s ch\xF4mage ?"
+    answersAgree:
+    - "Elles sont plus que n\xE9cessaires quand on voit le nombre de personnes qui
+      n'ont pas acc\xE8s \xE0 un emploi."
+    answersDisagree:
+    - "Les ch\xF4meurs en ont trop. Si on ne veut pas travailler, on assume !"
+    - "\xC7a fait beaucoup d'argent d\xE9pens\xE9 quand m\xEAme, non ?"
+    - A quoi bon ? Il suffit de traverser la rue pour trouver un travail !
+    answersIndecisive:
+    - "C'est pratique ce truc-l\xE0. Quand ma tante Jeanne a perdu son travail suite
+      \xE0 une d\xE9location de son entreprise, c'\xE9tait quand m\xEAme bien pratique
+      d'avoir de l'argent quand m\xEAme. Mais bon, y en qui abusent aussi... Genre
+      j'ai un pote, Jean, il travaille, il s'arr\xEAte, il profite des indemnisations,
+      il se prend des vacances, il rebosse, il reprofite du ch\xF4mage, etc. C'est
+      pas franchement r\xE9lo quand m\xEAme... "
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Que pensez-vous d'un contr\xF4le de la r\xE9mun\xE9ration des patrons
+      ?"
+    answersAgree:
+    - "Contr\xF4le un maximum, surtout l'\xE9cart entre le plus petit et le plus
+      haut salaire d'une entreprise."
+    answersDisagree:
+    - "Mais l\xE2chez-nous les baskets avec cette histoire-l\xE0 !"
+    - "C'est eux qui embauchent \xE0 tour de bras... On peut bien les remercier \xE0
+      la hauteur de leur service qu'ils rendent \xE0 la soci\xE9t\xE9. Ils m\xE9ritent
+      qu'on leur fiche la paix avec leur salaire."
+    answersIndecisive:
+    - "En vrai je m'en fiche un peu de ce que peuvent gagner les autres tant que
+      je vis bien de mon c\xF4t\xE9. Mais j'avoue que parfois, y en a qui abusent
+      quoi..."
+  - theme: 0
+    genre: 2
+    agreeAnswerSide: 0
+    question: Que proposez-vous de faire avec les aides sociales ?
+    answersAgree:
+    - "Il n'y en a pas assez, encore trop de gens vivent sous le seuil de pauvret\xE9
+      en France, trop de personnes qui n'ont pas acc\xE8s aux aides auxquelles elles
+      ont pourtant droit..."
+    answersDisagree:
+    - "Ce sont toujours les m\xEAmes qui en profitent et en abusent, si vous voyez
+      ce que je veux dire... Il y en a bien trop, il faut r\xE9duire l'acc\xE8s aux
+      aides sociales."
+    answersIndecisive:
+    - "Je ne suis pas contre qu'on aide les personnes en difficult\xE9, quand je
+      vois ces gens pauvres personnes qui font la manche dans la rue, \xE7a me brise
+      le c\u0153ur. Mais d'un autre c\xF4t\xE9, il para\xEEt que y en a plusieurs
+      qui fraudent et qui abusent. Et \xE7a franchement, c'est pas cool, c'est pas
+      solidaire quoi. Alors bon je me dis, si on pouvait surveiller un peu plus comment
+      on distribue ces aides, \xE7a ne serait pas une mauvaise id\xE9e. Et puis comme
+      \xE7a on pourrait peut-\xEAtre permettre \xE0 plus de personnes d'en b\xE9n\xE9ficier."
