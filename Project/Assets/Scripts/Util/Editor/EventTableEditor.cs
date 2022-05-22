@@ -21,7 +21,8 @@ public class EventTableEditor : Editor
         EventTable eventTable = target as EventTable;
         var audioPrefabProperty = serializedObject.FindProperty("audioPrefab");
         hideUnused = GUILayout.Toggle(hideUnused, "Hide unused");
-        EditorGUILayout.PropertyField(audioPrefabProperty);
+        EditorGUILayout.ObjectField(audioPrefabProperty);
+        serializedObject.ApplyModifiedProperties();
         foreach(EventInvocationData invocationData in EventTable.ListEvents(eventTable.gameObject))
         {
             if(hideUnused)
