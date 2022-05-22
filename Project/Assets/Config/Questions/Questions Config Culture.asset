@@ -47,7 +47,7 @@ MonoBehaviour:
       triste France...'
     answersIndecisive:
     - "Oh j'en ai une bonne : vous savez pourquoi Napol\xE9on n'a jamais d\xE9m\xE9nag\xE9
-      ? ... ... ... ... ... ... Parce qu'il avait un Bonaparte ! Bon appart', Bonaparte,
+      ? ... ... ... ... Parce qu'il avait un Bonaparte ! Bon appart', Bonaparte,
       vous l'avez ?"
   - theme: 4
     genre: 2
@@ -136,10 +136,10 @@ MonoBehaviour:
     answersAgree:
     - "Il avait un ego surdimensionn\xE9, peu de capacit\xE9 au compromis, un cynisme
       puant, une rigidit\xE9 et un autoritarisme d\xE9testable..."
-    - "Il \xE9tait d\xE9tach\xE9 voire indiff\xE9rent par rapport aux cons\xE9quences
-      humaines de ses d\xE9cisions, comme celles des harkis par exemple. Il \xE9tait
-      trop nationaliste et il n'a d\xE9colonis\xE9 que pour la forme. Sans oublier
-      qu'il \xE9tait raciste et islamophobe."
+    - "Il \xE9tait indiff\xE9rent aux cons\xE9quences humaines de ses d\xE9cisions,
+      comme celles des harkis par exemple. Il \xE9tait trop nationaliste et il n'a
+      d\xE9colonis\xE9 que pour la forme. Sans oublier qu'il \xE9tait raciste et
+      islamophobe."
     answersDisagree:
     - "Je lui reproche d'avoir brad\xE9 l'empire et l'Alg\xE9rie fran\xE7aise. Et
       il s'est bien trop appuy\xE9 sur les communistes et Moscou."

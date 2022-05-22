@@ -72,11 +72,10 @@ MonoBehaviour:
     - "Non, y a d\xE9j\xE0 bien trop d'\xE9trangers en France, n'en rajoutons pas
       !"
     answersIndecisive:
-    - "Vous savez, moi je ne crois pas qu\u2019il y ait de bonne ou de mauvaise nationalit\xE9.
-      Moi, si je devais r\xE9sumer ma vie aujourd\u2019hui avec vous, je dirais que
-      c\u2019est d\u2019abord des rencontres. Des gens qui m\u2019ont tendu la main,
-      peut-\xEAtre \xE0 un moment o\xF9 je ne pouvais pas, o\xF9 j\u2019\xE9tais
-      seul chez moi."
+    - "Mais, vous savez, moi je ne crois pas qu\u2019il y ait de bonne ou de mauvaise
+      nationalit\xE9. Moi, si je devais r\xE9sumer ma vie aujourd\u2019hui avec vous,
+      je dirais que c\u2019est d\u2019abord des rencontres, des gens qui m\u2019ont
+      tendu la main..."
   - theme: 3
     genre: 2
     agreeAnswerSide: 0
@@ -100,10 +99,10 @@ MonoBehaviour:
     - "Et c'est comme \xE7a qu'on se retrouve avec des femmes incomp\xE9tentes au
       pouvoir..."
     answersIndecisive:
-    - "En th\xE9orie oui, mais en pratique je me dis que \xE7a risque peut-\xEAtre
-      de d\xE9ligitimer les postes des femmes politiques, nan ? Et puis je me demande
-      quand m\xEAme si \xE7a ne reste pas un boulot majoritairement masculin... Ouais,
-      j'sais pas trop en vrai."
+    - "En th\xE9orie oui, mais en pratique \xE7a risque peut-\xEAtre de d\xE9ligitimer
+      les postes des femmes politiques, nan ? Et puis je me demande quand m\xEAme
+      si \xE7a ne reste pas un boulot majoritairement masculin... Ouais, j'sais pas
+      trop en vrai."
   - theme: 3
     genre: 2
     agreeAnswerSide: 0
@@ -205,11 +204,8 @@ MonoBehaviour:
     - Ce pays de COMMUNISTES ? Vade retro satanas !!!
     answersIndecisive:
     - "Le Venezuela est un m\xE9lange repr\xE9sentatif des paysages du continent
-      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines,
-      grand fleuve, cascade, faune tr\xE8s riche, etc\u2026 Le Venezuela est encore
-      assez m\xE9connu et on ne pense pas forc\xE9ment \xE0 partir en voyage l\xE0-bas.
-      Mais heureusement, je suis conseill\xE8re en agence de voyage ! Je me ferai
-      un plaisir de vous aider \xE0 organiser votre voyage."
+      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines\u2026
+      Je suis conseill\xE8re en agence de voyage et je vais organiser votre voyage."
   - theme: 3
     genre: 0
     agreeAnswerSide: 0
@@ -220,8 +216,5 @@ MonoBehaviour:
     - Ce pays de COMMUNISTES ? Vade retro satanas !!!
     answersIndecisive:
     - "Le Venezuela est un m\xE9lange repr\xE9sentatif des paysages du continent
-      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines,
-      grand fleuve, cascade, faune tr\xE8s riche, etc\u2026 Le Venezuela est encore
-      assez m\xE9connu et on ne pense pas forc\xE9ment \xE0 partir en voyage l\xE0-bas.
-      Mais heureusement, je suis conseiller en agence de voyage ! Je me ferai un
-      plaisir de vous aider \xE0 organiser votre voyage."
+      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines\u2026
+      Je suis conseiller en agence de voyage et je vais organiser votre voyage."

@@ -446,7 +446,7 @@ MonoBehaviour:
     text: "Titre de s\xE9jour"
     isInvalid: 1
   - category: 1
-    text: Visa de travail
+    text: Etranger avec Visa de travail
     isInvalid: 1
   - category: 1
     text: "Part s'inscrire sur la liste \xE9lectorale"
@@ -455,7 +455,7 @@ MonoBehaviour:
     text: "Pas inscrit sur la liste \xE9lectorale"
     isInvalid: 1
   - category: 1
-    text: "Pas inscrit sur la liste \xE9lectorale"
+    text: "Ressortissant \xE9tranger"
     isInvalid: 1
   - category: 2
     text: Antivax

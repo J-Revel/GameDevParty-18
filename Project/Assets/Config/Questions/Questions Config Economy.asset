@@ -141,11 +141,10 @@ MonoBehaviour:
     - Je n'y crois pas, j'en suis convaincu ! Ce sont bien les riches qui permettent
       aux pauvres de travailler.
     answersIndecisive:
-    - "Ah c'est difficile \xE0 dire... peut-\xEAtre \xE7a a un effet mais j'sais
-      pas sa taille... Et j'ai cru entendre r\xE9cemment \xE0 la radio, que les experts
-      en \xE9conomie n'\xE9taient pas parvenus \xE0 mettre en \xE9vidence cet effet.
-      En m\xEAme temps, y a beaucoup de gens qui le d\xE9fendent. Qui je suis moi,
-      pour pouvoir les remettre en question ? "
+    - "Peut-\xEAtre, j'sais pas... J'ai lu r\xE9cemment que les experts en \xE9conomie
+      n'avaient jamais mis en \xE9vidence cet effet. Et en m\xEAme temps, y a beaucoup
+      de gens qui d\xE9fendent cette th\xE9orie. Qui je suis moi, pour pouvoir les
+      remettre en question ? "
   - theme: 0
     genre: 2
     agreeAnswerSide: 0
@@ -171,11 +170,10 @@ MonoBehaviour:
     - "\xC7a fait beaucoup d'argent d\xE9pens\xE9 quand m\xEAme, non ?"
     - A quoi bon ? Il suffit de traverser la rue pour trouver un travail !
     answersIndecisive:
-    - "Quand ma tante Jeanne a perdu son travail, c'\xE9tait quand m\xEAme bien pratique
-      d'avoir de l'argent. Mais bon, y en qui abusent aussi... Genre j'ai un pote,
-      Jean, il travaille, il s'arr\xEAte, il profite des indemnisations, il se prend
-      des vacances, il rebosse, il reprofite du ch\xF4mage, etc. C'est pas franchement
-      r\xE9glo quand m\xEAme... "
+    - "Quand ma tante Jeanne a perdu son travail, elle \xE9tait bien contente de
+      percevoir le ch\xF4mage. Mais j'ai un pote, Jean, il abuse. Il travaille, il
+      s'arr\xEAte, il profite du ch\xF4mage puis il retravaille, te re-ch\xF4mage...
+      C'est pas franchement r\xE9glo quand m\xEAme..."
   - theme: 0
     genre: 2
     agreeAnswerSide: 0
@@ -206,9 +204,7 @@ MonoBehaviour:
       ce que je veux dire... Il y en a bien trop, il faut r\xE9duire l'acc\xE8s aux
       aides sociales."
     answersIndecisive:
-    - "Quand je vois ces gens qui font la manche dans la rue, \xE7a me brise le c\u0153ur.
-      Mais d'un autre c\xF4t\xE9, il para\xEEt que y en a plusieurs qui fraudent
-      et qui abusent. Et \xE7a franchement, c'est pas cool, c'est pas solidaire quoi.
-      Alors si on pouvait surveiller un peu plus comment on distribue ces aides,
-      \xE7a ne serait pas une mauvaise id\xE9e. Et puis comme \xE7a on pourrait peut-\xEAtre
-      permettre \xE0 plus de personnes d'en b\xE9n\xE9ficier."
+    - "Les gens qui font la manche, \xE7a me brise le c\u0153ur. Les gens qui fraudent
+      et qui abusent, c'est naze, c'est pas solidaire. Alors si on peut surveiller
+      davantage la distribution des aides, peut-\xEAtre qu'on pourrait permettre
+      \xE0 plus de personnes d'en b\xE9n\xE9ficier."

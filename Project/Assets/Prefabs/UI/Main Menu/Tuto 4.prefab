@@ -1380,8 +1380,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sinon, trouve un moyen pour l'emp\xEAcher d'aller voter ! Tous les coups
-    sont permis !"
+  m_text: "Toi aussi, lutte contre l'abstention et participe \xE0 l'av\xE8nement
+    de la 6\xE8me R\xE9publique !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
