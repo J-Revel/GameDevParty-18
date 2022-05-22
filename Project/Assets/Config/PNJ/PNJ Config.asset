@@ -13,15 +13,67 @@ MonoBehaviour:
   m_Name: PNJ Config
   m_EditorClassIdentifier: 
   menFirstNames:
-  - Jean
-  - Charles
-  - Henri
-  - Axel
-  - Arthur
-  - Adrien
-  - Antoine
-  - Alexandre
+  - Victor
+  - "Th\xE9odore"
+  - Sacha
+  - Remi
+  - Quentin
+  - Philippe
+  - "Mo\xEFse"
+  - Maximilien
+  - Maxence
+  - Max
+  - Matthias
+  - Marius
+  - Marian
+  - Marc-Antoine
+  - Marc
+  - Manuel
+  - Lucien
+  - "L\xE9opold"
+  - "L\xE9onard"
+  - Kevin
   - Jules
+  - "Josu\xE9"
+  - "Jo\xEBl"
+  - "J\xE9r\xF4me"
+  - Jean-Paul
+  - Jean-Loup
+  - "Jean-Jo\xEBl"
+  - Jean
+  - Jacob
+  - Ignace
+  - "Herv\xE9"
+  - Henri
+  - Gustave
+  - "Gr\xE9goire"
+  - Fabrice
+  - "\xC9vrard"
+  - Emmanuel
+  - "\xC9lie"
+  - Edgar
+  - Cyrille
+  - Claude
+  - Charles
+  - "C\xE9dric"
+  - Brice
+  - "Barth\xE9lemy"
+  - Aymeric
+  - Axel
+  - Augustin
+  - Arthur
+  - Arnaud
+  - Antoine
+  - Anatole
+  - Alexis
+  - Alexandre
+  - Adrien
+  - Abraham
+  - "Cl\xE9ment"
+  - Julien
+  - "Rapha\xEBl"
+  - Alain
+  - Bernard
   womenFirstNames:
   - Camille
   - Anais
