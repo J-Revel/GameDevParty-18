@@ -362,7 +362,7 @@ MonoBehaviour:
     text: 'Date de naissance : 2000'
     isInvalid: 0
   - category: 0
-    text: 'Date de naissance :'
+    text: 'Date de naissance : Mai 1989'
     isInvalid: 0
   - category: 0
     text: 'Date de naissance : 2001'
