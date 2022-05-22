@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902912455124168559, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_Name
-      value: PNJ_Citoyen_A (2)
+      value: PNJ_Citoyen_C
       objectReference: {fileID: 0}
     - target: {fileID: 902912456211528379, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: animList
@@ -505,7 +505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 902912455124168337, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 902912455124168337, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902912455124168559, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_Name
-      value: PNJ_Citoyen_A (3)
+      value: PNJ_Citoyen_D
       objectReference: {fileID: 0}
     - target: {fileID: 902912456211528379, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: animList
@@ -962,7 +962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902912455124168559, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_Name
-      value: PNJ_Citoyen_A (1)
+      value: PNJ_Citoyen_B
       objectReference: {fileID: 0}
     - target: {fileID: 902912456211528379, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: animList
@@ -1950,7 +1950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341876170780391921, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5341876170780391921, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
       propertyPath: m_AnchorMax.x
