@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5123637653353911529}
   - component: {fileID: 8579573005627017503}
   - component: {fileID: 8168057275426463555}
+  - component: {fileID: 5514310382058797012}
   m_Layer: 0
   m_Name: PNJ
   m_TagString: Untagged
@@ -106,6 +107,8 @@ MonoBehaviour:
   state: 0
   leftWing: 0
   genre: 0
+  idCard: 
+  canVote: 1
   favouriteThemes: 
 --- !u!114 &1305502342205285269
 MonoBehaviour:
@@ -164,6 +167,34 @@ MonoBehaviour:
   walkMaxDuration: 2
   stopMinDuration: 1
   stopMaxDuration: 4
+  initialTarget: {x: 0, y: 0, z: 0}
+  targetRange: 0.5
+--- !u!114 &5514310382058797012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902912455124168559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7f83fc17134b94da90357cc4caa094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPrefab: {fileID: 0}
+  events:
+  - invocationData:
+      displayPath: Grabbable.thrownDelegate
+      gameObject: {fileID: 902912455124168559}
+      scriptType: Grabbable
+      fieldName: thrownDelegate
+    soundConfig:
+      clip: {fileID: 8300000, guid: 585db071a0ff94446ad228b578da7232, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.9
+      maxPitch: 1.1
+      minIntensity: 1
+      maxIntensity: 1
 --- !u!1 &902912456211528377
 GameObject:
   m_ObjectHideFlags: 0
