@@ -1009,6 +1009,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5341876171301492480, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: feb07934353d7b74496aaaff421337c1, type: 2}
+    - target: {fileID: 5341876171301492480, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -9213752247864742037, guid: feb07934353d7b74496aaaff421337c1, type: 2}
     - target: {fileID: 5341876171497367512, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
       propertyPath: m_Sprite
       value: 
