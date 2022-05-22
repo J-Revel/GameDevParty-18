@@ -18,9 +18,27 @@ public class ScoreCounter : MonoBehaviour
     public Color wrongColor = Color.red;
     public Color cantVoteColor = Color.yellow;
 
+    public TMPro.TextMeshProUGUI timerText;
+    public float remainingTime = 60 * 3;
+    public EndingScreen endingScreenPrefab;
+
     void Start()
     {
         pnjVoteHitbox.pnjDestroyDelegate += OnPNJVote;
+    }
+
+    void Update()
+    {
+        remainingTime -= Time.deltaTime;
+        if(remainingTime < 0)
+        {
+            remainingTime = 0;
+            EndingScreen endingScreen = Instantiate(endingScreenPrefab);
+            endingScreen.leftVotes = allyVotes;
+            endingScreen.rightVotes = enemyVotes;
+            enabled = false;
+        }
+        timerText.text = (Mathf.FloorToInt(remainingTime / 60)).ToString("00") + ":" + (Mathf.FloorToInt(remainingTime % 60)).ToString("00");
     }
 
     private void OnPNJVote(PNJProfile pnj)
