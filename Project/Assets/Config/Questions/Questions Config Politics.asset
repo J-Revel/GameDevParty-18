@@ -15,22 +15,232 @@ MonoBehaviour:
   questions:
   - theme: 3
     genre: 2
+    agreeAnswerSide: 0
     question: 'Pour ou contre la sortie de l''Europe ? '
     answersAgree:
-    - "Plut\xF4t contre"
+    - "Plut\xF4t contre..."
     answersDisagree:
-    - " Plut\xF4t pour "
+    - " Plut\xF4t pour..."
     answersIndecisive:
-    - "Je chai p\xF4"
+    - "Chai p\xF4"
   - theme: 3
     genre: 2
+    agreeAnswerSide: 0
     question: "Quelles sont les mesures \xE0 prendre pour l'accueil des migrants
       ? "
     answersAgree:
-    - Mieux accueillir les migrants
+    - Mieux accueillir les migrants.
     answersDisagree:
-    - Favoriser les expulsions
-    - "Il faut nettoyer les cit\xE9s au c\xE4rsher"
+    - Favoriser les expulsions.
+    - "Il faut nettoyer les cit\xE9s au K\xE4rcher !"
     answersIndecisive:
     - "Aucune id\xE9e..."
     - Mmmmmmmmmmh....
+    - "Ma m\xE8re dit toujours : \"on ne peut pas accueillir toute la mis\xE8re du
+      monde\". Bon, je pense qu'elle n'a pas tord et en m\xEAme temps, y a des gens
+      qui meurent pour fuir leur pays. Alors j'sais pas trop..."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour une VI \xE8me r\xE9publique ?"
+    answersAgree:
+    - "\xC9videmment que oui !"
+    answersDisagree:
+    - "Assur\xE9ment non."
+    answersIndecisive:
+    - "J'en ai rien \xE0 faire \xE0 vrai dire..."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous contre une VI \xE8me r\xE9publique ?"
+    answersAgree:
+    - Non
+    answersDisagree:
+    - Oui
+    answersIndecisive:
+    - "\"On sait ce qu'on perd, on ne sait pas ce qu'on gagne.\" Ouais bon ok c'est
+      bateau comme phrase, mais voil\xE0 quoi, j'ai aucune id\xE9e de quoi vous r\xE9pondre..."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour faciliter l'acc\xE8s \xE0 la nationalit\xE9 fran\xE7aise
+      ?"
+    answersAgree:
+    - "Oui, \xE9videmment, pour permettre \xE0 certaines personnes sans papier de
+      pouvoir d\xE9cemment dans ce pays !"
+    answersDisagree:
+    - "Non, y a d\xE9j\xE0 bien trop d'\xE9trangers en France, n'en rajoutons pas
+      !"
+    answersIndecisive:
+    - "Vous savez, moi je ne crois pas qu\u2019il y ait de bonne ou de mauvaise nationalit\xE9.
+      Moi, si je devais r\xE9sumer ma vie aujourd\u2019hui avec vous, je dirais que
+      c\u2019est d\u2019abord des rencontres. Des gens qui m\u2019ont tendu la main,
+      peut-\xEAtre \xE0 un moment o\xF9 je ne pouvais pas, o\xF9 j\u2019\xE9tais
+      seul chez moi. Et c\u2019est assez curieux de se dire que les hasards, les
+      rencontres forgent une destin\xE9e\u2026 Parce que quand on a le go\xFBt de
+      la chose, quand on a le go\xFBt de la chose bien faite, le beau geste, parfois
+      on ne trouve pas l\u2019interlocuteur en face je dirais, le miroir qui vous
+      aide \xE0 avancer. Alors \xE7a n\u2019est pas mon cas, comme je disais l\xE0,
+      puisque moi au contraire, j\u2019ai pu : et je dis merci \xE0 la vie, je lui
+      dis merci, je chante la vie, je danse la vie\u2026 je ne suis qu\u2019amour
+      ! Et finalement, quand beaucoup de gens aujourd\u2019hui me disent \xAB Mais
+      comment fais-tu pour avoir cette humanit\xE9 ? \xBB, et bien je leur r\xE9ponds
+      tr\xE8s simplement, je leur dis que c\u2019est ce go\xFBt de l\u2019amour ce
+      go\xFBt donc qui m\u2019a pouss\xE9 aujourd\u2019hui \xE0 entreprendre une
+      construction m\xE9canique, mais demain qui sait ? Peut-\xEAtre simplement \xE0
+      me mettre au service de la communaut\xE9, \xE0 faire le don, le don de soi\u2026 "
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous contre faciliter l'acc\xE8s \xE0 la nationalit\xE9 fran\xE7aise
+      ?"
+    answersAgree:
+    - Non, je suis pour et pas contre !
+    answersDisagree:
+    - "Oui, je suis contre, c'est d\xE9j\xE0 bien top facile d'\xEAtre fran\xE7ais..."
+    answersIndecisive:
+    - "Pour, contre, nationalit\xE9, blablabla, j'en sais rien, voil\xE0."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour la parit\xE9 dans le gouvernement ?"
+    answersAgree:
+    - "Bien \xE9videmment !"
+    - "Assur\xE9ment."
+    answersDisagree:
+    - "Quelle id\xE9e absurde !"
+    - "Et c'est comme \xE7a qu'on se retrouve avec des femmes incomp\xE9tentes au
+      pouvoir..."
+    answersIndecisive:
+    - "En th\xE9orie oui, mais en pratique je me dis que \xE7a risque peut-\xEAtre
+      de d\xE9ligitimer les postes des femmes politiques, nan ? Et puis je me demande
+      quand m\xEAme si \xE7a ne reste pas un boulot majoritairement masculin, et
+      c'est pour \xE7a qu'il y a plus d'hommes dans ce millieu... Ouais, j'sais pas
+      trop en vrai."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Que pensez-vous de l'op\xE9ration sp\xE9ciale Chirac IV pour s\xE9curiser
+      les int\xE9r\xEAts vitaux de nos 23 ressortissants Fran\xE7ais d'Afghanistan,
+      Amazonie et Japon ?"
+    answersAgree:
+    - Une honte...
+    answersDisagree:
+    - "J'adore \xE0 mort !"
+    answersIndecisive:
+    - "Quoi ? Jamais entendu parler... Vous \xEAtes s\xFBr de ce que vous racontez
+      ?"
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Quelle est le fond de votre pens\xE9e quant aux fonctionnaires ?"
+    answersAgree:
+    - "La cr\xE8me de la cr\xE8me"
+    - RPZ
+    answersDisagree:
+    - "Tous des feignants bons \xE0 rien\u2026"
+    - Il y en a bien trop...
+    answersIndecisive:
+    - "Certains pensent qu'ils y en a trop, d'autres hurlent qu'il n'y en a pas assez.
+      Qu'est-ce que vous voulez que je dise moi ? Je ne les ai pas compt\xE9..."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pour vous la guerre c'est\u2026"
+    answersAgree:
+    - Une abomination !
+    - Un horreur aboslue !
+    answersDisagree:
+    - Si triste !
+    - Trop bien
+    answersIndecisive:
+    - "Un d\xE9sastre..."
+    - Beaucoup trop de souffrances sur cette Terre.
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Le service militaire a \xE9t\xE9 suspendu sous Chirac en 1996, qu'en
+      pensez-vous ?"
+    answersAgree:
+    - 'Bon vent ! '
+    answersDisagree:
+    - "26 ann\xE9es qui ont cr\xE9\xE9 cette jeunesse d\xE9linquante, ramollie et
+      individualiste ! C'est la d\xE9bandade !"
+    answersIndecisive:
+    - "Moi j'aime bien jouer \xE0 la bagarre. Je me dis grandeur nature \xE7a peut
+      \xEAtre fun ! Mais la guerre, la vraie, j'ai pas vraiment envie de la vivre..."
+  - theme: 3
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour limiter le droit du sol ?"
+    answersAgree:
+    - "Non, assur\xE9ment non, toujours non !"
+    answersDisagree:
+    - "On peut pas accueillir toute la mis\xE8re du monde voyons !"
+    answersIndecisive:
+    - C'est genre le droit de poser ses pieds par terre ? Genre c'est pas un peu
+      con comme concept ?
+  - theme: 3
+    genre: 1
+    agreeAnswerSide: 0
+    question: "L'Europe se r\xE9unit pour organiser des sauvetages en M\xE9diterran\xE9e,
+      qu'en dites-vous ?"
+    answersAgree:
+    - "Une action tr\xE8s honorable et pleine de bon sens !"
+    answersDisagree:
+    - "Une perte d'argent inutilement. Ils auraient pu apprendre \xE0 nager avant
+      de venir\u2026"
+    - "\xC7a g\xE2che la vue depuis mon yacht..."
+    answersIndecisive:
+    - "Ah non merci, je ne suis pas int\xE9ress\xE9e, c'est gentil mais je pr\xE9f\xE8re
+      le littoral de l'oc\xE9an atlantique."
+  - theme: 3
+    genre: 0
+    agreeAnswerSide: 0
+    question: "L'Europe se r\xE9unit pour organiser des sauvetages en M\xE9diterran\xE9e,
+      qu'en dites-vous ?"
+    answersAgree:
+    - "Une action tr\xE8s honorable et pleine de bon sens !"
+    answersDisagree:
+    - "Une perte d'argent inutilement. Ils auraient pu apprendre \xE0 nager avant
+      de venir\u2026"
+    - "\xC7a g\xE2che la vue depuis mon yacht..."
+    answersIndecisive:
+    - "Ah non merci, je ne suis pas int\xE9ress\xE9, c'est gentil mais je pr\xE9f\xE8re
+      le littoral de l'oc\xE9an atlantique."
+  - theme: 3
+    genre: 1
+    agreeAnswerSide: 0
+    question: Que pensez-vous du Venezuela ?
+    answersAgree:
+    - TOUS les ennemis des capitalistes sont nos amis !
+    answersDisagree:
+    - Ce pays de COMMUNISTES ? Vade retro satanas !!!
+    answersIndecisive:
+    - "Le Venezuela est un m\xE9lange repr\xE9sentatif des paysages du continent
+      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines,
+      grand fleuve, cascade, faune tr\xE8s riche, etc\u2026 Le pays est surtout mis
+      en exergue par son littoral (2800km) sur la mer des Cara\xEFbes qui lui offre
+      des plages paradisiaques, des petites \xEEles sublimes, et un \xE9co-syst\xE8me
+      sous-marin exceptionnel qui rend la pratique de la plong\xE9e magique. Le Venezuela
+      est encore assez m\xE9connu et on ne pense pas forc\xE9ment \xE0 partir en
+      voyage l\xE0-bas. Mais heureusement, je suis conseill\xE8re en agence de voyage
+      ! Je me ferai un plaisir de vous aider \xE0 organiser votre voyage."
+  - theme: 3
+    genre: 0
+    agreeAnswerSide: 0
+    question: Que pensez-vous du Venezuela ?
+    answersAgree:
+    - TOUS les ennemis des capitalistes sont nos amis !
+    answersDisagree:
+    - Ce pays de COMMUNISTES ? Vade retro satanas !!!
+    answersIndecisive:
+    - "Le Venezuela est un m\xE9lange repr\xE9sentatif des paysages du continent
+      Sud-am\xE9ricain : for\xEAt amazonienne, jungle, sommets des Andes, plaines,
+      grand fleuve, cascade, faune tr\xE8s riche, etc\u2026 Le pays est surtout mis
+      en exergue par son littoral (2800km) sur la mer des Cara\xEFbes qui lui offre
+      des plages paradisiaques, des petites \xEEles sublimes, et un \xE9co-syst\xE8me
+      sous-marin exceptionnel qui rend la pratique de la plong\xE9e magique. Le Venezuela
+      est encore assez m\xE9connu et on ne pense pas forc\xE9ment \xE0 partir en
+      voyage l\xE0-bas. Mais heureusement, je suis conseiller en agence de voyage
+      ! Je me ferai un plaisir de vous aider \xE0 organiser votre voyage."
