@@ -20,7 +20,7 @@ MonoBehaviour:
     answersAgree:
     - " Tout \xE0 fait "
     answersDisagree:
-    - ' Effectivement !'
+    - ' Effectivement ! '
     answersIndecisive:
     - "S\xE9rieux ? Vous voulez parler m\xE9t\xE9o maintenant ?"
   - theme: 4
@@ -28,7 +28,7 @@ MonoBehaviour:
     agreeAnswerSide: 0
     question: "P\xE9tain, \xE7a vous dirait qu'on en parle ? "
     answersAgree:
-    - Seulement pour le clasher
+    - Seulement pour le clasher...
     answersDisagree:
     - "Avec plaisir, c'\xE9tait un grand homme qui a sauv\xE9 notre France tout de
       m\xEAme !"
@@ -42,7 +42,7 @@ MonoBehaviour:
   - theme: 4
     genre: 2
     agreeAnswerSide: 0
-    question: "Napol\xE9on vous manque-t-il ?"
+    question: "Napol\xE9on vous manque-t-il ? "
     answersAgree:
     - ' Pas le moins du monde.'
     answersDisagree:
@@ -57,11 +57,11 @@ MonoBehaviour:
     agreeAnswerSide: 0
     question: "Mangez vous des Mich\xE8le et Augustin ? "
     answersAgree:
-    - ' Ces fachos ?!'
+    - ' Ces homophobes contre le mariage pour tous ?!'
     answersDisagree:
     - ' J''adore ! '
     answersIndecisive:
-    - C'est qui ?
+    - "C\xE9ki ?"
   - theme: 4
     genre: 2
     agreeAnswerSide: 0
@@ -73,4 +73,92 @@ MonoBehaviour:
     answersIndecisive:
     - "l'ensemble des ph\xE9nom\xE8nes mat\xE9riels et id\xE9ologiques qui caract\xE9risent
       un groupe ethnique ou une nation, une civilisation, par opposition \xE0 un
-      autre groupe ou \xE0 une autre nation ?"
+      autre groupe ou \xE0 une autre nation. C'est \xE7a ?"
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: "La fran\xE7isation des pr\xE9noms est-elle n\xE9cessaire ?"
+    answersAgree:
+    - "Euh\u2026 Vraiment, vous osez poser cette question ? Le respect est mort l\xE0\u2026
+      Ce concept ne devrait m\xEAme pas exister."
+    answersDisagree:
+    - Vous savez j'ai un ami noir... mais heureusement il s'appelle Paul !
+    answersIndecisive:
+    - "Franchement je pr\xE9f\xE8re William \xE0 Jean-Eudes, pas vous ?"
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pour vous le poisson le vendredi, c'est\u2026"
+    answersAgree:
+    - "Toujours le choix du self le plus d\xE9gueulasse..."
+    answersDisagree:
+    - Ma nourriture sainte de la semaine.
+    answersIndecisive:
+    - Un plat, qui permet de remplir son estomac. Cela permet de combler une besoin
+      essentiel au bon fonctionnement du coprs humain.
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: Que pensez-vous du wokisme ?
+    answersAgree:
+    - "Je suis moi-m\xEAme wokiste ! J'en ai fait un d\xE9licieux hier soir."
+    answersDisagree:
+    - Ooooh les wookies ? J'adore Star Wars !
+    answersIndecisive:
+    - Aaaahhh mais c'est Rihanna !!! wok, wok, wok, wok, wok, wok. He said me haffi
+      wok, wok, wok, wok, wok, wok. He see me do mi dirt, dirt, dirt, dirt, dirt,
+      dirt...
+  - theme: 4
+    genre: 1
+    agreeAnswerSide: 0
+    question: "Que pensez-vous de la derni\xE8re collection d'Hugo Boss ?"
+    answersAgree:
+    - "Alors depuis que Orelsan a dit que Hugo Boss avait habill\xE9 les Nazis, je
+      t'avoue que je suis moins hyp\xE9e par cette marque..."
+    answersDisagree:
+    - "Elle est forte charmante ! La semaine derni\xE8re je suis pass\xE9e en boutique
+      acheter un cardigan de toute beaut\xE9."
+    answersIndecisive:
+    - Scuse mais la mode c'est pas mon truc...
+  - theme: 4
+    genre: 0
+    agreeAnswerSide: 0
+    question: "Que pensez-vous de la derni\xE8re collection d'Hugo Boss ?"
+    answersAgree:
+    - "Alors depuis que Orelsan a dit que Hugo Boss avait habill\xE9 les Nazis, je
+      t'avoue que je suis moins hyp\xE9 par cette marque..."
+    answersDisagree:
+    - "Elle est forte charmante ! La semaine derni\xE8re je suis pass\xE9 en boutique
+      acheter un cardigan de toute beaut\xE9."
+    answersIndecisive:
+    - Scuse mais la mode c'est pas mon truc...
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Le G\xE9n\xE9ral de Gaulle \xE9tait-il un grand homme ?"
+    answersAgree:
+    - "Il avait un ego surdimensionn\xE9, peu de capacit\xE9 au compromis, un cynisme
+      puant, une rigidit\xE9 et un autoritarisme d\xE9testable. Il \xE9tait d\xE9tach\xE9
+      voire indiff\xE9rent par rapport aux cons\xE9quences humaines de ses d\xE9cisions,
+      comme celles des harkis par exemple. Il \xE9tait tr\xE8s conservateur, trop
+      nationaliste et il n'a d\xE9colonis\xE9 que pour la forme puisqu'il a maintenu
+      une certaine mainmise fran\xE7aise sur une  bonne partie de son ex-empire.
+      Sans oublier qu'il \xE9tait raciste et islamophobe. Ai-je r\xE9pondu \xE0 votre
+      question ?"
+    answersDisagree:
+    - "Je lui reproche d'avoir brad\xE9 l'empire et l'Alg\xE9rie fran\xE7aise. Et
+      il s'est bien trop appuy\xE9 sur les communistes et Moscou."
+    - "Il a trahi la France v\xE9ritable, celle de Maurras et de la divine surprise
+      !"
+    answersIndecisive:
+    - "Askip il mesurait 1m93 ! C'est plut\xF4t grand ouais."
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Dans le cas d'Hitler, faut-il s\xE9parer l'homme de l'artiste ?"
+    answersAgree:
+    - ... ... ...
+    answersDisagree:
+    - ... ... ...
+    answersIndecisive:
+    - ... ... ...
