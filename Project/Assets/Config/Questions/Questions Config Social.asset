@@ -170,10 +170,10 @@ MonoBehaviour:
     - Je ne suis pas raciste, mais le voile avouez que c'est assez triste...
     - "C'est un signe \xE9vident du grand remplacement !"
     answersIndecisive:
-    - "C'est pas que c'est pas bien ou non, mais c'est plut\xF4t qu'en fait je crois
-      qu'on ne devrait pas poser des questions de ce genre \xE0 cette heure-l\xE0
-      de la journ\xE9e, et puis \xE0 des inconnus qui ne demandaient rien \xE0 personnne
-      en plus, c'est stressant, je me sens mal l\xE0 en fait..."
+    - "C'est pas que c'est pas bien ou non, mais je crois qu'on ne devrait pas poser
+      des questions de ce genre \xE0 cette heure-l\xE0 de la journ\xE9e, et puis
+      \xE0 des inconnus qui ne demandaient rien \xE0 personnne en plus, c'est stressant,
+      je me sens mal l\xE0 en fait..."
   - theme: 2
     genre: 1
     agreeAnswerSide: 0
@@ -184,10 +184,10 @@ MonoBehaviour:
     - Je ne suis pas raciste, mais le voile avouez que c'est assez triste...
     - "C'est un signe \xE9vident du grand remplacement !"
     answersIndecisive:
-    - "C'est pas que c'est pas bien ou non, mais c'est plut\xF4t qu'en fait je crois
-      qu'on ne devrait pas poser des questions de ce genre \xE0 cette heure-l\xE0
-      de la journ\xE9e, et puis \xE0 des inconnues qui ne demandaient rien \xE0 personnne
-      en plus, c'est stressant, je me sens mal l\xE0 en fait..."
+    - "C'est pas que c'est pas bien ou non, mais je crois qu'on ne devrait pas poser
+      des questions de ce genre \xE0 cette heure-l\xE0 de la journ\xE9e, et puis
+      \xE0 des inconnues qui ne demandaient rien \xE0 personnne en plus, c'est stressant,
+      je me sens mal l\xE0 en fait..."
   - theme: 2
     genre: 2
     agreeAnswerSide: 0
