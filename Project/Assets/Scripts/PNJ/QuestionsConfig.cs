@@ -24,6 +24,7 @@ public struct QuestionConfig
     public QuestionTheme theme;
     public Genre genre;
     public AnswerType agreeAnswerSide;
+    [TextArea(3,10)]
     public string question;
     public string[] answersAgree;
     public string[] answersDisagree;

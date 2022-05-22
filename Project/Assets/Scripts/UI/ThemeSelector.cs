@@ -30,11 +30,13 @@ public class ThemeSelector : MonoBehaviour
     public float[] bubbleAnimDisappearScales = new float[]{0.9f, 1.1f, 0.8f, 0.3f, 0};
     public RectTransform leftPartTransform;
     public RectTransform rightPartTransform;
+    public RectTransform idCardRectTransform;
 
     public QuestionsConfig[] configs;
 
     private TMPro.TextMeshProUGUI questionText;
     private TMPro.TextMeshProUGUI answerText;
+    public TMPro.TextMeshProUGUI idCardText;
     private PNJProfile pnj;
 
     private bool bubblesVisible = false;
@@ -126,6 +128,11 @@ public class ThemeSelector : MonoBehaviour
             leftPartTransform.pivot = new Vector2(1 - time / duration, 0.5f);
             yield return null;
         }
+        for(float time = 0; time < duration; time += Time.deltaTime)
+        {
+            idCardRectTransform.pivot = new Vector2(1, 0.5f + (1 - time/duration));
+            yield return null;
+        }
         yield return ShowSelectorCoroutine();
     }
 
@@ -214,6 +221,7 @@ public class ThemeSelector : MonoBehaviour
     public void StartDialogue(PNJProfile pnj)
     {
         this.pnj = pnj;
+        idCardText.text = pnj.idCard;
         StartCoroutine(AppearCoroutine());
     }
 

@@ -23,6 +23,8 @@ public class PNJProfile : MonoBehaviour
     public PNJState state;
     public bool leftWing;
     public Genre genre;
+    public string idCard;
+    public bool canVote = true;
 
     public QuestionTheme[] favouriteThemes;
 
