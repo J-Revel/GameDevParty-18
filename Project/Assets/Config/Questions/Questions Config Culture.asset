@@ -64,13 +64,13 @@ MonoBehaviour:
     agreeAnswerSide: 0
     question: 'Dans la culture, le plus important c''est... '
     answersAgree:
-    - "la diversit\xE9 avant tout !"
+    - "La diversit\xE9 avant tout !"
     answersDisagree:
-    - "le beau patrimoine fran\xE7ais ! "
+    - "Le beau patrimoine fran\xE7ais ! "
     answersIndecisive:
-    - "l'ensemble des ph\xE9nom\xE8nes mat\xE9riels et id\xE9ologiques qui caract\xE9risent
+    - "L'ensemble des ph\xE9nom\xE8nes mat\xE9riels et id\xE9ologiques qui caract\xE9risent
       un groupe ethnique ou une nation, une civilisation, par opposition \xE0 un
-      autre groupe ou \xE0 une autre nation. C'est \xE7a ?"
+      autre groupe ou \xE0 une autre nation. Amha."
   - theme: 4
     genre: 2
     agreeAnswerSide: 0
@@ -85,17 +85,6 @@ MonoBehaviour:
   - theme: 4
     genre: 2
     agreeAnswerSide: 0
-    question: "Pour vous le poisson le vendredi, c'est\u2026"
-    answersAgree:
-    - "Toujours le choix du self le plus d\xE9gueulasse..."
-    answersDisagree:
-    - Ma nourriture sainte de la semaine.
-    answersIndecisive:
-    - Un plat, qui permet de remplir son estomac. Cela permet de combler une besoin
-      essentiel au bon fonctionnement du coprs humain.
-  - theme: 4
-    genre: 2
-    agreeAnswerSide: 0
     question: Que pensez-vous du wokisme ?
     answersAgree:
     - "Je suis moi-m\xEAme wokiste ! J'en ai fait un d\xE9licieux hier soir."
@@ -105,6 +94,17 @@ MonoBehaviour:
     - Aaaahhh mais c'est Rihanna !!! wok, wok, wok, wok, wok, wok. He said me haffi
       wok, wok, wok, wok, wok, wok. He see me do mi dirt, dirt, dirt, dirt, dirt,
       dirt...
+  - theme: 4
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pour vous le poisson le vendredi, c'est\u2026"
+    answersAgree:
+    - "Toujours le choix du self le plus d\xE9gueulasse..."
+    answersDisagree:
+    - Ma nourriture sainte de la semaine.
+    answersIndecisive:
+    - Un plat, qui permet de remplir son estomac. Cela permet de combler un besoin
+      essentiel au bon fonctionnement du coprs humain.
   - theme: 4
     genre: 1
     agreeAnswerSide: 0
