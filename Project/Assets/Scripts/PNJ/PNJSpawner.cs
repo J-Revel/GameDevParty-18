@@ -56,6 +56,9 @@ public class PNJSpawner : MonoBehaviour
             availableThemes.RemoveAt(index);
         }
         pnj.leftWing = Random.Range(0, 1.0f) < leftWingProbability;
+        if(pnj.canVote)
+            pnj.procurationCount = Mathf.FloorToInt(4 - Mathf.Sqrt(Random.Range(0, 16)));
+        else pnj.procurationCount = 0;
         StringBuilder idCardContent = new StringBuilder();
         if(Random.Range(0, 1.0f) > 0.5f)
         {

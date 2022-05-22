@@ -8,6 +8,7 @@ public class PNJDestroyer : MonoBehaviour
     public Transform destructionFX;
     public CharacterState[] states;
     public UnityEvent destroyPNJEvent;
+    public System.Action<PNJProfile> pnjDestroyDelegate;
     private List<GameObject> pendingDestroys = new List<GameObject>();
 
     void OnTriggerEnter(Collider other)
@@ -32,6 +33,7 @@ public class PNJDestroyer : MonoBehaviour
                         StartCoroutine(FXCoroutine(pnj.gameObject, null));
                     }
                     destroyPNJEvent.Invoke();
+                    pnjDestroyDelegate?.Invoke(pnj);
                     return;
                 }
             }

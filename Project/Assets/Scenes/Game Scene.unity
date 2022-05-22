@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 974791954}
   - component: {fileID: 974791953}
   - component: {fileID: 974791952}
+  - component: {fileID: 974791955}
   m_Layer: 0
   m_Name: Vote Zone
   m_TagString: Untagged
@@ -405,10 +406,31 @@ Transform:
   m_LocalPosition: {x: 1.3563025, y: 3.1777468, z: 22.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1946234797}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974791955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974791951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231a7f6684b19bb48a521a11e3eb42d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allyVotes: 0
+  enemyVotes: 0
+  pnjVoteHitbox: {fileID: 974791953}
+  fxPrefab: {fileID: 1133963226626445881, guid: 9998791adbc1fdd4ba8aa8ef67e2cfa0, type: 3}
+  fxPosition: {fileID: 1946234797}
+  rightColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  cantVoteColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &1125470144
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +697,37 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1946234796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946234797}
+  m_Layer: 0
+  m_Name: Bonus spawn position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946234797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946234796}
+  m_LocalRotation: {x: 0.0000009865198, y: 0.92387956, z: -0.38268343, w: 0.0000023816697}
+  m_LocalPosition: {x: 1.52, y: -1.34, z: 2.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 974791954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1001 &2093999714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193616502076837858, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.58596516
+      value: -0.5859661
       objectReference: {fileID: 0}
     - target: {fileID: 193616502076837858, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_LocalPosition.y
