@@ -11,7 +11,7 @@ public enum CharacterState
     Flying,
     OnGround,
     Carried,
-    
+    Talking,
 }
 
 [System.Serializable]
@@ -170,6 +170,7 @@ public class CharacterMovement : MonoBehaviour
         switch(currentState)
         {
             case CharacterState.Idle:
+            case CharacterState.Talking:
                 animatedSprite.SelectAnim(movementInput.sqrMagnitude > speedWalkThreshold * speedWalkThreshold ? "Walk" : "Idle");
                 break;
             case CharacterState.Carrying:
