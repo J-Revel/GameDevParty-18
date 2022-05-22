@@ -14,6 +14,7 @@ public enum IdCardCategory
 public struct IdCardInfoConfig
 {
     public IdCardCategory category;
+    [TextArea(3,10)]
     public string text;
     public bool isInvalid;
 }
