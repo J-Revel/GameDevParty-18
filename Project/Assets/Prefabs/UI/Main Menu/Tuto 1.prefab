@@ -335,9 +335,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Le bureau de vote local ferme dans 3 minutes, et la course est serr\xE9e
-    ! Assure-toi que la g\xF4che remporte ces \xE9lections...\n\n... Par tous les
-    moyens !"
+  m_text: "Le bureau de vote local ferme dans <b>3 minutes</b>, et la course est
+    serr\xE9e ! Assure-toi que la <color=\"red\"><b>g\xF4che</b></color> remporte
+    ces \xE9lections...\n\n... Par tous les moyens !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 5803500446080491376}
   - component: {fileID: 3985183066542469132}
   - component: {fileID: 6158371384734537290}
+  - component: {fileID: 4672380467244251562}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -503,6 +504,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4672380467244251562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129745321717317382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2968803985144632631
 GameObject:
   m_ObjectHideFlags: 0
