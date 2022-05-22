@@ -33,12 +33,9 @@ MonoBehaviour:
     - "Avec plaisir, c'\xE9tait un grand homme qui a sauv\xE9 notre France tout de
       m\xEAme !"
     answersIndecisive:
-    - "Humph, qu'est-ce que vous voulez qu'on en dise ? A vrai dire, j'ai l'impression
-      d'entendre parler mon grand-p\xE8re. Il nous parlait tout le temps de P\xE9tain
-      comme d'un homme tr\xE8s honorable. J'imagine que sur certains points il avait
-      raison, mais qu'il ne m'a pas tout dit non plus... P\xE9tain \xE9tait un homme
-      de guerre, un homme politique, mais surtout un homme du pass\xE9. Je pense
-      qu'on peut passer \xE0 autre chose maintenant."
+    - "Mon grand-p\xE8re nous parlait tout le temps de P\xE9tain comme d'un homme
+      tr\xE8s honorable. J'imagine que sur certains points il avait raison, mais
+      qu'il ne m'a pas tout dit non plus..."
   - theme: 4
     genre: 2
     agreeAnswerSide: 0
@@ -138,13 +135,11 @@ MonoBehaviour:
     question: "Le G\xE9n\xE9ral de Gaulle \xE9tait-il un grand homme ?"
     answersAgree:
     - "Il avait un ego surdimensionn\xE9, peu de capacit\xE9 au compromis, un cynisme
-      puant, une rigidit\xE9 et un autoritarisme d\xE9testable. Il \xE9tait d\xE9tach\xE9
-      voire indiff\xE9rent par rapport aux cons\xE9quences humaines de ses d\xE9cisions,
-      comme celles des harkis par exemple. Il \xE9tait tr\xE8s conservateur, trop
-      nationaliste et il n'a d\xE9colonis\xE9 que pour la forme puisqu'il a maintenu
-      une certaine mainmise fran\xE7aise sur une  bonne partie de son ex-empire.
-      Sans oublier qu'il \xE9tait raciste et islamophobe. Ai-je r\xE9pondu \xE0 votre
-      question ?"
+      puant, une rigidit\xE9 et un autoritarisme d\xE9testable..."
+    - "Il \xE9tait d\xE9tach\xE9 voire indiff\xE9rent par rapport aux cons\xE9quences
+      humaines de ses d\xE9cisions, comme celles des harkis par exemple. Il \xE9tait
+      trop nationaliste et il n'a d\xE9colonis\xE9 que pour la forme. Sans oublier
+      qu'il \xE9tait raciste et islamophobe."
     answersDisagree:
     - "Je lui reproche d'avoir brad\xE9 l'empire et l'Alg\xE9rie fran\xE7aise. Et
       il s'est bien trop appuy\xE9 sur les communistes et Moscou."
