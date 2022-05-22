@@ -49,7 +49,7 @@ public class PlayerMovementInput : MonoBehaviour
             float closestGrabbableDistance = Mathf.Infinity;
             for(int i=inRangeGrabbables.Count - 1; i >= 0; i--)
             {
-                if(!inRangeGrabbables[i].isActiveAndEnabled)
+                if(inRangeGrabbables[i] == null || !inRangeGrabbables[i].isActiveAndEnabled)
                     inRangeGrabbables.RemoveAt(i);
             }
             for(int i=0; i < inRangeGrabbables.Count; i++)
