@@ -15,55 +15,203 @@ MonoBehaviour:
   questions:
   - theme: 1
     genre: 2
+    agreeAnswerSide: 0
     question: "\xCAtes-vous pour r\xE9duire le nucl\xE9aire ? "
     answersAgree:
     - "Plut\xF4t oui..."
     answersDisagree:
-    - " Plut\xF4t pas..."
+    - "Plut\xF4t pas..."
     answersIndecisive:
     - Je ne souhaite pas me prononcer sur ce sujet...
   - theme: 1
     genre: 2
-    question: "Les animaux sont-ils des \xEAtres sentients ? "
+    agreeAnswerSide: 0
+    question: "Les animaux sont-ils des \xEAtres sentients ?"
     answersAgree:
-    - Oui, ils sont capables de ressentir la douleur, a minima.
+    - Je pense que oui, reconnaisons qu'il sont a minima capables de ressentir la
+      douleur.
+    - "Ce n'est m\xEAme pas une question, c'est un fait, une \xE9vidence !"
     answersDisagree:
     - Non et puis quoi encore ?!
+    - "Oh faut pas se poser de telles questions, \xE7a g\xE2che le plaisir d'une
+      bonne c\xF4te de b\u0153uf."
     answersIndecisive:
     - C'est quoi un cien ? Genre les humains, ils ont des ciens eux ?
   - theme: 1
     genre: 2
-    question: "Le r\xE9chauffement climatique existe-t-il ? "
+    agreeAnswerSide: 0
+    question: "Le r\xE9chauffement climatique existe-t-il ?"
     answersAgree:
-    - "\xC9videment "
+    - "\xC9videment, et il faudrait qu'on se bouge le cul pour limiter les effets
+      in\xE9vitables qui vont nous tomber sur la tronche prochainement..."
     answersDisagree:
-    - "\"Non, du pur bullshit ! Je veux bien admettre que la temp\xE9rature augmente,
-      mais del\xE0 \xE0 penser que ce sont les humains qui sont la cause de tout
-      cela... Bon, n'exag\xE9rons rien tout de m\xEAme.\""
+    - Non, du pur bullshit !
+    - "Je veux bien admettre que la temp\xE9rature augmente, mais de l\xE0 \xE0 penser
+      que ce sont les humains qui sont la cause de tout cela... Bon, n'exag\xE9rons
+      rien tout de m\xEAme."
     answersIndecisive:
-    - "Euh oui, \xE9videmment, mais j'ai un doute sur son origine par contre, je
-      lis des trucs et tout... J'sais pas trop en vrai..."
+    - Euh oui, je pense bien, mais j'ai un doute sur son origine par contre... Genre
+      je lis des trucs et tout... J'sais pas trop en vrai...
   - theme: 1
     genre: 2
-    question: "Qu'est-ce que la r\xE8gle verte ? "
+    agreeAnswerSide: 0
+    question: "Qu'est-ce que la r\xE8gle verte ?"
     answersAgree:
     - "On ne pr\xE9l\xE8ve pas davantage \xE0 la nature que ce qu'elle est en \xE9tat
-      de reconstituer"
+      de reconstituer."
     answersDisagree:
     - "Oh non, j'imagine que c'est encore un truc de bobo-\xE9colo-islamo-gauchiste
       ?"
     answersIndecisive:
-    - Un truc vert pour tracer droit ? Elle est trop dure votre question...
+    - 'Elle est trop dure votre question... Un truc vert pour tracer droit ? '
   - theme: 1
     genre: 2
-    question: "\xCAtes-vous pour cr\xE9er une Agence pour les relocalisations d\xE9pendant
-      du Conseil \xE0 la planification \xE9cologique, charg\xE9e de recenser les
-      secteurs industriels indispensables \xE0 la souverainet\xE9 nationale et \xE0
-      la bifurcation \xE9cologique, et d\u2019\xE9tablir un plan de relocalisation
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour la cr\xE9ation d'une Agence pour les relocalisations
+      en fonction du Conseil \xE0 la planification \xE9cologique, charg\xE9e de recenser
+      les secteurs industriels indispensables \xE0 la souverainet\xE9 nationale et
+      \xE0 la bifurcation \xE9cologique, et d\u2019\xE9tablir un plan de relocalisation
       pour chaque fili\xE8re ou production strat\xE9gique identifi\xE9e ?"
     answersAgree:
     - Evidemment !
     answersDisagree:
-    - "\u2026 \u2026 \u2026"
+    - Non
     answersIndecisive:
     - Hum hum pardon ? Vous avez dit ?
+    - ... ... ... ...
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pour vous l'\xE9cologie, c'est\u2026"
+    answersAgree:
+    - "Une fa\xE7on de vivre !"
+    - "Une \xE9vidence."
+    - Bien
+    answersDisagree:
+    - Rien qu'une mode !
+    - "Du savon plus cher\u2026"
+    - "Une op\xE9ration marketing de grande ampleur !"
+    answersIndecisive:
+    - ... ... ... ...
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: Qu'est-ce que la collapsologie?
+    answersAgree:
+    - La sortie de la grotte de Platon, il faut regarder les choses en face.
+    - "Un moyen de pr\xE9dire les cons\xE9quences futures de nos actes pr\xE9sents."
+    answersDisagree:
+    - "Un rassemblement de personnes sectaires \xE0 la pens\xE9e \xE9troite, convaincues
+      de pouvoir pr\xE9dire le futur..."
+    answersIndecisive:
+    - "Ooh c'est pas une ville dans le sud de la Corse ? Si, c'est \xE7a ! Alors
+      qu'est-ce que j'ai gagn\xE9 ?"
+    - "L'\xE9tude du Coca-Cola."
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Que savez-vous de la d\xE9croissance ?"
+    answersAgree:
+    - "Je pense qu'il faut s'y pr\xE9parer d\xE8s maintenant..."
+    - "Comme Thanos, elle est in\xE9vitable."
+    answersDisagree:
+    - "Tout \xE7a parce que certaines personnes ont peur de l'avion..."
+    - C'est une folie !
+    answersIndecisive:
+    - "On dit pas plut\xF4t \"des croissants\" ?"
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: Vous aimez l'industrie alimentaire ?
+    answersAgree:
+    - Aled
+    - "Au b\xFBcher !"
+    - Quelle honte !
+    - On s'en passerait bien...
+    answersDisagree:
+    - Oui !
+    - "Le poulet fermier = mon petit d\xE9jeuner"
+    - "Passionn\xE9ment, j'aime d\xE9couper des animaux !"
+    - Et bien je porte justement un slip en plumes de dindon.
+    answersIndecisive:
+    - "\xC7a permet de nourrir pas mal de monde quand m\xEAme, mais \xE7a pollue
+      pas mal de tonnes aussi... je sais pas quoi vous dire, en fait !"
+    - "Vous a-t-on d\xE9j\xE0 dit que vous aviez de tr\xE8s beaux yeux ?"
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: Quelle technique agricole doit-on suivre ?
+    answersAgree:
+    - "Quelque chose de soutenable comme l'agriculture biologique, l'agro\xE9cologie,
+      l'agroforesterie et toutes ces techniques qui tentent de nourrir la population
+      sans bousiller les sols."
+    answersDisagree:
+    - "La terre br\xFBl\xE9e !!!"
+    - Intensifier l'agriculture intensive !
+    - C'est bien le cadet de mes soucis, tant que j'ai ma bouffe, moi, je m'en fiche
+      !
+    answersIndecisive:
+    - "J'sais pas si j'ai le temps de vous r\xE9pondre en fait, j'ai poney dans une
+      heure..."
+    - Quoi ? Qui est-ce qu'il faudrait suivre ?
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Qu'est-ce que le commerce \xE9quitable ?"
+    answersAgree:
+    - Un juste prix pour des actions justes.
+    - "Une excellente id\xE9e qui devrait \xEAtre la norme"
+    - C'est bien.
+    answersDisagree:
+    - "Un caf\xE9 trop cher\u2026"
+    - C'est nul.
+    answersIndecisive:
+    - C'est quand on fait du commerce sur une table ?
+    - "Un syst\xE8me d'\xE9change dont l'objectif est de proposer une plus grande
+      \xE9quit\xE9 dans le commerce conventionnel, voire une alternative \xE0 celui-ci,
+      fond\xE9e notamment sur la r\xE9appropriation des \xE9changes marchands par
+      ceux qui les pratiquent."
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: Que pensez-vous du recyclage ?
+    answersAgree:
+    - "Un geste n\xE9cessaire au quotidien."
+    - "Pas suffisant. Recycler \xE7a demande de l'\xE9nergie... Il faudrait vraiment
+      moins consommer !"
+    answersDisagree:
+    - "Une prise de t\xEAte qui m'emmerde au quotidien."
+    answersIndecisive:
+    - "La Sino-Indo th\xE9orie des 5 cycles ? C'est bidon\u2026"
+    - "Je pense que c'est un proc\xE9d\xE9 de traitement des d\xE9chets (industriels
+      ou m\xE9nagers) de produits arriv\xE9s en fin de vie, qui permet de r\xE9introduire
+      certains de leurs mat\xE9riaux dans la production de nouveaux produits."
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: Qu'est-ce que le compost ?
+    answersAgree:
+    - "Un geste pour la plan\xE8te."
+    - "Un moyen efficace de recycler les d\xE9chets organiques et de limiter la pollution.
+      Nous devrions d'ailleurs augmenter le nombre de composts en ville afin de favoriser
+      la biodiversit\xE9 des sols !"
+    answersDisagree:
+    - On est d'accord ! A La Poste c'est tous des c*** !!!
+    - Oh ce truc qui pue chez mon voisin ? Une horreur !
+    answersIndecisive:
+    - "Le produit du compostage des d\xE9chets."
+  - theme: 1
+    genre: 2
+    agreeAnswerSide: 0
+    question: "J'ai un peu d'herbe sur moi, \xE7a vous dit de partager un oinj en
+      ma compagnie ?"
+    answersAgree:
+    - Mmmmh moui... mais le CBD est plus fort non ?
+    - On se fait une ptite 2-2 ?
+    answersDisagree:
+    - Police ! Poliiiiiice !
+    - "La drogue des ch\xF4meurs et des assist\xE9s de l'Etat, \xE9loignez vous de
+      moi !"
+    answersIndecisive:
+    - Ah. Euh... Non merci, je ne fume pas.
+    - CBD ou pas CBD ?
