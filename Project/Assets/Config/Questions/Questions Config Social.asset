@@ -15,26 +15,199 @@ MonoBehaviour:
   questions:
   - theme: 2
     genre: 2
+    agreeAnswerSide: 0
+    question: "La pauvret\xE9 c'est super triste... "
+    answersAgree:
+    - Oui
+    answersDisagree:
+    - ' Oui'
+    answersIndecisive:
+    - Oui
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
     question: "Faut-il reculer l'\xE2ge de la retraite ? "
     answersAgree:
     - Non !
     - "Je ne pense pas\u2026"
     answersDisagree:
-    - " Oui, \xE0 70 m\xEAme !"
-    - "Regardez en Chine, on travaille avec fiert\xE9 jusqu'\xE0 100 ans !!!"
+    - " Oui, jusqu'\xE0 70 m\xEAme !"
+    - "Regardez en Chine, on travaille avec fiert\xE9 jusqu'\xE0 sa mort !"
     answersIndecisive:
     - "\xC7a d\xE9pend\u2026"
-    - "Peut-\xEAtre oui\u2026 Peut-\xEAtre non\u2026"
-    - "Impossible de r\xE9pondre d'une traite\u2026 Ha ha vous avez compris ? Retraite
-      ? UNEtraite ? C'est un jeu de mot sur le prefixe de traite en fait !"
+    - "Peut-\xEAtre oui\u2026 peut-\xEAtre non\u2026"
   - theme: 2
     genre: 2
-    question: "La pauvret\xE9 c'est super triste... "
+    agreeAnswerSide: 0
+    question: "Faut-il avancer l'\xE2ge de la retraite ?"
     answersAgree:
-    - Oui (agree rep 1)
-    - Agree REP 2
+    - "Oui, \xE0 60 ans !"
     answersDisagree:
-    - ' Oui (disagree rep 1)'
-    - Disagree REP 2
+    - Non !
+    - "Je ne pense pas\u2026"
     answersIndecisive:
-    - "Ind\xE9cis REP"
+    - "Peut-\xEAtre oui\u2026 peut-\xEAtre non\u2026"
+  - theme: 2
+    genre: 1
+    agreeAnswerSide: 0
+    question: "Sur le cannabis vous \xEAtes partisane de... ? "
+    answersAgree:
+    - "Le l\xE9galiser !"
+    - "Le d\xE9p\xE9naliser, au moins."
+    answersDisagree:
+    - "Renforcer la r\xE9pression !"
+    answersIndecisive:
+    - "Ne pas m'en pr\xE9occuper."
+  - theme: 2
+    genre: 0
+    agreeAnswerSide: 0
+    question: "Sur le cannabis vous \xEAtes partisan de... ? "
+    answersAgree:
+    - "Le l\xE9galiser !"
+    - "Le d\xE9p\xE9naliser, au moins."
+    answersDisagree:
+    - "Renforcer la r\xE9pression !"
+    answersIndecisive:
+    - "Ne pas m'en pr\xE9occuper."
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: 'L''IVG est possible au bout de quatorze semaine, vous souhaitez... '
+    answersAgree:
+    - Maintenir ce droit.
+    answersDisagree:
+    - ' L''ABOLITION !!!'
+    answersIndecisive:
+    - "Bonne ann\xE9e ?"
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous pour la chasse \xE0 courre ? "
+    answersAgree:
+    - Non !
+    answersDisagree:
+    - "Oui, une activit\xE9 si noble"
+    answersIndecisive:
+    - "On pratique la chasse dans les cours d'\xE9cole maintenant ?!"
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous contre la chasse \xE0 courre ?"
+    answersAgree:
+    - Oui, c'est de la torture animale atroce.
+    answersDisagree:
+    - Non
+    answersIndecisive:
+    - "Boarf, je ne me suis jamais pos\xE9 la question \xE0 vrai dire..."
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pensez-vous que les droits des LGBT+ sont respect\xE9s ?"
+    answersAgree:
+    - C'est mieux qu'avant, mais ce n'est toujours pas assez... Il faut continuer
+      de se battre !
+    answersDisagree:
+    - "Encore un qui est aveugl\xE9 par le lobby LGBT..."
+    answersIndecisive:
+    - Je n'en pense rien, je ne dis rien.
+  - theme: 2
+    genre: 1
+    agreeAnswerSide: 0
+    question: Que pensez-vous des femmes qui assument leurs poils ?
+    answersAgree:
+    - Je les comprends, je fais pareil !
+    - "Je les envie en vrai, c'est chiant de s'\xE9piler... Je les trouve courageuses
+      de r\xE9ussir \xE0 s'\xE9manciper de cette injonction \xE0 la f\xE9minit\xE9
+      impos\xE9e par les hommes."
+    answersDisagree:
+    - Oh je les plains, elles doivent trouver aucun mec...
+    - Moins de concurrence pour les jolies filles comme moi !
+    answersIndecisive:
+    - "J'avoue que \xE7a me fait bizarre quand j'en vois, je trouve \xE7a moche.
+      Mais bon je peux les comprendre, c'est archi chiant de devoir s'\xE9piler...
+      Mais \xE7a reste moche quand m\xEAme."
+  - theme: 2
+    genre: 0
+    agreeAnswerSide: 0
+    question: Que pensez-vous des femmes qui assument leurs poils ?
+    answersAgree:
+    - "Elles ont bien raison, lib\xE9rez les poils !"
+    answersDisagree:
+    - "Ah c'est trop d\xE9gueu !"
+    - "C'est que des f\xE9minazis de toute mani\xE8re, j'y fais m\xEAme pas gaffe."
+    answersIndecisive:
+    - "J'avoue que \xE7a me fait bizarre quand j'en vois, je trouve \xE7a moche.
+      Mais bon je peux comprendre que \xE7a en sao\xFBlent certaines de devoir s'\xE9piler.
+      Mais c'est moche quand m\xEAme."
+  - theme: 2
+    genre: 1
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous partisan.e de l'\xE9criture inclusive ?"
+    answersAgree:
+    - "Je suis pratiquante de la premi\xE8re heure !"
+    answersDisagree:
+    - "\xC7a s'\xE9crit partisan !! P.A.R.T.T.I.Z.A.N !!!"
+    answersIndecisive:
+    - "Euh... euh... faut vraiment que je r\xE9ponde ?"
+  - theme: 2
+    genre: 0
+    agreeAnswerSide: 0
+    question: "\xCAtes-vous partisan.e de l'\xE9criture inclusive ?"
+    answersAgree:
+    - "Si cela donne plus de visibilit\xE9 \xE0 la cause f\xE9minine, ma foi\u2026"
+    answersDisagree:
+    - "Je suis de l'avis de l'Acad\xE9mie Fran\xE7aise : avec cette \xE9criture inclusive,
+      la langue fran\xE7aise est en proie \xE0 un p\xE9ril mortel."
+    answersIndecisive:
+    - "Euh... euh... faut vraiment que je r\xE9ponde ?"
+  - theme: 2
+    genre: 0
+    agreeAnswerSide: 0
+    question: Que pensez-vous du voile dans l'espace public ?
+    answersAgree:
+    - Rien, osef.
+    answersDisagree:
+    - Je ne suis pas raciste, mais le voile avouez que c'est assez triste...
+    - "C'est un signe \xE9vident du grand remplacement !"
+    answersIndecisive:
+    - "C'est pas que c'est pas bien ou non, mais je crois qu'on ne devrait pas poser
+      des questions de ce genre \xE0 cette heure-l\xE0 de la journ\xE9e, et puis
+      \xE0 des inconnus qui ne demandaient rien \xE0 personnne en plus, c'est stressant,
+      je me sens mal l\xE0 en fait..."
+  - theme: 2
+    genre: 1
+    agreeAnswerSide: 0
+    question: Que pensez-vous du voile dans l'espace public ?
+    answersAgree:
+    - Rien, osef.
+    answersDisagree:
+    - Je ne suis pas raciste, mais le voile avouez que c'est assez triste...
+    - "C'est un signe \xE9vident du grand remplacement !"
+    answersIndecisive:
+    - "C'est pas que c'est pas bien ou non, mais je crois qu'on ne devrait pas poser
+      des questions de ce genre \xE0 cette heure-l\xE0 de la journ\xE9e, et puis
+      \xE0 des inconnues qui ne demandaient rien \xE0 personnne en plus, c'est stressant,
+      je me sens mal l\xE0 en fait..."
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: "Pour vous, qu'est-ce que le f\xE9minisme ?"
+    answersAgree:
+    - "Un combat n\xE9cessaire pour plus de justice et d'\xE9galit\xE9 dans cette
+      soci\xE9t\xE9 !"
+    answersDisagree:
+    - "Le f\xE9minisme est une tare qui entra\xEEne l'ali\xE9nation de la soci\xE9t\xE9."
+    answersIndecisive:
+    - "Un courant de pens\xE9e et un mouvement politique, social et culturel en faveur
+      de l'\xE9galit\xE9 entre les femmes et les hommes."
+  - theme: 2
+    genre: 2
+    agreeAnswerSide: 0
+    question: Que pensez-vous du burkini ?
+    answersAgree:
+    - "Une bonne chose si ce v\xEAtement permet \xE0 toutes les femmes de profiter
+      de bienfaits de la natation !"
+    answersDisagree:
+    - "Une absurdit\xE9 totale ! Le d\xE9but du grand remplacement !!!"
+    answersIndecisive:
+    - Le burkiquoi ?

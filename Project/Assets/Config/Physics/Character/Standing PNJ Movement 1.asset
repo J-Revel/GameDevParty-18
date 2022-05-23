@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db428bcc52ff740bf6ef4b8c2f1e02, type: 3}
   m_Name: Standing PNJ Movement 1
   m_EditorClassIdentifier: 
-  acceleration: 30
-  inertia: 0.3
+  acceleration: 70
+  inertia: 0.01
   maxSpeed: 15
   mass: 10
   gravity: 100

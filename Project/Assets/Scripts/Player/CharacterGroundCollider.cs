@@ -8,7 +8,9 @@ public class CharacterGroundCollider : MonoBehaviour
     public Collider groundCollider;
     void Start()
     {
-        movement = GetComponentInParent<CharacterMovement>();
+        movement = GetComponent<CharacterMovement>();
+        if(movement == null)
+            movement = GetComponentInParent<CharacterMovement>();
     }
 
     void Update()
@@ -18,6 +20,8 @@ public class CharacterGroundCollider : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        if(movement == null)
+            return;
         if(collision.GetContact(0).thisCollider == groundCollider)
             movement.OnTouchGround();
     }
