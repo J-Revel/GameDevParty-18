@@ -2026,6 +2026,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 632d1cb4d9538394690a240492cf5e95, type: 2}
   - {fileID: 11400000, guid: f11850975b7b8de4397bd3d9cef9d246, type: 2}
   idCardText: {fileID: 5341876170463244567}
+  pnjImage: {fileID: 5341876171497861958}
 --- !u!1 &5341876171743263384
 GameObject:
   m_ObjectHideFlags: 0

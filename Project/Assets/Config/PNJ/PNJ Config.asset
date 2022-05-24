@@ -943,3 +943,13 @@ MonoBehaviour:
   - category: 2
     text: Revient d'un date Tinder
     isInvalid: 0
+  pnjDisplayProfileMen:
+  - dialogueSprite: {fileID: 21300000, guid: 879fa2686f726c340b9d6b539275e9d7, type: 3}
+    animations: {fileID: 11400000, guid: ccc79350db06fa54dbcb04304bb25fb7, type: 2}
+  - dialogueSprite: {fileID: 21300000, guid: 1baff4fa531487942b0ba548cda7ccbf, type: 3}
+    animations: {fileID: 11400000, guid: cacbf84ba07e67341a1d79e733e53c96, type: 2}
+  pnjDisplayProfileWomen:
+  - dialogueSprite: {fileID: 21300000, guid: c96cb447506241443947e2780da5132b, type: 3}
+    animations: {fileID: 11400000, guid: 5e653cb0795600940a7c88cbbf881ab1, type: 2}
+  - dialogueSprite: {fileID: 21300000, guid: f9ee5468b55569748a5cb7c9569e8460, type: 3}
+    animations: {fileID: 11400000, guid: f47f95cc8df0794448e04728829613fb, type: 2}

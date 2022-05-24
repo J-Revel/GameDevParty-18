@@ -138,7 +138,7 @@ public class PlayerMovementInput : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
-        if(grabbable != null)
+        if(grabbable != null && !inRangeGrabbables.Contains(grabbable))
             inRangeGrabbables.Add(grabbable);
     }
 

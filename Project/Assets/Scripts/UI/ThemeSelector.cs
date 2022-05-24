@@ -39,6 +39,8 @@ public class ThemeSelector : MonoBehaviour
     public TMPro.TextMeshProUGUI idCardText;
     private PNJProfile pnj;
 
+    public Image pnjImage;
+
     private bool bubblesVisible = false;
 
     void Start()
@@ -221,6 +223,7 @@ public class ThemeSelector : MonoBehaviour
     public void StartDialogue(PNJProfile pnj)
     {
         this.pnj = pnj;
+        pnjImage.sprite = pnj.dialogueSprite;
         idCardText.text = pnj.idCard;
         StartCoroutine(AppearCoroutine());
     }

@@ -8,9 +8,6 @@ public class PNJSpawner : MonoBehaviour
     public float leftWingProbability = 0.4f;
     public PNJConfig config;
     public PNJProfile pnjPrefab;
-    public SpriteAnimList[] animationSets;
-    public SpriteAnimList[] animationSetsMale;
-    public SpriteAnimList[] animationSetsFemale;
     public int minInterestCount = 1;
     public int maxInterestCount = 5;
     public BoxCollider spawnBox;
@@ -60,18 +57,14 @@ public class PNJSpawner : MonoBehaviour
             pnj.procurationCount = Mathf.FloorToInt(4 - Mathf.Sqrt(Random.Range(0, 16)));
         else pnj.procurationCount = 0;
         StringBuilder idCardContent = new StringBuilder();
-        if(Random.Range(0, 1.0f) > 0.5f)
-        {
-            pnj.genre = Genre.Male;
-            pnj.GetComponentInChildren<AnimatedSprite>().animList = animationSetsMale[Random.Range(0, animationSetsMale.Length)];
-            idCardContent.Append(config.menFirstNames[Random.Range(0, config.menFirstNames.Length)]);
-        }
-        else
-        {
-            pnj.genre = Genre.Female;
-            pnj.GetComponentInChildren<AnimatedSprite>().animList = animationSetsFemale[Random.Range(0, animationSetsFemale.Length)];
-            idCardContent.Append(config.womenFirstNames[Random.Range(0, config.womenFirstNames.Length)]);
-        }
+        pnj.genre = Random.Range(0, 1.0f) > 0.5f ? Genre.Male : Genre.Female;
+        PNJDisplayProfile[] displayProfileList = pnj.genre == Genre.Male ? config.pnjDisplayProfileMen : config.pnjDisplayProfileWomen;
+        
+        PNJDisplayProfile displayProfile = displayProfileList[Random.Range(0, displayProfileList.Length)];
+        pnj.dialogueSprite = displayProfile.dialogueSprite;
+        pnj.GetComponentInChildren<AnimatedSprite>().animList = displayProfile.animations;
+        string[] firstNameList = pnj.genre == Genre.Male ? config.menFirstNames : config.womenFirstNames;
+        idCardContent.Append(firstNameList[Random.Range(0, config.menFirstNames.Length)]);
 
         idCardContent.Append(" ").Append(config.secondNames[Random.Range(0, config.secondNames.Length)]).Append("\n");
         List<IdCardCategory> presentCategories = new List<IdCardCategory>();

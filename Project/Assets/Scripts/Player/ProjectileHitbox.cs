@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ProjectileHitbox : MonoBehaviour
 {
-    public CharacterMovement thrower;
+    private CharacterMovement characterMovement;
     private new Rigidbody rigidbody;
     void Start()
     {
         rigidbody = GetComponentInParent<Rigidbody>();
+        characterMovement = GetComponentInParent<CharacterMovement>();
     }
 
     void Update()
@@ -19,22 +20,21 @@ public class ProjectileHitbox : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         CharacterMovement movement = other.GetComponentInParent<CharacterMovement>();
-        if(movement == null)
+        if(movement == null || characterMovement == movement)
             return;
         Grabbable grabbable = movement.GetComponent<Grabbable>();
-        if(movement != thrower && grabbable != null)
+        if(grabbable == null)
+            return;
+            
+        switch(movement.currentState)
         {
-            switch(movement.currentState)
-            {
-                case CharacterState.Idle:
-                case CharacterState.Carrying:
-                    Vector3 collisionDirection = (other.transform.position - transform.position);
-                    collisionDirection.y = 0;
-                
-                    grabbable.OnThrow(collisionDirection.normalized * movement.collisionThrowSpeed + Vector3.up * movement.throwVerticalSpeed);
-                    break;
-
-            }
+            case CharacterState.Idle:
+            case CharacterState.Carrying:
+                Vector3 collisionDirection = (other.transform.position - transform.position);
+                collisionDirection.y = 0;
+            
+                grabbable.OnThrow(collisionDirection.normalized * movement.collisionThrowSpeed + Vector3.up * movement.throwVerticalSpeed);
+                break;
         }
     }
 }

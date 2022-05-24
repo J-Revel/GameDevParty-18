@@ -19,6 +19,13 @@ public struct IdCardInfoConfig
     public bool isInvalid;
 }
 
+[System.Serializable]
+public struct PNJDisplayProfile
+{
+    public Sprite dialogueSprite;
+    public SpriteAnimList animations;
+}
+
 [CreateAssetMenu]
 public class PNJConfig : ScriptableObject
 {
@@ -26,5 +33,8 @@ public class PNJConfig : ScriptableObject
     public string[] womenFirstNames;
     public string[] secondNames;
     public IdCardInfoConfig[] info;
+
+    public PNJDisplayProfile[] pnjDisplayProfileMen;
+    public PNJDisplayProfile[] pnjDisplayProfileWomen;
 
 }
