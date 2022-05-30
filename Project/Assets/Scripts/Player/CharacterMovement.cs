@@ -33,7 +33,7 @@ public class CharacterMovement : MonoBehaviour
     public AnimatedSprite animatedSprite;
     public float speedWalkThreshold = 0.1f;
     public CharacterState currentState;
-    public System.Action throwDelegate;
+    public SimpleEvent throwDelegate;
     public System.Action touchGroundDelegate;
     public System.Action<CharacterState> stateChangedDelegate;
 
@@ -83,7 +83,7 @@ public class CharacterMovement : MonoBehaviour
             switch(currentState)
             {
                 case CharacterState.Throwing:
-                    throwDelegate?.Invoke();
+                    throwDelegate.PlaySounds();
                     SetState(CharacterState.Idle);
                     break;
                 case CharacterState.Grabbing:
@@ -129,6 +129,7 @@ public class CharacterMovement : MonoBehaviour
                 }
                 break;
             case CharacterState.Throwing:
+                throwDelegate?.Invoke();
                 animatedSprite.SelectAnim("Throw");
                 break;
             case CharacterState.Grabbing:

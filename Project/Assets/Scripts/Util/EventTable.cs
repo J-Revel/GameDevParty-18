@@ -33,6 +33,25 @@ public struct SoundConfig
     public float maxIntensity;
 }
 
+[System.Serializable]
+public struct SimpleEvent
+{
+    public SoundConfig[] sounds;
+
+    public void PlaySounds(AudioSource audioPrefab, Transform emitter)
+    {
+        foreach(SoundConfig soundConfig in sounds)
+        {
+            AudioSource source = AudioSource.Instantiate(audioPrefab, emitter.position, emitter.rotation);
+            source.volume = Random.Range(soundConfig.minIntensity, soundConfig.maxIntensity);
+            source.pitch = Random.Range(soundConfig.minPitch, soundConfig.maxPitch);
+            source.clip = soundConfig.clip;
+            source.outputAudioMixerGroup = soundConfig.mixerGroup;
+            source.Play();
+        }
+    }
+}
+
 public class EventTable : MonoBehaviour
 {
     public AudioSource audioPrefab;
@@ -63,10 +82,6 @@ public class EventTable : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-    }
-
     public static EventInvocationData[] ListEvents(GameObject gameObject)
     {
         List<EventInvocationData> result = new List<EventInvocationData>();
@@ -81,7 +96,10 @@ public class EventTable : MonoBehaviour
             }
             foreach(var member in type.GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance))
             {
-                if(member.FieldType.IsSubclassOf(typeof(UnityEngine.Events.UnityEvent)) || member.FieldType.IsSubclassOf(typeof(System.MulticastDelegate)))
+                if( member.FieldType.IsSubclassOf(typeof(UnityEngine.Events.UnityEvent))
+                    || member.FieldType.IsSubclassOf(typeof(System.MulticastDelegate))
+                    || member.FieldType.IsSubclassOf(typeof(SimpleEvent))
+                )
                 {
                     EventInvocationData invocationData = new EventInvocationData();
                     invocationData.displayPath = gameObjectPath + type.Name + "." + member.Name;

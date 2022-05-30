@@ -16,7 +16,6 @@ public class PlayerMovementInput : MonoBehaviour
     private void Start()
     {
         characterMovement = GetComponent<CharacterMovement>();
-        characterMovement.throwDelegate += OnThrow;
     }
 
     public void Update()
@@ -146,10 +145,5 @@ public class PlayerMovementInput : MonoBehaviour
     {
         Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
         inRangeGrabbables.Remove(grabbable);
-    }
-
-    private void OnThrow()
-    {
-
     }
 }
