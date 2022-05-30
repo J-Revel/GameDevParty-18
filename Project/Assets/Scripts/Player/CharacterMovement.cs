@@ -35,7 +35,11 @@ public class CharacterMovement : MonoBehaviour
     public CharacterState currentState;
     public System.Action throwDelegate;
     public System.Action touchGroundDelegate;
+    public System.Action grabStartDelegate;
     public System.Action<CharacterState> stateChangedDelegate;
+    public System.Action footstepDelegate;
+    public float footstepInterval = 0.3f;
+    private float footstepDistance = 0;
 
     private Grabbable grabbable;
     private float onGroundTime = 0;
@@ -83,7 +87,6 @@ public class CharacterMovement : MonoBehaviour
             switch(currentState)
             {
                 case CharacterState.Throwing:
-                    throwDelegate?.Invoke();
                     SetState(CharacterState.Idle);
                     break;
                 case CharacterState.Grabbing:
@@ -129,10 +132,12 @@ public class CharacterMovement : MonoBehaviour
                 }
                 break;
             case CharacterState.Throwing:
+                throwDelegate?.Invoke();
                 animatedSprite.SelectAnim("Throw");
                 break;
             case CharacterState.Grabbing:
                 animatedSprite.SelectAnim("Grab");
+                grabStartDelegate?.Invoke();
                 
                 break;
             case CharacterState.OnGround:
@@ -188,6 +193,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if(currentState == CharacterState.Flying)
         {
+            touchGroundDelegate?.Invoke();
             SetState(CharacterState.OnGround);
         }
     }

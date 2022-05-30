@@ -21,10 +21,11 @@ public struct EventConfig
     
 }
 
+
 [System.Serializable]
 public struct SoundConfig
 {
-    public AudioClip clip;
+    public AudioClip[] clips;
     public AudioMixerGroup mixerGroup;
 
     public float minPitch;
@@ -59,6 +60,7 @@ public class EventTable : MonoBehaviour
                 targetDelegate += () => {
                     StartCoroutine(PlaySound(component.gameObject, eventConfig.soundConfig));
                 };
+                field.SetValue(component, targetDelegate);
             }
         }
     }
@@ -101,10 +103,11 @@ public class EventTable : MonoBehaviour
         AudioSource source = Instantiate(audioPrefab, emitter.transform.position, emitter.transform.rotation);
         source.volume = Random.Range(soundConfig.minIntensity, soundConfig.maxIntensity);
         source.pitch = Random.Range(soundConfig.minPitch, soundConfig.maxPitch);
-        source.clip = soundConfig.clip;
+        AudioClip selectedClip = soundConfig.clips[Random.Range(0, soundConfig.clips.Length)];
+        source.clip = selectedClip;
         source.outputAudioMixerGroup = soundConfig.mixerGroup;
         source.Play();
-        yield return new WaitForSeconds(soundConfig.clip.length + 1);
+        yield return new WaitForSeconds(selectedClip.length + 1);
         Destroy(source.gameObject);
     }
 }

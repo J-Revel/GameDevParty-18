@@ -183,20 +183,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7f83fc17134b94da90357cc4caa094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPrefab: {fileID: 0}
+  audioPrefab: {fileID: 2598897783869053215, guid: f547ba7087cc0434d98ac2cbb6249974, type: 3}
   events:
+  - invocationData:
+      displayPath: CharacterMovement.touchGroundDelegate
+      gameObject: {fileID: 902912455124168559}
+      scriptType: CharacterMovement
+      fieldName: touchGroundDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: baa0a3abd94ae684ba648b7efb2e1968, type: 3}
+      - {fileID: 8300000, guid: aa7438c06fadd9e4c8daf3d5592ac497, type: 3}
+      - {fileID: 8300000, guid: 3a52a149313125a46a54af09b9992c2b, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.9
+      maxPitch: 1.1
+      minIntensity: 0.5
+      maxIntensity: 0.5
   - invocationData:
       displayPath: Grabbable.thrownDelegate
       gameObject: {fileID: 902912455124168559}
       scriptType: Grabbable
       fieldName: thrownDelegate
     soundConfig:
-      clip: {fileID: 8300000, guid: 585db071a0ff94446ad228b578da7232, type: 3}
+      clips:
+      - {fileID: 8300000, guid: 585db071a0ff94446ad228b578da7232, type: 3}
+      - {fileID: 8300000, guid: 4d0b7f8f8bdb07e4a84d847faec214a3, type: 3}
+      - {fileID: 8300000, guid: eea159538b0cda347aeaccba0a0176d9, type: 3}
       mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
-      minPitch: 0.9
-      maxPitch: 1.1
-      minIntensity: 1
-      maxIntensity: 1
+      minPitch: 0.8
+      maxPitch: 1.2
+      minIntensity: 0.3
+      maxIntensity: 0.3
 --- !u!1 &902912456211528377
 GameObject:
   m_ObjectHideFlags: 0
