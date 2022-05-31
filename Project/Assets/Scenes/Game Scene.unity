@@ -1370,6 +1370,70 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -70
       objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimFPS
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: answerAppearDelay
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: blinkAnimDuration
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.data[1]
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.data[3]
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.data[5]
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimAppearScales.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[0]
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[2]
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[4]
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341876171730756041, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
+      propertyPath: bubbleAnimDisappearScales.Array.data[5]
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5341876171743263385, guid: 4a4eba97263397b439f68647bbfa3447, type: 3}
       propertyPath: m_SizeDelta.x
       value: 434.1611
@@ -1516,8 +1580,8 @@ MonoBehaviour:
       mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
       minPitch: 0.8
       maxPitch: 1.1
-      minIntensity: 0.5
-      maxIntensity: 0.5
+      minIntensity: 0.3
+      maxIntensity: 0.3
   - invocationData:
       displayPath: CharacterMovement.throwDelegate
       gameObject: {fileID: 390334989}
@@ -2165,7 +2229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193616502076837858, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5859661
+      value: -0.58596516
       objectReference: {fileID: 0}
     - target: {fileID: 193616502076837858, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_LocalPosition.y
