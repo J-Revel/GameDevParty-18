@@ -14,4 +14,5 @@ public class CharacterMovementConfig : ScriptableObject
     public float throwVerticalSpeed;
     public float onGroundDuration = 2;
     public float collisionThrowSpeed;
+    public float collisionVerticalSpeed;
 }

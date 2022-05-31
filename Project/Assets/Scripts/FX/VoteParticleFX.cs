@@ -14,6 +14,7 @@ public class VoteParticleFX : MonoBehaviour
     public float maxSpeed = 10;
     public float shrinkDuration = 2;
     public float deactivateColliderDuration = 1;
+    private IEnumerator playingCoroutine;
     
 
     void Start()
@@ -27,7 +28,10 @@ public class VoteParticleFX : MonoBehaviour
 
     public void PlayFX()
     {
-        StartCoroutine(FXCoroutine());
+        if(playingCoroutine != null)
+            StopCoroutine(playingCoroutine);
+        playingCoroutine = FXCoroutine();
+        StartCoroutine(playingCoroutine);
     }
 
     IEnumerator FXCoroutine()

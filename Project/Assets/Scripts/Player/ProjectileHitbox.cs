@@ -6,6 +6,8 @@ public class ProjectileHitbox : MonoBehaviour
 {
     private CharacterMovement characterMovement;
     private new Rigidbody rigidbody;
+    public Transform collisionFxHitbox;
+
     void Start()
     {
         rigidbody = GetComponentInParent<Rigidbody>();
@@ -32,8 +34,9 @@ public class ProjectileHitbox : MonoBehaviour
             case CharacterState.Carrying:
                 Vector3 collisionDirection = (other.transform.position - transform.position);
                 collisionDirection.y = 0;
-            
-                grabbable.OnThrow(collisionDirection.normalized * movement.collisionThrowSpeed + Vector3.up * movement.throwVerticalSpeed);
+                Instantiate(collisionFxHitbox, other.ClosestPoint(movement.transform.position), movement.transform.rotation);
+                
+                grabbable.OnThrow(collisionDirection.normalized * movement.collisionThrowSpeed + Vector3.up * movement.collisionVerticalSpeed);
                 break;
         }
     }

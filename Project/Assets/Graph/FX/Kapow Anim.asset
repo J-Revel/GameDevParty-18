@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13426e9ead40efb40b3fde96cfad97aa, type: 3}
+  m_Name: Kapow Anim
+  m_EditorClassIdentifier: 
+  actionPointNames: []
+  spriteAnims:
+  - name: Kapow
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 52b421ff85415b144ab0b328219478bd, type: 3}
+      - {fileID: 21300000, guid: 8d61da31642cab74dbb158d68c010344, type: 3}
+      - {fileID: 21300000, guid: bf5edb16678514041b76a966021171a0, type: 3}
+      - {fileID: 21300000, guid: 5dc6b8b437e845448b288175258934a0, type: 3}
+      - {fileID: 21300000, guid: 74c3ff2dc662e4241900b82d0ca0ef5e, type: 3}
+      - {fileID: 21300000, guid: 82b1274040981024a8b725ab9967b52b, type: 3}
+      - {fileID: 21300000, guid: 82b1274040981024a8b725ab9967b52b, type: 3}
+      - {fileID: 21300000, guid: 74c3ff2dc662e4241900b82d0ca0ef5e, type: 3}
+      - {fileID: 21300000, guid: 5dc6b8b437e845448b288175258934a0, type: 3}
+      - {fileID: 21300000, guid: bf5edb16678514041b76a966021171a0, type: 3}
+      - {fileID: 21300000, guid: 8d61da31642cab74dbb158d68c010344, type: 3}
+      - {fileID: 21300000, guid: 52b421ff85415b144ab0b328219478bd, type: 3}
+      - {fileID: 0}
+      actionPoints: []
+      framePerSecond: 30
+      loop: 0

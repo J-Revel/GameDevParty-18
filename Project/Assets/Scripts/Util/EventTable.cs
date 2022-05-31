@@ -34,25 +34,6 @@ public struct SoundConfig
     public float maxIntensity;
 }
 
-[System.Serializable]
-public struct SimpleEvent
-{
-    public SoundConfig[] sounds;
-
-    public void PlaySounds(AudioSource audioPrefab, Transform emitter)
-    {
-        foreach(SoundConfig soundConfig in sounds)
-        {
-            AudioSource source = AudioSource.Instantiate(audioPrefab, emitter.position, emitter.rotation);
-            source.volume = Random.Range(soundConfig.minIntensity, soundConfig.maxIntensity);
-            source.pitch = Random.Range(soundConfig.minPitch, soundConfig.maxPitch);
-            source.clip = soundConfig.clip;
-            source.outputAudioMixerGroup = soundConfig.mixerGroup;
-            source.Play();
-        }
-    }
-}
-
 public class EventTable : MonoBehaviour
 {
     public AudioSource audioPrefab;
@@ -66,20 +47,23 @@ public class EventTable : MonoBehaviour
             Component component = invocationData.gameObject.GetComponent(invocationData.scriptType);
             
             System.Reflection.FieldInfo field = component.GetType().GetField(invocationData.fieldName, System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            object target = field.GetValue(component);
-            if(field.FieldType.IsSubclassOf(typeof(UnityEngine.Events.UnityEvent)))
+            if(field != null)
             {
-                (target as UnityEngine.Events.UnityEvent).AddListener(() => {
-                    StartCoroutine(PlaySound(component.gameObject, eventConfig.soundConfig));
-                });
-            }
-            if(field.FieldType.IsSubclassOf(typeof(System.MulticastDelegate)))
-            {
-                var targetDelegate = (target as System.Action);
-                targetDelegate += () => {
-                    StartCoroutine(PlaySound(component.gameObject, eventConfig.soundConfig));
-                };
-                field.SetValue(component, targetDelegate);
+                object target = field.GetValue(component);
+                if(field.FieldType.IsSubclassOf(typeof(UnityEngine.Events.UnityEvent)))
+                {
+                    (target as UnityEngine.Events.UnityEvent).AddListener(() => {
+                        StartCoroutine(PlaySound(component.gameObject, eventConfig.soundConfig));
+                    });
+                }
+                if(field.FieldType.IsSubclassOf(typeof(System.MulticastDelegate)))
+                {
+                    var targetDelegate = (target as System.Action);
+                    targetDelegate += () => {
+                        StartCoroutine(PlaySound(component.gameObject, eventConfig.soundConfig));
+                    };
+                    field.SetValue(component, targetDelegate);
+                }
             }
         }
     }
@@ -100,7 +84,6 @@ public class EventTable : MonoBehaviour
             {
                 if( member.FieldType.IsSubclassOf(typeof(UnityEngine.Events.UnityEvent))
                     || member.FieldType.IsSubclassOf(typeof(System.MulticastDelegate))
-                    || member.FieldType.IsSubclassOf(typeof(SimpleEvent))
                 )
                 {
                     EventInvocationData invocationData = new EventInvocationData();

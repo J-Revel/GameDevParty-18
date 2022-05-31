@@ -25,6 +25,7 @@ public class Grabbable : MonoBehaviour
     public void OnThrow(Vector3 velocity)
     {
         rigidbody.velocity = velocity;
+        thrownDelegate?.Invoke();
         movement.SetState(CharacterState.Flying);
     }
 }

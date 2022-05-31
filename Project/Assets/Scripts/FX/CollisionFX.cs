@@ -17,6 +17,7 @@ public class CollisionFX : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Instantiate(fxPrefab, collision.contacts[0].point, Quaternion.LookRotation(collision.contacts[0].normal));
+        if(collision.collider.GetComponentInParent<CharacterMovement>() != null)
+            Instantiate(fxPrefab, collision.contacts[0].point, Quaternion.LookRotation(collision.contacts[0].normal));
     }
 }

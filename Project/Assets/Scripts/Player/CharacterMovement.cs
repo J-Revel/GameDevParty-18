@@ -33,13 +33,9 @@ public class CharacterMovement : MonoBehaviour
     public AnimatedSprite animatedSprite;
     public float speedWalkThreshold = 0.1f;
     public CharacterState currentState;
-    public SimpleEvent throwDelegate;
+    public System.Action throwDelegate;
     public System.Action touchGroundDelegate;
-    public System.Action grabStartDelegate;
     public System.Action<CharacterState> stateChangedDelegate;
-    public System.Action footstepDelegate;
-    public float footstepInterval = 0.3f;
-    private float footstepDistance = 0;
 
     private Grabbable grabbable;
     private float onGroundTime = 0;
@@ -48,6 +44,12 @@ public class CharacterMovement : MonoBehaviour
     public float collisionThrowSpeed {
         get {
             return currentConfig.collisionThrowSpeed;
+        }
+    }
+
+    public float collisionVerticalSpeed {
+        get {
+            return currentConfig.collisionVerticalSpeed;
         }
     }
 
@@ -137,7 +139,6 @@ public class CharacterMovement : MonoBehaviour
                 break;
             case CharacterState.Grabbing:
                 animatedSprite.SelectAnim("Grab");
-                grabStartDelegate?.Invoke();
                 
                 break;
             case CharacterState.OnGround:
@@ -171,7 +172,8 @@ public class CharacterMovement : MonoBehaviour
         }
         rigidbody.AddForce(movementInput * currentConfig.acceleration);
         rigidbody.AddForce(Vector3.down * currentConfig.gravity);
-        rigidbody.velocity = rigidbody.velocity * Mathf.Pow(currentConfig.inertia, Time.fixedDeltaTime);
+        Vector3 newVelocity = rigidbody.velocity * Mathf.Pow(currentConfig.inertia, Time.fixedDeltaTime);
+        rigidbody.velocity = new Vector3(newVelocity.x, rigidbody.velocity.y, newVelocity.z);
         switch(currentState)
         {
             case CharacterState.Idle:

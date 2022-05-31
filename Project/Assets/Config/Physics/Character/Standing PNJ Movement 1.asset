@@ -18,6 +18,7 @@ MonoBehaviour:
   mass: 10
   gravity: 100
   throwSpeed: 100
-  throwVerticalSpeed: 3
+  throwVerticalSpeed: 10
   onGroundDuration: 2
-  collisionThrowSpeed: 10
+  collisionThrowSpeed: 15
+  collisionVerticalSpeed: 5

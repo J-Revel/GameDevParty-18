@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Flying PNJ Movement
   m_EditorClassIdentifier: 
   acceleration: 70
-  inertia: 0.05
+  inertia: 0.1
   maxSpeed: 30
   mass: 10
   gravity: 200
   throwSpeed: 100
-  throwVerticalSpeed: 3.2
+  throwVerticalSpeed: 100
   onGroundDuration: 2
-  collisionThrowSpeed: 10
+  collisionThrowSpeed: 2000
+  collisionVerticalSpeed: 0

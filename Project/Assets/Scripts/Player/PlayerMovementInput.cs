@@ -12,6 +12,8 @@ public class PlayerMovementInput : MonoBehaviour
     public float grabOffset = 0.2f;
     public ThemeSelector themeSelector;
     private bool talking = false;
+    
+    public System.Action grabDelegate;
 
     private void Start()
     {
@@ -82,6 +84,7 @@ public class PlayerMovementInput : MonoBehaviour
                         if(closestGrabbable != null)
                         {
                             characterMovement.SetState(CharacterState.Grabbing);
+                            grabDelegate?.Invoke();
                             grabbedElement = closestGrabbable;
                             closestGrabbable.grabStartedDelegate?.Invoke();
                             grabbedElement.StartGrabbed();
@@ -94,7 +97,6 @@ public class PlayerMovementInput : MonoBehaviour
                         if(grabbedElement != null)
                         {
                             characterMovement.SetState(CharacterState.Throwing);
-                            grabbedElement.thrownDelegate?.Invoke();
                             grabbedElement.OnThrow(characterMovement.throwVelocity);
                             grabbedElement = null;
                         }
