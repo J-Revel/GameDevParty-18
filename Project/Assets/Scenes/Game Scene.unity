@@ -1947,7 +1947,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9245283, g: 0.81571645, b: 0.5189569, a: 1}
+  m_Color: {r: 1, g: 0.8793541, b: 0.5518868, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2263,9 +2263,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2616889240929064092, guid: a6f2cf44ef5cd55448a98f4e5cf4871c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616889240929064092, guid: a6f2cf44ef5cd55448a98f4e5cf4871c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2616889241062903624, guid: a6f2cf44ef5cd55448a98f4e5cf4871c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616889241062903626, guid: a6f2cf44ef5cd55448a98f4e5cf4871c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.79
       objectReference: {fileID: 0}
     - target: {fileID: 2616889241062903627, guid: a6f2cf44ef5cd55448a98f4e5cf4871c, type: 3}
       propertyPath: targetBox
@@ -2624,7 +2636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5974111648485242550, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_Size.z
-      value: 23.019562
+      value: 27.25808
       objectReference: {fileID: 0}
     - target: {fileID: 5974111648485242550, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_Center.x
@@ -2632,7 +2644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5974111648485242550, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_Center.z
-      value: 4.8040504
+      value: 2.684792
       objectReference: {fileID: 0}
     - target: {fileID: 5974111648515156329, guid: 0efd63c59d233b94289e1cb1b1aff6b5, type: 3}
       propertyPath: m_Name
