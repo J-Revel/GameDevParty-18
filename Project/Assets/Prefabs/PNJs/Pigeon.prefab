@@ -89,8 +89,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
+--- !u!1 &493568005158760663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4963429330683050544, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
+  m_PrefabInstance: {fileID: 4771605387342400231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1840760365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493568005158760663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b4e88a6cb90844ba2bdfe79272d9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PigeonFlying: {fileID: 4771605388211993619}
+  PigeonFly: PigeonFly
 --- !u!4 &493568005158760667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4963429330683050556, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
+  m_PrefabInstance: {fileID: 4771605387342400231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4771605388211993619 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1414887156, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
   m_PrefabInstance: {fileID: 4771605387342400231}
   m_PrefabAsset: {fileID: 0}
