@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 786497096678820733}
   - component: {fileID: 786497096678820729}
   - component: {fileID: 786497096678820730}
-  - component: {fileID: 2123866616}
   - component: {fileID: 2123866611}
   m_Layer: 7
   m_Name: Player Character
@@ -232,14 +231,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.59
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &2123866616
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786497096678820732}
-  m_Enabled: 1
 --- !u!114 &2123866611
 MonoBehaviour:
   m_ObjectHideFlags: 0

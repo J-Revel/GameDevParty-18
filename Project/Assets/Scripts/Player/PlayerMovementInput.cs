@@ -10,7 +10,7 @@ public class PlayerMovementInput : MonoBehaviour
     public AnimatedSprite animatedSprite;
     public Grabbable grabbedElement;
     public float grabOffset = 0.2f;
-    public ThemeSelector themeSelector;
+    public DialogueUI dialogueUI;
     private bool talking = false;
     
     public System.Action grabDelegate;
@@ -27,7 +27,7 @@ public class PlayerMovementInput : MonoBehaviour
             characterMovement.movementInput = Vector3.zero;
             if(Input.GetButtonDown("Interact"))
             {
-                themeSelector.CloseMenu();
+                dialogueUI.CloseDialogue();
                 if(closestGrabbable != null)
                 {
                     characterMovement.SetState(CharacterState.Grabbing);
@@ -110,7 +110,7 @@ public class PlayerMovementInput : MonoBehaviour
             
             if(characterMovement.currentState == CharacterState.Talking)
             {
-                themeSelector.OnTalkButtonPressed();
+                dialogueUI.OnTalkButtonPressed();
             }
             else
             {
@@ -120,7 +120,7 @@ public class PlayerMovementInput : MonoBehaviour
                         if(closestGrabbable != null)
                         {
                             PNJProfile config = closestGrabbable.GetComponent<PNJProfile>();
-                            themeSelector.StartDialogue(config);
+                            dialogueUI.StartDialogue(config);
                             characterMovement.SetState(CharacterState.Talking);
                             closestGrabbable.GetComponent<CharacterMovement>().SetState(CharacterState.Talking);
                         }
