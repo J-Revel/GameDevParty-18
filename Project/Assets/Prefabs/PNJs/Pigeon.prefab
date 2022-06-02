@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4771605386947632932}
     m_Modifications:
+    - target: {fileID: 1414887159, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4963429330683050544, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
       propertyPath: m_Name
       value: PigeonSprite

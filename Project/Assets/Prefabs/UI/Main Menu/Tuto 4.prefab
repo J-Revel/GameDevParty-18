@@ -632,7 +632,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Une fois que tu penses savoir l''orientation politique du PNJ que tu interroges,
-    tu peux l''attraper ! '
+    tu peux l''attraper avec <b>''Espace''</b> ! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
@@ -828,7 +828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.616}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.19573212, y: -65.8811}
+  m_AnchoredPosition: {x: 0.1, y: -63.3}
   m_SizeDelta: {x: 531.3896, y: 84.658}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4186460575800433064
@@ -861,7 +861,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Si tu penses qu'il vote \xE0 <color=\"red\"><b>g\xF4che</b></color>, lance
     le directement dans le bureau de vote afin qu'il accomplisse son devoir civique
-    !"
+    ! Sinon, d\xE9barasse toi de lui... par tous les moyens !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}

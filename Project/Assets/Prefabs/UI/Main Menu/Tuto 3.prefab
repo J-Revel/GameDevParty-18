@@ -278,7 +278,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Chaque PNJ ne saura pas r\xE9pondre pr\xE9cis\xE9ment \xE0 propos de certains
-    th\xE8mes, mais a des opinions marqu\xE9es sur les d'autres."
+    th\xE8mes, mais a des opinions marqu\xE9es sur d'autres."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
@@ -413,9 +413,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pendant l'interrogatoire, appuie sur <b>'Espace'</b> pour choisir un th\xE8me,
-    et une question sera pos\xE9e selon ce th\xE8me ! Attention, la r\xE9ponse du
-    PNJ t'aidera \xE0 savoir s'il ou elle est de <color=\"red\"><b>g\xF4che</b></color>
+  m_text: "Pendant l'interrogatoire, appuie sur <b>'E'</b> \xE0 nouveau pour choisir
+    un th\xE8me, et tu poseras une question selon ce th\xE8me ! Attention, la r\xE9ponse
+    du PNJ t'aidera peut-\xEAtre \xE0 savoir s'il ou elle est\n de <color=\"red\"><b>g\xF4che</b></color>
     ou de <color=\"blue\"><b>drouate</b></color> !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}

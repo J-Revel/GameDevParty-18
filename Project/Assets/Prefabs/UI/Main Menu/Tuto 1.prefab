@@ -335,7 +335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Le bureau de vote local ferme dans <b>3 minutes</b>, et la course est
+  m_text: "Ton bureau de vote local ferme dans <b>3 minutes</b>, et la course est
     serr\xE9e ! Assure-toi que la <color=\"red\"><b>g\xF4che</b></color> remporte
     ces \xE9lections...\n\n... Par tous les moyens !"
   m_isRightToLeft: 0
