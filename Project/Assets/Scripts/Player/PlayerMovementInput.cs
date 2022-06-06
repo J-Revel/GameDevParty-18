@@ -5,19 +5,16 @@ using UnityEngine;
 public class PlayerMovementInput : MonoBehaviour
 {
     private CharacterMovement characterMovement;
-    private List<Grabbable> inRangeGrabbables = new List<Grabbable>();
-    private Grabbable closestGrabbable;
-    public AnimatedSprite animatedSprite;
-    public Grabbable grabbedElement;
+    private GrabHandler grabHandler;
     public float grabOffset = 0.2f;
     public DialogueUI dialogueUI;
-    private bool talking = false;
     
     public System.Action grabDelegate;
 
     private void Start()
     {
         characterMovement = GetComponent<CharacterMovement>();
+        grabHandler = GetComponent<GrabHandler>();
     }
 
     public void Update()
@@ -28,17 +25,7 @@ public class PlayerMovementInput : MonoBehaviour
             if(Input.GetButtonDown("Interact"))
             {
                 dialogueUI.CloseDialogue();
-                if(closestGrabbable != null)
-                {
-                    characterMovement.SetState(CharacterState.Grabbing);
-                    grabbedElement = closestGrabbable;
-                    closestGrabbable.grabStartedDelegate?.Invoke();
-                    grabbedElement.StartGrabbed();
-                    inRangeGrabbables.Remove(grabbedElement);
-                    closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
-                    closestGrabbable = null;
-                }
-                talking = false;
+                grabHandler.GrabClosest();
             }
         }
         else
@@ -46,60 +33,16 @@ public class PlayerMovementInput : MonoBehaviour
             characterMovement.movementInput.x = Input.GetAxis("Horizontal");
             characterMovement.movementInput.z = Input.GetAxis("Vertical");
         
-            int closestGrabbableIndex = -1;
-            float closestGrabbableDistance = Mathf.Infinity;
-            for(int i=inRangeGrabbables.Count - 1; i >= 0; i--)
-            {
-                if(inRangeGrabbables[i] == null || !inRangeGrabbables[i].isActiveAndEnabled)
-                    inRangeGrabbables.RemoveAt(i);
-            }
-            for(int i=0; i < inRangeGrabbables.Count; i++)
-            {
-                float distance = Vector3.SqrMagnitude(inRangeGrabbables[i].transform.position - transform.position);
-                if(closestGrabbableDistance > distance)
-                {
-                    closestGrabbableDistance = distance;
-                    closestGrabbableIndex = i;
-                }
-            }
-            if(closestGrabbableIndex < 0 || characterMovement.currentState != CharacterState.Idle)
-            {
-                if(closestGrabbable != null)
-                    closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
-                closestGrabbable = null;
-            }
-            else if(inRangeGrabbables[closestGrabbableIndex] != closestGrabbable)
-            {
-                if(closestGrabbable != null)
-                    closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
-                closestGrabbable = inRangeGrabbables[closestGrabbableIndex];
-                closestGrabbable.GetComponent<Highlightable>().SetHighlighted(true);
-            }
-
+            
             if(Input.GetButtonDown("Interact"))
             {
                 switch(characterMovement.currentState)
                 {
                     case CharacterState.Idle:
-                        if(closestGrabbable != null)
-                        {
-                            characterMovement.SetState(CharacterState.Grabbing);
-                            grabDelegate?.Invoke();
-                            grabbedElement = closestGrabbable;
-                            closestGrabbable.grabStartedDelegate?.Invoke();
-                            grabbedElement.StartGrabbed();
-                            inRangeGrabbables.Remove(grabbedElement);
-                            closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
-                            closestGrabbable = null;
-                        }
+                        grabHandler.GrabClosest();
                         break;
                     case CharacterState.Carrying:
-                        if(grabbedElement != null)
-                        {
-                            characterMovement.SetState(CharacterState.Throwing);
-                            grabbedElement.OnThrow(characterMovement.throwVelocity);
-                            grabbedElement = null;
-                        }
+                        grabHandler.Throw();
                         break;
                 }
             }
@@ -117,6 +60,7 @@ public class PlayerMovementInput : MonoBehaviour
                 switch(characterMovement.currentState)
                 {
                     case CharacterState.Idle:
+                        Grabbable closestGrabbable = grabHandler.closestGrabbable;
                         if(closestGrabbable != null)
                         {
                             PNJProfile config = closestGrabbable.GetComponent<PNJProfile>();
@@ -128,24 +72,5 @@ public class PlayerMovementInput : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if(grabbedElement != null)
-            grabbedElement.transform.position = animatedSprite.GetPointPosition("Grab Point") - transform.forward * grabOffset;
-    }
-
-    private void OnTriggerEnter(Collider collider)
-    {
-        Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
-        if(grabbable != null && !inRangeGrabbables.Contains(grabbable))
-            inRangeGrabbables.Add(grabbable);
-    }
-
-    private void OnTriggerExit(Collider collider)
-    {
-        Grabbable grabbable = collider.GetComponentInParent<Grabbable>();
-        inRangeGrabbables.Remove(grabbable);
     }
 }

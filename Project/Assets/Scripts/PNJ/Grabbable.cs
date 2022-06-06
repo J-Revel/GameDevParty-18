@@ -8,6 +8,10 @@ public class Grabbable : MonoBehaviour
     public System.Action grabStartedDelegate;
     public System.Action thrownDelegate;
     private CharacterMovement movement;
+    public float invincibilityDuration = 5;
+    private float invincibilityTime = 0;
+
+    public bool isInvincible {get { return invincibilityTime > 0; }}
 
     
     void Start()
@@ -27,5 +31,11 @@ public class Grabbable : MonoBehaviour
         rigidbody.velocity = velocity;
         thrownDelegate?.Invoke();
         movement.SetState(CharacterState.Flying);
+        invincibilityTime = invincibilityDuration;
+    }
+
+    private void Update()
+    {
+        invincibilityTime -= Time.deltaTime;
     }
 }

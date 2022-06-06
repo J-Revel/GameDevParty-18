@@ -126,8 +126,11 @@ GameObject:
   - component: {fileID: 786497096678820734}
   - component: {fileID: 786497096678820733}
   - component: {fileID: 786497096678820729}
+  - component: {fileID: 1473876874594677314}
   - component: {fileID: 786497096678820730}
   - component: {fileID: 2123866611}
+  - component: {fileID: 342871650930241841}
+  - component: {fileID: 2123866617}
   m_Layer: 7
   m_Name: Player Character
   m_TagString: Player
@@ -214,10 +217,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa4755d23636b84d9ae28581546b485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatedSprite: {fileID: 786497096568800446}
+  grabOffset: 0.2
+  dialogueUI: {fileID: 0}
+--- !u!114 &1473876874594677314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786497096678820732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5795df9a14896394aafabe6b8b721d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   grabbedElement: {fileID: 0}
   grabOffset: 0.2
-  themeSelector: {fileID: 0}
+  animatedSprite: {fileID: 786497096568800446}
+  inRangeHilight: 1
 --- !u!135 &786497096678820730
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -272,6 +289,23 @@ MonoBehaviour:
       minIntensity: 0.3
       maxIntensity: 0.3
   - invocationData:
+      displayPath: StepSound.stepDelegate
+      gameObject: {fileID: 786497096678820732}
+      scriptType: StepSound
+      fieldName: stepDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: 9f5a61a8128ecde4182f24c82a74c44c, type: 3}
+      - {fileID: 8300000, guid: 11825fc669afebb40852f830079e4309, type: 3}
+      - {fileID: 8300000, guid: 62d748763f3092a42a8ecfcbbfd148de, type: 3}
+      - {fileID: 8300000, guid: c051936b67476524ba8b76d21671493d, type: 3}
+      - {fileID: 8300000, guid: ce8a3583601da5043ae3c78fa6b4c1d8, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.8
+      maxPitch: 1.1
+      minIntensity: 0.2
+      maxIntensity: 0.2
+  - invocationData:
       displayPath: CharacterMovement.throwDelegate
       gameObject: {fileID: 786497096678820732}
       scriptType: CharacterMovement
@@ -284,6 +318,72 @@ MonoBehaviour:
       maxPitch: 1.1
       minIntensity: 0.2
       maxIntensity: 0.2
+--- !u!114 &342871650930241841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786497096678820732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7f83fc17134b94da90357cc4caa094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPrefab: {fileID: 2598897783869053215, guid: f547ba7087cc0434d98ac2cbb6249974, type: 3}
+  events:
+  - invocationData:
+      displayPath: CharacterMovement.grabStartDelegate
+      gameObject: {fileID: 786497096678820732}
+      scriptType: CharacterMovement
+      fieldName: grabStartDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: a549ec3391662fa4a86e235e52dd1bc5, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.5
+      maxPitch: 1
+      minIntensity: 0.2
+      maxIntensity: 0.2
+  - invocationData:
+      displayPath: PlayerMovementInput.grabDelegate
+      gameObject: {fileID: 786497096678820732}
+      scriptType: PlayerMovementInput
+      fieldName: grabDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: 0ff8b36c071507943a89368c2104fb00, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.8
+      maxPitch: 1.1
+      minIntensity: 0.3
+      maxIntensity: 0.3
+  - invocationData:
+      displayPath: CharacterMovement.throwDelegate
+      gameObject: {fileID: 786497096678820732}
+      scriptType: CharacterMovement
+      fieldName: throwDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: 0ff8b36c071507943a89368c2104fb00, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.8
+      maxPitch: 1.1
+      minIntensity: 0.2
+      maxIntensity: 0.2
+--- !u!114 &2123866617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786497096678820732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c06cdae65944584aac34f7895bba43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepDistance: 0.5
 --- !u!1 &1372269537976605768
 GameObject:
   m_ObjectHideFlags: 0

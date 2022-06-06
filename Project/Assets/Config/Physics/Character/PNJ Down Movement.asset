@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db428bcc52ff740bf6ef4b8c2f1e02, type: 3}
-  m_Name: Flying PNJ Movement
+  m_Name: PNJ Down Movement
   m_EditorClassIdentifier: 
-  acceleration: 70
-  inertia: 0.1
-  maxSpeed: 30
+  acceleration: 0
+  inertia: 0.3
+  maxSpeed: 15
   mass: 10
-  gravity: 200
+  gravity: 100
   throwSpeed: 100
-  throwVerticalSpeed: 100
+  throwVerticalSpeed: 200
   onGroundDuration: 2
-  collisionThrowSpeed: 2000
-  collisionVerticalSpeed: 0
+  collisionThrowSpeed: 10
