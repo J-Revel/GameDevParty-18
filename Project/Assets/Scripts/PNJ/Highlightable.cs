@@ -12,14 +12,14 @@ public class Highlightable : MonoBehaviour
     public string hilightColorShaderParam = "_HighlightColor";
     public GameObject[] hilightElements;
     
-    public void SetHighlighted(bool highlighted)
+    public void SetHighlighted(bool highlighted, bool showInput)
     {
         renderer.GetPropertyBlock(propertyBlock);
         propertyBlock.SetColor(hilightColorShaderParam, highlighted ? highlightColor : Color.white);
         renderer.SetPropertyBlock(propertyBlock);
         foreach(GameObject hilightElement in hilightElements)
         {
-            hilightElement.SetActive(highlighted);
+            hilightElement.SetActive(showInput);
         }
     }
 

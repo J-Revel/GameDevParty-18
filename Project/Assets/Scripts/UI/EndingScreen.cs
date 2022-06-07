@@ -13,8 +13,8 @@ public class EndingScreen : MonoBehaviour
 
     void Start()
     {
-        text.text = "Résultat final :\n Drouate " + leftVotes + "\nGôche " + rightVotes;
+        text.text = "Résultat final :\n Drouate " + rightVotes + "\nGôche " + leftVotes;
         victoryImage.gameObject.SetActive(leftVotes > rightVotes);
-        victoryImage.gameObject.SetActive(leftVotes <= rightVotes);
+        defeatImage.gameObject.SetActive(leftVotes <= rightVotes);
     }
 }
