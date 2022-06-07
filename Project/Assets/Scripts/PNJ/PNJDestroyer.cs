@@ -44,6 +44,7 @@ public class PNJDestroyer : MonoBehaviour
 
     private IEnumerator FXCoroutine(GameObject pnj, GameObject destructionFX)
     {
+        pnj.GetComponent<Grabbable>().enabled = false;
         for(float time=0; time<2; time += Time.deltaTime)
         {
             pnj.transform.localScale = Vector3.one * (1 - time / 2);

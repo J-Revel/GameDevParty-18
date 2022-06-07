@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class PlayerMovementInput : MonoBehaviour
 {
+    public static PlayerMovementInput instance;
     private CharacterMovement characterMovement;
     private GrabHandler grabHandler;
     public float grabOffset = 0.2f;
     public DialogueUI dialogueUI;
     
     public System.Action grabDelegate;
+    private Grabbable grabbable;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
         characterMovement = GetComponent<CharacterMovement>();
         grabHandler = GetComponent<GrabHandler>();
+        grabbable = GetComponent<Grabbable>();
+        grabbable.grabStartedDelegate += OnGrabbed;
     }
 
     public void Update()
@@ -71,6 +80,14 @@ public class PlayerMovementInput : MonoBehaviour
                         break;
                 }
             }
+        }
+    }
+
+    private void OnGrabbed()
+    {
+        if(characterMovement.currentState == CharacterState.Talking)
+        {
+            dialogueUI.CloseDialogue();
         }
     }
 }

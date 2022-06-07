@@ -84,6 +84,15 @@ public class CharacterMovement : MonoBehaviour
     {
         spriteRenderer.flipX = lookDirection.x < 0;
         bool animFinished = animatedSprite.isAnimationFinished;
+        if(currentState == CharacterState.OnGround)
+        {
+            onGroundTime += Time.deltaTime;
+            if(onGroundTime >= currentConfig.onGroundDuration)
+            {
+                onGroundTime = 0;
+                SetState(CharacterState.Idle);
+            }
+        }
         if(animFinished)
         {
             switch(currentState)
@@ -93,14 +102,6 @@ public class CharacterMovement : MonoBehaviour
                     break;
                 case CharacterState.Grabbing:
                     SetState(CharacterState.Carrying);
-                    break;
-                case CharacterState.OnGround:
-                    onGroundTime += Time.deltaTime;
-                    if(onGroundTime >= currentConfig.onGroundDuration)
-                    {
-                        onGroundTime = 0;
-                        SetState(CharacterState.Idle);
-                    }
                     break;
             }
 

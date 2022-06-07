@@ -8,17 +8,32 @@ public class GrabHandler : MonoBehaviour
     private List<Grabbable> inRangeGrabbables = new List<Grabbable>();
     private Grabbable _closestGrabbable;
     public Grabbable grabbedElement;
+    private Grabbable grabbable;
     public float grabOffset = 0.2f;
     public AnimatedSprite animatedSprite;
     
     public System.Action grabDelegate;
     public bool inRangeHilight = false;
+    public bool closestGrabbableLocked = false;
 
     public Grabbable closestGrabbable { get { return _closestGrabbable; } }
 
     private void Start()
     {
         characterMovement = GetComponent<CharacterMovement>();
+        grabbable = GetComponent<Grabbable>();
+        grabbable.grabStartedDelegate += OnGrabbed;
+    }
+
+    
+
+    public void OnGrabbed()
+    {
+        if(grabbedElement != null)
+        {
+            grabbedElement.OnThrow(characterMovement.throwVelocity * 0.01f);
+            grabbedElement = null;
+        }
     }
 
     public void Update()
@@ -39,19 +54,28 @@ public class GrabHandler : MonoBehaviour
                 closestGrabbableIndex = i;
             }
         }
-        if(inRangeGrabbables[closestGrabbableIndex] != _closestGrabbable)
+        if(characterMovement.currentState != CharacterState.Talking)
         {
-            if(inRangeHilight && _closestGrabbable != null)
-                _closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
-            _closestGrabbable = inRangeGrabbables[closestGrabbableIndex];
-            if(inRangeHilight)
-                _closestGrabbable.GetComponent<Highlightable>().SetHighlighted(true);
+            if(closestGrabbableIndex < 0)
+            {
+                if(inRangeHilight && _closestGrabbable != null)
+                    _closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
+                _closestGrabbable = null;
+            }
+            else if(inRangeGrabbables[closestGrabbableIndex] != _closestGrabbable)
+            {
+                if(inRangeHilight && _closestGrabbable != null)
+                    _closestGrabbable.GetComponent<Highlightable>().SetHighlighted(false);
+                _closestGrabbable = inRangeGrabbables[closestGrabbableIndex];
+                if(inRangeHilight)
+                    _closestGrabbable.GetComponent<Highlightable>().SetHighlighted(true);
+            }
         }
     }
 
     public void GrabClosest()
     {
-        if(_closestGrabbable != null)
+        if(_closestGrabbable != null && _closestGrabbable.isActiveAndEnabled)
         {
             characterMovement.SetState(CharacterState.Grabbing);
             grabDelegate?.Invoke();

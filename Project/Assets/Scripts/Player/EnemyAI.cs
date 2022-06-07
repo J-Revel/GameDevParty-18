@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     {
         characterMovement = GetComponent<CharacterMovement>();
         grabHandler = GetComponent<GrabHandler>();
+        target = PlayerMovementInput.instance.GetComponent<Grabbable>();
     }
 
     public void Update()

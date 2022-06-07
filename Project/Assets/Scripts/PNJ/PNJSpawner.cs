@@ -58,6 +58,11 @@ public class PNJSpawner : MonoBehaviour
         else pnj.procurationCount = 0;
         StringBuilder idCardContent = new StringBuilder();
         pnj.genre = Random.Range(0, 1.0f) > 0.5f ? Genre.Male : Genre.Female;
+        if(config.pnjDisplayProfileMen.Length == 0)
+            pnj.genre = Genre.Female;
+        if(config.pnjDisplayProfileWomen.Length == 0)
+            pnj.genre = Genre.Male;
+            
         PNJDisplayProfile[] displayProfileList = pnj.genre == Genre.Male ? config.pnjDisplayProfileMen : config.pnjDisplayProfileWomen;
         
         PNJDisplayProfile displayProfile = displayProfileList[Random.Range(0, displayProfileList.Length)];
@@ -80,13 +85,16 @@ public class PNJSpawner : MonoBehaviour
         }
         pnj.idCard = idCardContent.ToString();
         
-        
         pnj.GetComponent<CharacterMovement>().movementInput = transform.forward;
 
+        RandomPNJMovement pnjMovement = pnj.GetComponent<RandomPNJMovement>();
+        if(pnjMovement != null)
+        {
+            if(targetBox != null)
+                pnjMovement.initialTarget = new Vector3(Random.Range(targetBox.bounds.min.x, targetBox.bounds.max.x), 0, Random.Range(targetBox.bounds.min.z, targetBox.bounds.max.z));
+            else pnjMovement.initialTarget = pnj.transform.position;
+        }
         
-        if(targetBox != null)
-            pnj.GetComponent<RandomPNJMovement>().initialTarget = new Vector3(Random.Range(targetBox.bounds.min.x, targetBox.bounds.max.x), 0, Random.Range(targetBox.bounds.min.z, targetBox.bounds.max.z));
-        else pnj.GetComponent<RandomPNJMovement>().initialTarget = pnj.transform.position;
     }
     
     void Update()

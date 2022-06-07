@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 2123866611}
   - component: {fileID: 342871650930241841}
   - component: {fileID: 2123866617}
+  - component: {fileID: 2123866624}
+  - component: {fileID: 2123866633}
   m_Layer: 7
   m_Name: Player Character
   m_TagString: Player
@@ -193,6 +195,12 @@ MonoBehaviour:
     config: {fileID: 11400000, guid: b9ac7b475bac7574a9d2b27e6de7ebde, type: 2}
   - state: 1
     config: {fileID: 11400000, guid: b9ac7b475bac7574a9d2b27e6de7ebde, type: 2}
+  - state: 6
+    config: {fileID: 11400000, guid: fc96f9cae46bb684d8119ff167a4ba9b, type: 2}
+  - state: 5
+    config: {fileID: 11400000, guid: 79078d983a930744f8b68b984045aed9, type: 2}
+  - state: 4
+    config: {fileID: 11400000, guid: c353f8ae8328cea4e9a7c0b4d03d0c17, type: 2}
   movementInput: {x: 0, y: 0, z: 0}
   lookDirection: {x: 1, y: 0, z: 0}
   spriteRenderer: {fileID: 786497096568800444}
@@ -384,6 +392,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepDistance: 0.5
+--- !u!114 &2123866624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786497096678820732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66a67f26470b5d4f9c8e1b5e0192dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invincibilityDuration: 5
+--- !u!114 &2123866633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786497096678820732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb63462022521e848a85f63c0ccf9768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCollider: {fileID: 6884855397518901091}
 --- !u!1 &1372269537976605768
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2760644170761053514}
-  - component: {fileID: 845232412667896234}
+  - component: {fileID: 2778429308623569881}
   m_Layer: 6
   m_Name: Damage Trigger
   m_TagString: Untagged
@@ -476,19 +510,20 @@ Transform:
   m_Father: {fileID: 4814477904022914175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &845232412667896234
-SphereCollider:
+--- !u!136 &2778429308623569881
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2338301905712373094}
-  m_Material: {fileID: 13400000, guid: 1fcca7b23f260a14c8100b67dee9438e, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.06
-  m_Center: {x: 0, y: 0.98, z: 0}
+  m_Radius: 0.9961806
+  m_Height: 4.3317685
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.12237716, z: 0.003819406}
 --- !u!1 &2571471062223389104
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +535,6 @@ GameObject:
   - component: {fileID: 999924344248019960}
   - component: {fileID: 8340887309082349337}
   - component: {fileID: 6884855397518901091}
-  - component: {fileID: 6843400616621746779}
   m_Layer: 8
   m_Name: Ground Collider
   m_TagString: Untagged
@@ -516,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2571471062223389104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0849, y: 0.2814, z: 0}
+  m_LocalPosition: {x: 0.0849, y: 0.131, z: 0}
   m_LocalScale: {x: 0.6897, y: 0.3187, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -544,19 +578,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6843400616621746779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2571471062223389104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb63462022521e848a85f63c0ccf9768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundCollider: {fileID: 0}
 --- !u!1 &5019886420689948759
 GameObject:
   m_ObjectHideFlags: 0

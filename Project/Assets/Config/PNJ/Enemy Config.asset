@@ -1,0 +1,949 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434ddb8ca4aabda4f96cf5e03c1d5feb, type: 3}
+  m_Name: Enemy Config
+  m_EditorClassIdentifier: 
+  menFirstNames:
+  - Victor
+  - "Th\xE9odore"
+  - Sacha
+  - Remi
+  - Quentin
+  - Philippe
+  - "Mo\xEFse"
+  - Maximilien
+  - Maxence
+  - Max
+  - Matthias
+  - Marius
+  - Marian
+  - Marc-Antoine
+  - Marc
+  - Manuel
+  - Lucien
+  - "L\xE9opold"
+  - "L\xE9onard"
+  - Kevin
+  - Jules
+  - "Josu\xE9"
+  - "Jo\xEBl"
+  - "J\xE9r\xF4me"
+  - Jean-Paul
+  - Jean-Loup
+  - "Jean-Jo\xEBl"
+  - Jean
+  - Jacob
+  - Ignace
+  - "Herv\xE9"
+  - Henri
+  - Gustave
+  - "Gr\xE9goire"
+  - Fabrice
+  - "\xC9vrard"
+  - Emmanuel
+  - "\xC9lie"
+  - Edgar
+  - Cyrille
+  - Claude
+  - Charles
+  - "C\xE9dric"
+  - Brice
+  - "Barth\xE9lemy"
+  - Aymeric
+  - Axel
+  - Augustin
+  - Arthur
+  - Arnaud
+  - Antoine
+  - Anatole
+  - Alexis
+  - Alexandre
+  - Adrien
+  - Abraham
+  - "Cl\xE9ment"
+  - Julien
+  - "Rapha\xEBl"
+  - Alain
+  - Bernard
+  womenFirstNames:
+  - "Ad\xE9la\xEFde"
+  - "Ad\xE8le"
+  - Alicia
+  - "Am\xE9lie"
+  - "Ana\xEFs"
+  - Anastasie
+  - Anita
+  - Auriane
+  - Aurore
+  - Barbara
+  - "B\xE9reng\xE8re"
+  - Berthe
+  - Blanche
+  - Camille
+  - Capucine
+  - Christiane
+  - Claude
+  - "Cl\xE9mence"
+  - Constance
+  - Coralie
+  - "D\xE9borah"
+  - "\xC9lodie"
+  - Emilie
+  - Emmeline
+  - Fiona
+  - "Ga\xEBtane"
+  - Harmonie
+  - Jacqueline
+  - Janine
+  - Jasmine
+  - Jennifer
+  - Laurine
+  - Lesly
+  - Lydia
+  - "Ma\xEFt\xE9"
+  - Manon
+  - Margaux
+  - Marie
+  - Marie-Louise
+  - Marie-Madeleine
+  - Martine
+  - Maryvonne
+  - "No\xE9mie"
+  - Orianne
+  - Rosalie
+  - Sara
+  - Sonia
+  - Sophie
+  - Suzanne
+  - Sylvie
+  - Tania
+  - "Th\xE8cle"
+  - "Th\xE9r\xE8se"
+  - Valentine
+  - "V\xE9ronique"
+  - Vivienne
+  - Laura
+  - Marina
+  - Roseline
+  - "Nad\xE8ge"
+  - "Aim\xE9e"
+  secondNames:
+  - Dupont
+  - Dupond
+  - Ballesdens
+  - Barbier
+  - Barrault
+  - Barthet
+  - Bassot
+  - Beaudouin
+  - Beauvilliers
+  - "B\xE9liveau"
+  - Bissonnette
+  - Blanchard
+  - Botrel
+  - Bombelles
+  - Boudon
+  - Boudreaux
+  - Bouhier
+  - Boulanger
+  - Brian
+  - Brochard
+  - Cartier
+  - Cailloux
+  - Delisle
+  - Deloffre
+  - Dujardin
+  - Durand
+  - Duval
+  - Favre
+  - Gounelle
+  - Haillet
+  - Jaccoud
+  - "Lafl\xE8che"
+  - Guilloux
+  - La Fromboise
+  - Lagarde
+  - Leavitt
+  - Le Mahieu
+  - Lucy
+  - Mace
+  - Mallet
+  - Matthieu
+  - Messier
+  - Montgomery
+  - Neri
+  - Noir
+  - Pasquier
+  - Passereau
+  - Pierrat
+  - Rapace
+  - Regnard
+  - Robiquet
+  - Rodier
+  - Rossignol
+  - Saint-Yves
+  - Sartre
+  - Sharpe
+  - Rousseau
+  - Thiers
+  - Vallotton
+  - Vasseur
+  - Djedid
+  info:
+  - category: 0
+    text: 'Date de naissance : 30 avril 2008'
+    isInvalid: 1
+  - category: 0
+    text: 10/05/1993
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : avril 2003'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1950'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1951'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1952'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1953'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1954'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1955'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1956'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1957'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1958'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1959'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1960'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1961'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1962'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1963'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1964'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1965'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1966'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1967'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1968'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1969'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1970'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1971'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1972'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1973'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1974'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1975'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1976'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1977'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1978'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1979'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1980'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1981'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1982'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1983'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1984'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1985'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1986'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1987'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1988'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1989'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1990'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1991'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1992'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1993'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1994'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1995'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1996'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1997'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1998'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 1999'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2000'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : Mai 1989'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2001'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2002'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2003'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2004'
+    isInvalid: 0
+  - category: 0
+    text: 'Date de naissance : 2005'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2006'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2007'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2008'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2009'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2010'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2011'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2012'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 2013'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 15 BC'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 30XX'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 32/04/1987'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 30/02/2000'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 12/12/2012'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : ??/??/????'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 1793'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 17/06/2009'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 14/03/2007'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 11/08/2008'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 01/02/2006'
+    isInvalid: 1
+  - category: 0
+    text: 'Date de naissance : 07/07/2007'
+    isInvalid: 1
+  - category: 1
+    text: "Inscrit sur la liste \xE9lectorale"
+    isInvalid: 0
+  - category: 1
+    text: "Titre de s\xE9jour"
+    isInvalid: 1
+  - category: 1
+    text: Etranger avec Visa de travail
+    isInvalid: 1
+  - category: 1
+    text: "Part s'inscrire sur la liste \xE9lectorale"
+    isInvalid: 1
+  - category: 1
+    text: "Pas inscrit sur la liste \xE9lectorale"
+    isInvalid: 1
+  - category: 1
+    text: "Ressortissant \xE9tranger"
+    isInvalid: 1
+  - category: 2
+    text: Antivax
+    isInvalid: 0
+  - category: 2
+    text: Flat Earther
+    isInvalid: 0
+  - category: 2
+    text: Vegan
+    isInvalid: 0
+  - category: 2
+    text: "V\xE9g\xE9tarien"
+    isInvalid: 0
+  - category: 2
+    text: Flexitarien
+    isInvalid: 0
+  - category: 2
+    text: Aime les chocolatines
+    isInvalid: 0
+  - category: 2
+    text: Est de bonne humeur
+    isInvalid: 0
+  - category: 2
+    text: Vient de voir un concert de Rihanna
+    isInvalid: 0
+  - category: 2
+    text: "Pr\xE9f\xE8re les chats aux chiens"
+    isInvalid: 0
+  - category: 2
+    text: "Pr\xE9f\xE8re les chiens aux chats"
+    isInvalid: 0
+  - category: 2
+    text: "Pr\xE9f\xE8re les chiens aux chats"
+    isInvalid: 0
+  - category: 2
+    text: "A trop mang\xE9 ce midi"
+    isInvalid: 0
+  - category: 2
+    text: A pris un coup de soleil
+    isInvalid: 0
+  - category: 2
+    text: A les mains moites
+    isInvalid: 0
+  - category: 2
+    text: "Aimerait aller au cin\xE9ma"
+    isInvalid: 0
+  - category: 2
+    text: A peur des grenouilles
+    isInvalid: 0
+  - category: 2
+    text: Est fan de Jean Pierre Pernault
+    isInvalid: 0
+  - category: 2
+    text: "A particip\xE9 \xE0 Koh-Lanta"
+    isInvalid: 0
+  - category: 2
+    text: Rentre des courses
+    isInvalid: 0
+  - category: 2
+    text: Veut manger un donut
+    isInvalid: 0
+  - category: 2
+    text: "A oubli\xE9 son cousin \xE0 la station service"
+    isInvalid: 0
+  - category: 2
+    text: Fan de Johnny Halliday
+    isInvalid: 0
+  - category: 2
+    text: Fan de Nicolas Cage
+    isInvalid: 0
+  - category: 2
+    text: Fan d'Arthur
+    isInvalid: 0
+  - category: 2
+    text: Fan du Bachelor
+    isInvalid: 0
+  - category: 2
+    text: "Fan de l'Amour est dans le Pr\xE9"
+    isInvalid: 0
+  - category: 2
+    text: Fan de l'Ile de la Tentation
+    isInvalid: 0
+  - category: 2
+    text: Fan d'Un, Dos, Tres
+    isInvalid: 0
+  - category: 2
+    text: Fan de Quotidien
+    isInvalid: 0
+  - category: 2
+    text: Aime l'odeur de la colle
+    isInvalid: 0
+  - category: 2
+    text: N'a pas dormi de la nuit
+    isInvalid: 0
+  - category: 2
+    text: A les jambes qui grattent
+    isInvalid: 0
+  - category: 2
+    text: S'est fait piquer par un moustique
+    isInvalid: 0
+  - category: 2
+    text: A peur des trains
+    isInvalid: 0
+  - category: 2
+    text: Cannibal
+    isInvalid: 0
+  - category: 2
+    text: A peur des trains
+    isInvalid: 0
+  - category: 2
+    text: "Veut faire du saut \xE0 l'\xE9lastique"
+    isInvalid: 0
+  - category: 2
+    text: "A engag\xE9 un d\xE9tective priv\xE9"
+    isInvalid: 0
+  - category: 2
+    text: "A divorc\xE9 4 fois"
+    isInvalid: 0
+  - category: 2
+    text: "Ne sait pas cuire des p\xE2tes"
+    isInvalid: 0
+  - category: 2
+    text: "Aime les p\xE2tes au ketchup"
+    isInvalid: 0
+  - category: 2
+    text: "A des chaussettes d\xE9pareill\xE9es"
+    isInvalid: 0
+  - category: 2
+    text: "Sp\xE9cialiste des coquillettes"
+    isInvalid: 0
+  - category: 2
+    text: "Mange ses p\xE2tes crues"
+    isInvalid: 0
+  - category: 2
+    text: Donne du chocolat aux chiens
+    isInvalid: 0
+  - category: 2
+    text: "Vient de casser son t\xE9l\xE9phone"
+    isInvalid: 0
+  - category: 2
+    text: Triste
+    isInvalid: 0
+  - category: 2
+    text: Euphorique
+    isInvalid: 0
+  - category: 2
+    text: "Fatigu\xE9"
+    isInvalid: 0
+  - category: 2
+    text: Content
+    isInvalid: 0
+  - category: 2
+    text: Anxieux
+    isInvalid: 0
+  - category: 2
+    text: Malade
+    isInvalid: 0
+  - category: 2
+    text: En pleine forme
+    isInvalid: 0
+  - category: 2
+    text: Agoraphobe
+    isInvalid: 0
+  - category: 2
+    text: Syndrome de Raiponce
+    isInvalid: 0
+  - category: 2
+    text: "Syndrome de la main \xE9trang\xE8re"
+    isInvalid: 0
+  - category: 2
+    text: Syndrome de Fregoli
+    isInvalid: 0
+  - category: 2
+    text: Syndrome de Cotard
+    isInvalid: 0
+  - category: 2
+    text: Syndrome de Truman Show
+    isInvalid: 0
+  - category: 2
+    text: Syndrome de Stendhal
+    isInvalid: 0
+  - category: 2
+    text: "Est bourr\xE9"
+    isInvalid: 0
+  - category: 2
+    text: "Vient d'aller \xE0 l'aquarium"
+    isInvalid: 0
+  - category: 2
+    text: "Veut aller \xE0 l'aquarium"
+    isInvalid: 0
+  - category: 2
+    text: Revient de la plage
+    isInvalid: 0
+  - category: 2
+    text: "Veut aller \xE0 la plage"
+    isInvalid: 0
+  - category: 2
+    text: "Revient du th\xE9\xE2tre"
+    isInvalid: 0
+  - category: 2
+    text: A le COVID
+    isInvalid: 0
+  - category: 2
+    text: "Revient du th\xE9\xE2tre"
+    isInvalid: 0
+  - category: 2
+    text: N'aime pas le saumon
+    isInvalid: 0
+  - category: 2
+    text: Adore le saumon
+    isInvalid: 0
+  - category: 2
+    text: A une collection de timbres
+    isInvalid: 0
+  - category: 2
+    text: "Veut aller \xE0 un concert"
+    isInvalid: 0
+  - category: 2
+    text: Revient d'un concert
+    isInvalid: 0
+  - category: 2
+    text: A faim
+    isInvalid: 0
+  - category: 2
+    text: Veut aller aux WC
+    isInvalid: 0
+  - category: 2
+    text: N'a pas beaucoup dormi
+    isInvalid: 0
+  - category: 2
+    text: A une collection de Barbies
+    isInvalid: 0
+  - category: 2
+    text: A peur des oiseaux
+    isInvalid: 0
+  - category: 2
+    text: Adore le pain au raisin
+    isInvalid: 0
+  - category: 2
+    text: N'a plus de chemises propres
+    isInvalid: 0
+  - category: 2
+    text: Doit faire une lessive
+    isInvalid: 0
+  - category: 2
+    text: "A peur de Bob l'\xE9ponge"
+    isInvalid: 0
+  - category: 2
+    text: Fait du rap
+    isInvalid: 0
+  - category: 2
+    text: "Chanteur d'op\xE9ra"
+    isInvalid: 0
+  - category: 2
+    text: Veut visiter une grotte
+    isInvalid: 0
+  - category: 2
+    text: Veut faire un safari
+    isInvalid: 0
+  - category: 2
+    text: "Veut aller \xE0 la piscine"
+    isInvalid: 0
+  - category: 2
+    text: Revient de la piscine
+    isInvalid: 0
+  - category: 2
+    text: Mange ses ongles
+    isInvalid: 0
+  - category: 2
+    text: Fait de l'escalade
+    isInvalid: 0
+  - category: 2
+    text: Aime les mangas
+    isInvalid: 0
+  - category: 2
+    text: Aime les comics
+    isInvalid: 0
+  - category: 2
+    text: "Avide de bande dessin\xE9e"
+    isInvalid: 0
+  - category: 2
+    text: "R\xE9alisateur de films \xE9rotiques"
+    isInvalid: 0
+  - category: 2
+    text: Ne supporte pas le froid
+    isInvalid: 0
+  - category: 2
+    text: Ne supporte pas le chaud
+    isInvalid: 0
+  - category: 2
+    text: Se lave trop les mains
+    isInvalid: 0
+  - category: 2
+    text: Adore se laver les cheveux
+    isInvalid: 0
+  - category: 2
+    text: Prend 2 bains par jours
+    isInvalid: 0
+  - category: 2
+    text: Fait du cheval
+    isInvalid: 0
+  - category: 2
+    text: 'A un lama '
+    isInvalid: 0
+  - category: 2
+    text: A un hamster
+    isInvalid: 0
+  - category: 2
+    text: A un perroquet
+    isInvalid: 0
+  - category: 2
+    text: A un singe
+    isInvalid: 0
+  - category: 2
+    text: A un rat
+    isInvalid: 0
+  - category: 2
+    text: A une souris
+    isInvalid: 0
+  - category: 2
+    text: A un bernard l'hermite
+    isInvalid: 0
+  - category: 2
+    text: A deux chiens
+    isInvalid: 0
+  - category: 2
+    text: A deux chats
+    isInvalid: 0
+  - category: 2
+    text: A un chien et un chat
+    isInvalid: 0
+  - category: 2
+    text: A un serpent
+    isInvalid: 0
+  - category: 2
+    text: Membre de QAnon
+    isInvalid: 0
+  - category: 2
+    text: "Fan de Fran\xE7ois Hollande"
+    isInvalid: 0
+  - category: 2
+    text: "Fan de Fran\xE7ois Fillon"
+    isInvalid: 0
+  - category: 2
+    text: Adore les patates douces
+    isInvalid: 0
+  - category: 2
+    text: Adore les algues
+    isInvalid: 0
+  - category: 2
+    text: N'aime pas les algues
+    isInvalid: 0
+  - category: 2
+    text: A peur de l'eau
+    isInvalid: 0
+  - category: 2
+    text: A peur de l'eau
+    isInvalid: 0
+  - category: 2
+    text: A peur de l'eau
+    isInvalid: 0
+  - category: 2
+    text: "Fan de jeux vid\xE9os"
+    isInvalid: 0
+  - category: 2
+    text: Fan d'Hideo Kojima
+    isInvalid: 0
+  - category: 2
+    text: Fan de Fifa
+    isInvalid: 0
+  - category: 2
+    text: A tous les Call of Duty
+    isInvalid: 0
+  - category: 2
+    text: N'aime pas Elden Ring
+    isInvalid: 0
+  - category: 2
+    text: "Veut aller au Y\xE9men en tant qu'analyste financier"
+    isInvalid: 0
+  - category: 2
+    text: "Vient d'acheter le Temps des Temp\xEAtes"
+    isInvalid: 0
+  - category: 2
+    text: A peur de Mr Propre
+    isInvalid: 0
+  - category: 2
+    text: "Va \xE0 une Game Jam"
+    isInvalid: 0
+  - category: 2
+    text: "D\xE9teste les enfants"
+    isInvalid: 0
+  - category: 2
+    text: A peur du noir
+    isInvalid: 0
+  - category: 2
+    text: Nihiliste
+    isInvalid: 0
+  - category: 2
+    text: Satanique
+    isInvalid: 0
+  - category: 2
+    text: A tous les My Little Poney
+    isInvalid: 0
+  - category: 2
+    text: Nymphomane
+    isInvalid: 0
+  - category: 2
+    text: Pyromane
+    isInvalid: 0
+  - category: 2
+    text: Kleptomane
+    isInvalid: 0
+  - category: 2
+    text: Musicien
+    isInvalid: 0
+  - category: 2
+    text: Masseur
+    isInvalid: 0
+  - category: 2
+    text: Dessinateur
+    isInvalid: 0
+  - category: 2
+    text: "Sp\xE9cialiste de Sciences Cognitives"
+    isInvalid: 0
+  - category: 2
+    text: Professeur
+    isInvalid: 0
+  - category: 2
+    text: "Poss\xE8de la L\xE9gion d'Honneur"
+    isInvalid: 0
+  - category: 2
+    text: Conducteur
+    isInvalid: 0
+  - category: 2
+    text: Plombier
+    isInvalid: 0
+  - category: 2
+    text: Electricien
+    isInvalid: 0
+  - category: 2
+    text: Ne mange pas sa salade
+    isInvalid: 0
+  - category: 2
+    text: Adore les endives
+    isInvalid: 0
+  - category: 2
+    text: Adore les topinambours
+    isInvalid: 0
+  - category: 2
+    text: Adore les navets
+    isInvalid: 0
+  - category: 2
+    text: Adore la choucroute
+    isInvalid: 0
+  - category: 2
+    text: Adore les blettes
+    isInvalid: 0
+  - category: 2
+    text: Adore le fenouille
+    isInvalid: 0
+  - category: 2
+    text: Prend de la meth
+    isInvalid: 0
+  - category: 2
+    text: Aime le pastis
+    isInvalid: 0
+  - category: 2
+    text: "Mange ses cro\xFBtes"
+    isInvalid: 0
+  - category: 2
+    text: "Peut l\xE9cher son coude"
+    isInvalid: 0
+  - category: 2
+    text: A un oeil de verre
+    isInvalid: 0
+  - category: 2
+    text: Vient de se faire larguer
+    isInvalid: 0
+  - category: 2
+    text: Daltonien
+    isInvalid: 0
+  - category: 2
+    text: En cavale
+    isInvalid: 0
+  - category: 2
+    text: Revient d'un date Tinder
+    isInvalid: 0
+  pnjDisplayProfileMen:
+  - dialogueSprite: {fileID: 21300000, guid: 849f4966d8433f048994a047a41646ce, type: 3}
+    animations: {fileID: 11400000, guid: 1723587e580e7bb4b8c37d7891bf7ff7, type: 2}
+  pnjDisplayProfileWomen: []
