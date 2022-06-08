@@ -5076,7 +5076,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603053242}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9cf2712bcd274254a8133cf858857d2a, type: 3}
@@ -5358,24 +5358,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1618934005 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2338301905712373094, guid: 6d217f728026a01489a59717152a4f7b, type: 3}
-  m_PrefabInstance: {fileID: 2123866605}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1618934008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618934005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee02e714f77f5a043b261ad3fa9619c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionFxHitbox: {fileID: 3545836732590159143, guid: d96d78b66be3c714a972d008fa400586, type: 3}
 --- !u!1 &1639828064
 GameObject:
   m_ObjectHideFlags: 0

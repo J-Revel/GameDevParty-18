@@ -7,6 +7,7 @@ public class TriggerPigeonFly : MonoBehaviour
     [SerializeField] private Animator PigeonFlying;
 
     [SerializeField] private string PigeonFly = "PigeonFly";
+    public System.Action pigeonFlyDelegate;
 
     AudioSource audioData;
 
@@ -16,9 +17,7 @@ public class TriggerPigeonFly : MonoBehaviour
         {
             PigeonFlying.SetInteger("PigeonFly_index", Random.Range(0, 2));
             PigeonFlying.SetTrigger("CharacterEnterCollider");
-            audioData = GetComponent<AudioSource>();
-            audioData.Play(0);
-            Debug.Log("pigeonAudioPlay");
+            pigeonFlyDelegate?.Invoke();
 
         }
     }

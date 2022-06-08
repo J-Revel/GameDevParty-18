@@ -91,7 +91,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1414887159, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
+    - {fileID: 1414887158, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
 --- !u!1 &493568005158760663 stripped
 GameObject:
@@ -112,6 +114,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PigeonFlying: {fileID: 4771605388211993619}
   PigeonFly: PigeonFly
+--- !u!114 &7003139786822103704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493568005158760663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7f83fc17134b94da90357cc4caa094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPrefab: {fileID: 2598897783869053215, guid: f547ba7087cc0434d98ac2cbb6249974, type: 3}
+  events:
+  - invocationData:
+      displayPath: TriggerPigeonFly.pigeonFlyDelegate
+      gameObject: {fileID: 493568005158760663}
+      scriptType: TriggerPigeonFly
+      fieldName: pigeonFlyDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: f335ee79815a3194ebc27e50bb9fe34a, type: 3}
+      - {fileID: 8300000, guid: b039bb70f3777eb4ba5d59e9f1ae1079, type: 3}
+      - {fileID: 8300000, guid: 5dd9ee69143053f44b487f71eddb70e0, type: 3}
+      - {fileID: 8300000, guid: cfd73db3337647945a993caad7283ada, type: 3}
+      - {fileID: 8300000, guid: 4bf2b7a8f11c1434ca63371873691933, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.9
+      maxPitch: 1.1
+      minIntensity: 0.5
+      maxIntensity: 0.5
 --- !u!4 &493568005158760667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4963429330683050556, guid: c6f95356b20476b45b61b729d1bc5ab5, type: 3}
