@@ -53,14 +53,7 @@ public class PlayerMovementInput : MonoBehaviour
 
         if(characterMovement.currentState == CharacterState.Talking)
         {
-            characterMovement.movementInput = Vector3.zero;
-            if(highlighted != null)
-                highlighted.SetHighlighted(true, false);
-            if(Input.GetButtonDown("Interact"))
-            {
-                dialogueUI.CloseDialogue();
-                GrabClosest();
-            }
+            
         }
         else
         {
@@ -86,43 +79,37 @@ public class PlayerMovementInput : MonoBehaviour
             characterMovement.movementInput.x = Input.GetAxis("Horizontal");
             characterMovement.movementInput.z = Input.GetAxis("Vertical");
         
-            
-            if(Input.GetButtonDown("Interact"))
-            {
-                switch(characterMovement.currentState)
-                {
-                    case CharacterState.Idle:
-                        GrabClosest();
-                        break;
-                    case CharacterState.Carrying:
-                        grabHandler.Throw();
-                        break;
-                }
-            }
         }
 
-        if(Input.GetButtonDown("Talk"))
+        switch(characterMovement.currentState)
         {
-            
-            if(characterMovement.currentState == CharacterState.Talking)
-            {
-                dialogueUI.OnTalkButtonPressed();
-            }
-            else
-            {
-                switch(characterMovement.currentState)
+            case CharacterState.Idle:
+                if(closestGrabbable != null && Input.GetButtonDown("Talk"))
                 {
-                    case CharacterState.Idle:
-                        if(closestGrabbable != null)
-                        {
-                            PNJProfile config = closestGrabbable.GetComponent<PNJProfile>();
-                            dialogueUI.StartDialogue(config);
-                            characterMovement.SetState(CharacterState.Talking);
-                            closestGrabbable.GetComponent<CharacterMovement>().SetState(CharacterState.Talking);
-                        }
-                        break;
+                    PNJProfile config = closestGrabbable.GetComponent<PNJProfile>();
+                    dialogueUI.StartDialogue(config);
+                    characterMovement.SetState(CharacterState.Talking);
+                    closestGrabbable.GetComponent<CharacterMovement>().SetState(CharacterState.Talking);
                 }
-            }
+                if(Input.GetButtonDown("Interact"))
+                    GrabClosest();
+                break;
+            case CharacterState.Talking:
+                characterMovement.movementInput = Vector3.zero;
+                if(highlighted != null)
+                    highlighted.SetHighlighted(true, false);
+                if(Input.GetButtonDown("Close"))
+                {
+                    dialogueUI.CloseDialogue();
+                    GrabClosest();
+                }
+                if(Input.GetButtonDown("Talk") || Input.GetButtonDown("Interact"))
+                    dialogueUI.OnTalkButtonPressed();
+                break;
+            case CharacterState.Carrying:
+                if(Input.GetButtonDown("Interact"))
+                    grabHandler.Throw();
+                break;
         }
     }
 

@@ -69,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d7ddc7421b289b0459a7d70a4bbe6daf, type: 2}
     - target: {fileID: 902912455124168559, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4439722638195878550, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
       propertyPath: states.Array.size
@@ -125,7 +125,6 @@ MonoBehaviour:
   grabbedElement: {fileID: 0}
   grabOffset: 0.2
   animatedSprite: {fileID: 4731875990422225084}
-  inRangeHilight: 0
 --- !u!114 &1341397413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,5 +139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabOffset: 0.2
   target: {fileID: 0}
-  grabRange: 2
+  grabRange: 3
   throwDelay: 2
+  grabDelay: 2
+  shakeIntensity: 0.2
+  grabAnimColor: {r: 0.6603774, g: 0.33261555, b: 0.29592383, a: 1}

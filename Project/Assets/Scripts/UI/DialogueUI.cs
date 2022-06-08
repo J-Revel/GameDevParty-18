@@ -42,6 +42,7 @@ public class DialogueUI : MonoBehaviour
         talkerImage.sprite = pnj.dialogueSprite;
         leftCharacterFoldable.isOn = true;
         rightCharacterFoldable.isOn = true;
+        themeSelector.playing = true;
         yield return new WaitForSeconds(0.2f);
         idCardText.text = pnj.idCard;
         idCardFoldable.isOn = true;
@@ -108,6 +109,7 @@ public class DialogueUI : MonoBehaviour
         answerGivenDelegate?.Invoke();
         yield return new WaitForSeconds(0.3f);
         themeSelector.playing = true;
+        Debug.Log("playing = true");
         audioSource.Play();
         themeSelectorFoldable.isOn = true;
         canAskQuestion = true;

@@ -16,6 +16,9 @@ public class PNJSpawner : MonoBehaviour
     public float maxSpawnInterval = -1;
 
     public int initialSpawnCount = 0;
+    public int maxAlive = 10;
+
+    private List<PNJProfile> spawned = new List<PNJProfile>();
 
     IEnumerator Start()
     {
@@ -36,6 +39,8 @@ public class PNJSpawner : MonoBehaviour
 
     public void Spawn()
     {
+        if(spawned.Count >= maxAlive)
+            return;
         Vector3 spawnPoint = transform.position;
         spawnPoint.x = Random.Range(spawnBox.bounds.min.x, spawnBox.bounds.max.x);
         spawnPoint.z = Random.Range(spawnBox.bounds.min.z, spawnBox.bounds.max.z);
@@ -94,11 +99,15 @@ public class PNJSpawner : MonoBehaviour
                 pnjMovement.initialTarget = new Vector3(Random.Range(targetBox.bounds.min.x, targetBox.bounds.max.x), 0, Random.Range(targetBox.bounds.min.z, targetBox.bounds.max.z));
             else pnjMovement.initialTarget = pnj.transform.position;
         }
-        
+        spawned.Add(pnj);
     }
     
     void Update()
     {
-        
+        for(int i=spawned.Count - 1; i>=0; i--)
+        {
+            if(spawned[i] == null)
+                spawned.RemoveAt(i);
+        }
     }
 }

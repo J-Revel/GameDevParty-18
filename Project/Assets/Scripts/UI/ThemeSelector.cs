@@ -68,6 +68,7 @@ public class ThemeSelector : MonoBehaviour
     public IEnumerator SelectThemeCoroutine(PNJProfile pnj, System.Action<string, string> bubbleContentDelegate)
     {
         playing = false;
+        Debug.Log("playing = false");
         for(float time=0; time < blinkAnimDuration; time += Time.deltaTime)
         {
             elements[selectedIndex].color = Mathf.Floor(time * blinkAnimFreq) % 2 == 0 ? highlightColor : blinkColor;
