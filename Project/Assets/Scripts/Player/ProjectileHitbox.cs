@@ -7,6 +7,7 @@ public class ProjectileHitbox : MonoBehaviour
     private CharacterMovement characterMovement;
     private new Rigidbody rigidbody;
     public Transform collisionFxHitbox;
+    public System.Action collisionDelegate;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class ProjectileHitbox : MonoBehaviour
                 Instantiate(collisionFxHitbox, other.ClosestPoint(movement.transform.position), movement.transform.rotation);
                 
                 grabbable.OnThrow(collisionDirection.normalized * movement.collisionThrowSpeed + Vector3.up * movement.collisionVerticalSpeed);
+                collisionDelegate?.Invoke();
                 break;
         }
     }

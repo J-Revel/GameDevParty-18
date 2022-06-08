@@ -207,6 +207,21 @@ MonoBehaviour:
       minIntensity: 0.2
       maxIntensity: 0.2
   - invocationData:
+      displayPath: Projectile Collider (1)/Damage Trigger/ProjectileHitbox.collisionDelegate
+      gameObject: {fileID: 6082845424226954415}
+      scriptType: ProjectileHitbox
+      fieldName: collisionDelegate
+    soundConfig:
+      clips:
+      - {fileID: 8300000, guid: baa0a3abd94ae684ba648b7efb2e1968, type: 3}
+      - {fileID: 8300000, guid: aa7438c06fadd9e4c8daf3d5592ac497, type: 3}
+      - {fileID: 8300000, guid: 3a52a149313125a46a54af09b9992c2b, type: 3}
+      mixerGroup: {fileID: 4977741803042760663, guid: 7371a39c93339bb41ab3162e59cf47b6, type: 2}
+      minPitch: 0.8
+      maxPitch: 1.2
+      minIntensity: 0.4
+      maxIntensity: 0.4
+  - invocationData:
       displayPath: Grabbable.thrownDelegate
       gameObject: {fileID: 902912455124168559}
       scriptType: Grabbable

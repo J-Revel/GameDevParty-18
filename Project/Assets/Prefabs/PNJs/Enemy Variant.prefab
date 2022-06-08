@@ -91,6 +91,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8584906
       objectReference: {fileID: 0}
+    - target: {fileID: 5514310382058797012, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
+      propertyPath: events.Array.data[1].soundConfig.maxPitch
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514310382058797012, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
+      propertyPath: events.Array.data[1].soundConfig.minPitch
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8168057275426463555, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8cd8d555f555c9d40ad785cce4e943ff, type: 3}
