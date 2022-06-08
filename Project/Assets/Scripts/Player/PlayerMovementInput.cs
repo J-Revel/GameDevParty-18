@@ -18,6 +18,9 @@ public class PlayerMovementInput : MonoBehaviour
     private List<Grabbable> inRangeGrabbables = new List<Grabbable>();
 
     private Highlightable highlighted;
+    public Material borderHighlightMaterial;
+    public float highlightAnimDuration = 0.5f;
+    private float highlightAnimTime = 0;
 
     private void Awake()
     {
@@ -98,12 +101,12 @@ public class PlayerMovementInput : MonoBehaviour
                 characterMovement.movementInput = Vector3.zero;
                 if(highlighted != null)
                     highlighted.SetHighlighted(true, false);
-                if(Input.GetButtonDown("Close"))
+                if(Input.GetButtonDown("Interact"))
                 {
                     dialogueUI.CloseDialogue();
                     GrabClosest();
                 }
-                if(Input.GetButtonDown("Talk") || Input.GetButtonDown("Interact"))
+                if(Input.GetButtonDown("Talk"))
                     dialogueUI.OnTalkButtonPressed();
                 break;
             case CharacterState.Carrying:
@@ -111,6 +114,14 @@ public class PlayerMovementInput : MonoBehaviour
                     grabHandler.Throw();
                 break;
         }
+
+        if(grabHandler.grabbedElement != null)
+        {
+            highlightAnimTime += Time.deltaTime;
+        }
+        else highlightAnimTime -= Time.deltaTime;
+        highlightAnimTime = Mathf.Clamp(highlightAnimTime, 0, highlightAnimDuration);
+        borderHighlightMaterial.SetFloat("_Alpha", highlightAnimTime / highlightAnimDuration);
     }
 
     private void OnGrabbed()
