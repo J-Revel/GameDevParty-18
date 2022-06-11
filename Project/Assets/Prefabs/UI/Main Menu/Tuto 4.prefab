@@ -766,8 +766,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Une fois que tu penses savoir l''orientation politique du PNJ que tu interroges,
-    tu peux l''attraper avec <b>''E''</b> ! '
+  m_text: 'Une fois que tu penses savoir l''orientation politique du passant que
+    tu interroges, tu peux l''attraper avec <b>''E''</b> ! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
@@ -1609,8 +1609,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Attention, certains PNJs sont pr\xEAts \xE0 d\xE9fendre le bureau de vote
-    \xE0 leur fa\xE7on aussi !"
+  m_text: "Attention, certains passants sont pr\xEAts \xE0 d\xE9fendre le bureau
+    de vote \xE0 leur fa\xE7on aussi !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}

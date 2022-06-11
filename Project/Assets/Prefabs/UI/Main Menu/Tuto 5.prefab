@@ -1132,7 +1132,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Certains PNJs ont des procurations, et valent donc \nplus de points !"
+  m_text: 'Certains passants ont des procurations,
+
+    et valent donc plus de points
+    !'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
@@ -1267,8 +1270,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "V\xE9rifie bien <b>l'ann\xE9e de naissance</b> des PNJs, certains ne sont
-    pas encore majeurs, et les envoyer voter ne donnera pas de voix !"
+  m_text: "V\xE9rifie bien <b>l'ann\xE9e de naissance</b> des passants,\ncertains
+    ne sont pas encore majeurs, et les envoyer voter \nne donnera pas de voix !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}

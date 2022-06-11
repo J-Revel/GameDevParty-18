@@ -1777,7 +1777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Au contact d'un PNJ, appuie sur <b>'Espace'</b> pour l'interroger !
+  m_text: Au contact d'un passant, appuie sur <b>'Espace'</b> pour l'interroger !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
   m_sharedMaterial: {fileID: 6145946791875717587, guid: 7c89066db4035ec4c84f5d6568be555a, type: 2}
